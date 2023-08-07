@@ -1,0 +1,369 @@
+a{
+    text-decoration: none;
+}
+header .content{
+    width: 100%; height: 14.5rem;
+    padding-left: 12.5%; padding-right: 12.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: url("../img/page1/хедер.svg"), no-repeat;
+    background-size: auto 100%
+}
+header .content .top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header .content .top .logo-href{
+    width: 35%;
+    height: 8rem;
+}
+header .content .top .logo{
+    background: url("../img/index/логоfooter.svg"), no-repeat;
+    width: 100%;
+    height: 8rem;
+    background-size: 100% 100%;
+}
+header .top .nav{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 2rem;
+    position: relative;
+    top: 1rem
+}
+header .top .nav a{
+    color: var(--unnamed, #FFF);
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-transform: uppercase;
+}
+header .top .nav img{
+    position: relative;
+    bottom: 0.1rem;
+}
+header .content .bottom,
+header .content .bottom .base-href{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--unnamed, #FFF);
+    font-family: Ubuntu;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.05938rem;
+    text-transform: uppercase;
+}
+header .content .bottom summary{
+    color: var(--unnamed, #FFF);
+    font-family: Ubuntu;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.05938rem;
+    text-transform: uppercase;
+}
+details, summary {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+summary{
+    position: relative;
+}
+header .all-block{
+    position: absolute;
+    top: 14.4rem;
+}
+header .block {
+    border: 3px solid var(--unnamed, #01437C);
+    border-bottom: 0;
+    background: #FFF;
+    display: flex;
+    width: 100%;
+    padding: 0.8rem 4%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header .block a{
+    color: var(--unnamed, #00AEEF);
+
+    /* Хедер мал */
+    font-family: Ubuntu;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-transform: uppercase;
+}
+header .last{
+    border: 3px solid var(--unnamed, #01437C);
+}
+header .opab{
+    left:18.5%;
+}
+header .fuck{
+    left: 30.5%;
+}
+
+
+main{
+    padding: 7.5rem;
+    padding-left: 12.75%; padding-right: 12.75%;
+}
+main h1{
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1.25rem;
+}
+main h2{
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 7.5rem;
+}
+main h3{
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 1.40625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.07031rem;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+main .p-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; margin-bottom: 2.5rem;
+}
+main .p-container .title{
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.05938rem;
+    text-transform: uppercase;
+    display: flex; flex-direction: column; justify-content: space-between;
+    width: 25%;
+}
+main .p-container .p{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    align-items: start;
+}
+main .p-container .p h4{
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+main .p-container .p h5{
+    color: var(--unnamed, #01437C);
+font-family: Ubuntu;
+font-size: 1.5625rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.07063rem;
+text-transform: uppercase;
+}
+.p .I1{
+    color: var(--unnamed, #01437C);
+
+    /* H2 */
+    font-family: Ubuntu;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 7.37rem;
+}
+.p-container .title button{
+    display: flex; 
+    flex-direction: row;
+    justify-content: start;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-transform: uppercase;
+}
+.p-container .title button:hover{
+    display: flex; 
+    flex-direction: row;
+    justify-content: start;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--1, #00AEEF);
+    font-family: Ubuntu;
+    font-size: 1.40625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.07031rem;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.p-container .v{
+    width: 75%;
+    height: 31rem;
+    background: var(--20, rgba(0, 0, 0, 0.20));
+    display: flex; 
+    flex-direction: row;
+    justify-content: center; 
+    /* align-items: center; */
+}
+.p-container .vv{
+    width: 12%;
+    height: 6rem;
+    background: url('../img/page9/ion_play-circle-outline.svg'), no-repeat;
+    background-size: 100% auto;
+    margin-left: 44%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer .content{
+    width: 100%;
+    height: 24.4rem;
+    background: url("../img/index/plashka.svg"), no-repeat;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+}
+footer .top{
+    display: flex;
+    width: 75%; margin-left: 12.5%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2.8rem;
+    align-items: flex-start;
+}
+footer .top .right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+footer .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2.5rem;
+}
+
+
+footer .container div{
+    color: var(--unnamed, #FFF);
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-decoration: none;
+}
+
+footer h1{
+    color: var(--unnamed, #FFF);
+    /* text-align: center; */
+    font-family: Ubuntu;
+    font-size: 1.40625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.07031rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+footer .first{
+    height: 9rem;
+}
+footer .second{
+    height: 12rem;
+}
+footer .thirt{
+    height: 9rem;
+}
+
+footer .bottom{
+    display: flex;
+    width: 75%;
+    margin-left: 12.5%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+footer .bottom .left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 17%;
+}
+footer .bottom .right{
+    color: var(--unnamed, #FFF);
+    text-align: right;
+    font-family: Ubuntu;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-transform: uppercase;
+}

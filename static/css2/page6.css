@@ -1,0 +1,416 @@
+a{
+    text-decoration: none;
+}
+header .content{
+    width: 100%; height: 14.5rem;
+    padding-left: 12.5%; padding-right: 12.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: url("../img/page1/хедер.svg"), no-repeat;
+    background-size: auto 100%
+}
+header .content .top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header .content .top .logo-href{
+    width: 35%;
+    height: 8rem;
+}
+header .content .top .logo{
+    background: url("../img/index/логоfooter.svg"), no-repeat;
+    width: 100%;
+    height: 8rem;
+    background-size: 100% 100%;
+}
+header .top .nav{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 2rem;
+    position: relative;
+    top: 1rem
+}
+header .top .nav a{
+    color: var(--unnamed, #FFF);
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-transform: uppercase;
+}
+header .top .nav img{
+    position: relative;
+    bottom: 0.1rem;
+}
+header .content .bottom,
+header .content .bottom .base-href{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--unnamed, #FFF);
+    font-family: Ubuntu;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.05938rem;
+    text-transform: uppercase;
+}
+header .content .bottom summary{
+    color: var(--unnamed, #FFF);
+    font-family: Ubuntu;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.05938rem;
+    text-transform: uppercase;
+}
+details, summary {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+summary{
+    position: relative;
+}
+header .all-block{
+    position: absolute;
+    top: 14.4rem;
+}
+header .block {
+    border: 3px solid var(--unnamed, #01437C);
+    border-bottom: 0;
+    background: #FFF;
+    display: flex;
+    width: 100%;
+    padding: 0.8rem 4%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header .block a{
+    color: var(--unnamed, #00AEEF);
+
+    /* Хедер мал */
+    font-family: Ubuntu;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-transform: uppercase;
+}
+header .last{
+    border: 3px solid var(--unnamed, #01437C);
+}
+header .opab{
+    left:18.5%;
+}
+header .fuck{
+    left: 30.5%;
+}
+
+
+
+
+
+
+main{
+    padding: 12.5%;
+    padding-top: 3.75rem;
+    padding-bottom: 7.5rem;
+}
+main .content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+main .href1, main .href2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .href1{
+    margin-bottom: 0.94rem;
+}
+main .href2{
+    margin-bottom: 7.5rem;
+}
+main .href1 a, main .href2 a{
+    color: var(--unnamed, #01437C);
+    /* внутр линк/другое */
+    font-family: Ubuntu;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-transform: uppercase;
+    border-bottom: #01437C dashed 1px;
+}
+main .href1 a:hover, main .href2 a:hover{
+    color: var(--1, #00AEEF);
+    /* внутр линк/другое */
+    font-family: Ubuntu;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-transform: uppercase;
+    border-bottom: #00AEEF dashed 1px;
+}
+main h1{
+    color: var(--unnamed, #01437C);
+
+    /* Н1 */
+    font-family: Ubuntu;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 3.81rem;
+}
+
+main .f-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .f-info .left{
+    width: 45%;
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%; /* 1.75rem */
+}
+main .f-info .right{
+    width: 45%;
+    height: 20.5rem;
+    background: url("../img/page4/photo.svg");
+    background-size: 100% 100%;
+}
+main .sometextandbutton{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+main .sometextandbutton h2{
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 7.5rem;
+    margin-bottom: 2.4rem;
+}
+main .sometextandbutton button{
+    display: inline-flex;
+    padding: 0.9375rem 3.75rem;
+    justify-content: center;
+    align-items: center;
+    background: var(--unnamed, #01437C);
+    color: var(--unnamed, #FFF);
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    max-height: 3rem;
+    margin-top: 5rem;
+}
+main .container5{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 100%; height: auto;  
+    align-items: stretch;
+}
+main .container5 a{
+    width: 32%; height: 34rem;
+    z-index: 1;
+}
+main .container5 .card{
+    width: 100%; height: auto;
+    display: flex;
+    flex-direction: column;
+    /* max-height: 34rem; */
+}
+main .container5 .card .top{
+    width: 100%;
+    height: 20rem;
+    flex-shrink: 0;
+    background: var(--20, rgba(0, 0, 0, 0.20));
+    background: url("../img/page1/фото2.svg"), no-repeat;
+    background-size: 100% 100%;
+}
+main .container5 .bottom{
+    height: 14rem;
+}
+main .container5 .name{
+    color: var(--unnamed, #01437C);
+
+    /* Карточка персоны/H4-П */
+    font-family: Ubuntu;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 8%; margin-top: 0.8rem; margin-bottom: 0.6rem;
+}
+main .container5 .card-text{
+    overflow: hidden;
+    color: var(--unnamed, #01437C);
+    text-overflow: ellipsis;
+    whitespace: nowrap;
+    
+    /* Карточка персоны/текст-П */
+    font-family: Ubuntu;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 8%; margin-bottom: 2.5rem;
+}
+main .container5 .tags{
+    display: flex; flex-direction: row;
+    justify-content: space-between;
+    width: 40%; margin-left: 8%;
+}
+main .container5 .tags div{
+    color: var(--1, #00AEEF);
+
+/* подписи под фото */
+font-family: Ubuntu;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+
+main .container5 .card{
+    position:relative;
+}
+main .container5 .card .border{
+    display:block;
+    width: 94%;
+    height: 33rem;
+    border: 3px solid var(--unnamed, #01437C);
+    position: absolute;
+    bottom: 0.5rem;
+    left: 3%;
+}
+
+
+
+
+
+
+
+
+footer .content{
+    width: 100%;
+    height: 24.4rem;
+    background: url("../img/index/plashka.svg"), no-repeat;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+}
+footer .top{
+    display: flex;
+    width: 75%; margin-left: 12.5%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2.8rem;
+    align-items: flex-start;
+}
+footer .top .right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+footer .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2.5rem;
+}
+
+
+footer .container div{
+    color: var(--unnamed, #FFF);
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-decoration: none;
+}
+
+footer h1{
+    color: var(--unnamed, #FFF);
+    /* text-align: center; */
+    font-family: Ubuntu;
+    font-size: 1.40625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.07031rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+footer .first{
+    height: 9rem;
+}
+footer .second{
+    height: 12rem;
+}
+footer .thirt{
+    height: 9rem;
+}
+
+footer .bottom{
+    display: flex;
+    width: 75%;
+    margin-left: 12.5%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+footer .bottom .left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 17%;
+}
+footer .bottom .right{
+    color: var(--unnamed, #FFF);
+    text-align: right;
+    font-family: Ubuntu;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-transform: uppercase;
+}
