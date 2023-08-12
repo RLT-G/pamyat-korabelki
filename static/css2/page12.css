@@ -149,11 +149,21 @@ main{
 
 
 main .item1, 
-main .item2{
+main .item2,
+main .item3,
+main .item4{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+}
+main .item1 .right,
+main .item2 .right,
+main .item3 .right,
+main .item4 .right{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
 }
 main .item1 .left{
     color: var(--unnamed, #01437C);
@@ -167,12 +177,6 @@ main .item1 .left{
     letter-spacing: 0.05938rem;
     text-transform: uppercase;
     width: 15%;
-}
-main .item1 .right,
-main .item2 .right{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
 }
 main .item1 .right .text{
     color: var(--unnamed, #01437C);
@@ -217,9 +221,8 @@ main .item2 h4{
     line-height: normal;
     margin-bottom: 1rem;
 }
-
-
-main .item2 .right{
+main .item2 .right,
+main .item4 .right{
     color: var(--unnamed, #01437C);
 
     /* текст_статья */
@@ -243,104 +246,117 @@ main .item2 .right b{
     letter-spacing: 0.07031rem;
     text-transform: uppercase;
 }
-/* main .container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 7.5rem;
+main .item3 .right .photo{
+    width: 100%; height: 37.5rem;
+    padding: 0.94rem;
+    background-color: #F0F0F0
 }
-main .container .left,
-main .container .right{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
+main .item3 .right .photo .inner{
+    border: 3px solid var(--unnamed, #01437C);
+    width: 100%; height: 100%;
 }
-main .container .right{width: 80%;}
-main .container .left h2{
+main .item3 .right .text{
     color: var(--unnamed, #01437C);
-    font-family: Ubuntu;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 1.6rem;
-}
-main .container .left h3{
-    color: var(--unnamed, #01437C);
-    font-family: Ubuntu;
-    font-size: 0.9375rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.04688rem;
-    text-transform: uppercase;
-    margin-bottom: 2.3rem;
-}
-main .container .right h4{
-    color: var(--unnamed, #01437C);
-    font-family: Ubuntu;
-    font-size: 1.1375rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%; /* 2.0125rem 
-    letter-spacing: 0.02875rem;
-    width: 85%; 
-    align-self: self-end;
-}
-main .container .right .photo1{
-    width: 100%; 
-    height: 30.5rem;
-    background: url("../img/page3-t/фото.svg"), no-repeat;
-    background-size: 100% 100%;
-    margin-top: 3.75rem;
-}
-main .container .right h5{
-    color: var(--unnamed, #01437C);
-font-family: Ubuntu;
-font-size: 0.75rem;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
-align-self: self-start;
-margin-top: 1.25rem;
-}
-main .tw{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 3.6rem;
-    margin-bottom: 3.6rem;
-}
-
-main .tw .left{
-    width: 44%; height: 14.5rem;
-    background: url("../img/page3-t/фото2.svg"), no-repeat;
-    background-size: 100% 100%;
-}
-main .tw .right{
-    width: 54%;
-    color: var(--unnamed, #01437C);
-    font-family: Ubuntu;
-    font-size: 1.1375rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%; /* 2.0125rem 
-    letter-spacing: 0.02875rem;
-}
-main .tw .left::after{
-    content: 'Первая отечественная электроторпеда';
-    color: var(--unnamed, #01437C);
+    margin-top: 1.25rem;
+    /* подписи под фото */
     font-family: Ubuntu;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    margin-top: 14.5rem;
-} */
+}
+main .item3 .left{
+    color: var(--unnamed, #01437C);
 
+    /* Статья/дата */
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+main .item3 .left b{
+    color: var(--unnamed, #01437C);
 
+/* Хедер мал */
+font-family: Ubuntu;
+font-size: 0.9375rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.04688rem;
+text-transform: uppercase;
+}
+main .item4 .right .text b{
+    color: var(--unnamed, #01437C);
+
+    /* Н3-Bold */
+    font-family: Ubuntu;
+    font-size: 1.20625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.07031rem;
+    border-bottom: var(--unnamed, #01437C) solid 2px;
+}
+main .item4 .right .text2{
+    width: 100%;
+    margin-top: 3.75rem;
+    padding: 0.625rem 0rem 0.625rem 1.25rem;
+    border-left: 2px solid var(--1, #00AEEF);
+color: var(--unnamed, #01437C);
+font-family: Ubuntu;
+font-size: 1.4375rem;
+font-style: italic;
+font-weight: 400;
+line-height: 150%; /* 2.15625rem */
+letter-spacing: 0.04313rem;
+}
+main .item4 .right .block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    right: 6.5rem;
+    width: 56rem;
+    margin-top: 3.75rem;
+}
+main .item4 .right .block .ph{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+main .item4 .right .block .ph .mn{
+    width: 100%;
+    height: 17rem;
+    padding: 0.9375rem;
+    background-color: #F0F0F0;
+}
+main .item4 .right .block .ph .mn .mn-inner{
+    border: 3px solid var(--unnamed, #01437C);
+    width: 100%; height: 100%;
+}
+main .item4 .right .block .ph .tx{
+    color: var(--unnamed, #01437C);
+    margin-top: 0.94rem;
+
+/* подписи под фото */
+font-family: Ubuntu;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+main .item4 .right .block .tx-d{
+    width: 58%;
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 2.0125rem */
+    letter-spacing: 0.02875rem;
+}
 
 
 
