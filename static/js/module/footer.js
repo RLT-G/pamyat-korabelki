@@ -4,9 +4,9 @@ let footer_html = `
     <div class="content">
         <div class="top">
             <a href="page1.html">
-            <div>
-                <img src="../static/img/index/логоfooter.svg" alt="logo.svg">
-            </div>
+                <div>
+                    <img src="../static/img/index/логоfooter.svg" alt="logo.svg">
+                </div>
             </a>
             <div class="right">
                 <div class="container first">
