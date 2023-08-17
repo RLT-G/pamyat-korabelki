@@ -264,7 +264,7 @@ main .c-form .submit{
     letter-spacing: 0.04688rem;
     text-transform: uppercase;
     cursor: pointer;
-}
+} main .c-form .submit:hover{background-color:#00AEEF}
 main .p-container{
     display: flex;
     width: 100%;
@@ -408,4 +408,9 @@ footer .bottom .right{
     line-height: normal;
     letter-spacing: 0.04688rem;
     text-transform: uppercase;
+}
+#a1{
+    color: #00AEEF;
+    position: relative;
+    top: -0.1rem;
 }

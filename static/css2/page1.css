@@ -281,6 +281,11 @@ main .container3 .right .bottom .inner .text{
     letter-spacing: 0.07063rem;
     text-transform: uppercase;
 }
+
+
+
+
+
 main .container4{
     margin-top: 7.5rem;
     width: 100%;
@@ -321,9 +326,9 @@ main .container4 .left button{
     letter-spacing: 0.07031rem;
     text-transform: uppercase;
     height: 0rem;
+    position: relative; top: -0.4rem;
 }
 main .container4 .right{
-    color: var(--1, #00AEEF);
     text-align: center;
     
     /* ссылки в тексте */
@@ -332,9 +337,13 @@ main .container4 .right{
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    text-decoration-line: underline;
+    position: relative; top: -0.3rem;
 }
+main .container4 .right a{
+    color: var(--1, #00AEEF);
+    text-decoration-line: underline;
 
+}
 
 
 main .container5{
@@ -344,6 +353,30 @@ main .container5{
     justify-content: space-between; 
     width: 100%; height: auto;  
     align-items: stretch;
+    position: relative;
+}
+main .container5 .arrow-left{
+    position: absolute;
+    width: 3.25%; height: 1.5rem;
+    display: block;
+    left: -4.5%;
+    top: 16.5rem;
+    background: url("../img/page1/стрелка\ слайдера\ right.svg"), no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+main .container5 .arrow-left button, main .container5 .arrow-right button{
+    width: 100%; height: 100%; background-color: transparent; border: none; cursor: pointer;
+}
+main .container5 .arrow-right{
+    position: absolute;
+    width: 3.25%; height: 1.5rem;
+    display: block;
+    left: 101.25%;
+    top: 16.5rem;
+    background: url("../img/page1/стрелка\ слайдера\ left.svg"), no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
 }
 main .container5 a{
     width: 32%; height: 34rem;

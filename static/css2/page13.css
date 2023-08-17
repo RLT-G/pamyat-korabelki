@@ -267,7 +267,7 @@ line-height: normal;
 letter-spacing: 0.04688rem;
 text-transform: uppercase;
     cursor: pointer;
-}
+}main .last button:hover{background-color: #00AEEF;}
 main .buttom{
     width: 100%;
     display: flex;
@@ -299,7 +299,7 @@ main .buttom button{
     margin-top: 3.75rem;
     cursor: pointer;
     margin-bottom: 7.5rem;
-}
+}main .buttom button:hover{background-color: #00AEEF;}
 
 
 
@@ -354,8 +354,7 @@ main .c-form .submit{
     letter-spacing: 0.04688rem;
     text-transform: uppercase;
     cursor: pointer;
-}
-
+}main .c-form .submit:hover{background-color: #00AEEF;}
 
 
 

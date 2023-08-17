@@ -271,6 +271,9 @@ main .buttom button{
     margin-top: 3.75rem;
     cursor: pointer;
 }
+main .buttom button:hover{
+    background-color: #00AEEF;
+}
 
 
 

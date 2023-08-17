@@ -236,6 +236,9 @@ main .sometextandbutton button{
     max-height: 3rem;
     margin-top: 5rem;
 }
+main .sometextandbutton button:hover{
+    background-color: #00AEEF;
+}
 main .container5{
     margin-top: 2.5rem;
     display: flex;

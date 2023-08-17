@@ -236,6 +236,9 @@ main .button-full button{
     text-transform: uppercase;
     cursor: pointer;
 }
+main .button-full button:hover{
+    background-color: #00AEEF;
+}
 
 
 

@@ -316,7 +316,7 @@ main .sometextandbutton button{
     text-transform: uppercase;
     cursor: pointer;
     border: none;
-}
+}main .sometextandbutton button:hover{background-color: #00AEEF;}
 main .container5{
     margin-top: 2.5rem;
     display: flex;

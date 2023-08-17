@@ -210,6 +210,9 @@ main .container .right button{
     text-transform: uppercase;
     cursor: pointer;
 }
+main .container .right button:hover{
+    background-color: #00AEEF;
+}
 main .container .right div{
     width: 85%;
     align-self: self-end;
