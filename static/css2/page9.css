@@ -246,6 +246,7 @@ text-transform: uppercase;
     flex-direction: row;
     justify-content: center; 
     /* align-items: center; */
+    cursor: pointer;
 }
 .p-container .vv{
     width: 12%;

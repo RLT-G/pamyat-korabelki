@@ -159,7 +159,7 @@ main .container5 .card{
     width: 100%; height: auto;
     display: flex;
     flex-direction: column;
-    /* max-height: 34rem; */
+    max-height: 34rem;
 }
 main .container5 .card .top{
     width: 100%;
@@ -170,7 +170,8 @@ main .container5 .card .top{
     background-size: 100% 100%;
 }
 main .container5 .bottom{
-    height: 14rem;
+    height: 12rem;
+    background-color: #F0F0F0;
 }
 main .container5 .name{
     color: var(--unnamed, #01437C);
@@ -188,19 +189,25 @@ main .container5 .card-text{
     color: var(--unnamed, #01437C);
     text-overflow: ellipsis;
     whitespace: nowrap;
-    
     /* Карточка персоны/текст-П */
     font-family: Ubuntu;
     font-size: 0.9rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-left: 8%; margin-bottom: 2.5rem;
+
+
+
+    margin-left: 8%; 
+    margin-bottom: 1rem;
 }
 main .container5 .tags{
     display: flex; flex-direction: row;
     justify-content: space-between;
-    width: 40%; margin-left: 8%;
+
+
+
+    width: 45%; margin-left: 8%;
 }
 main .container5 .tags div{
     color: var(--1, #00AEEF);
@@ -219,7 +226,7 @@ main .container5 .card{
 main .container5 .card .border{
     display:block;
     width: 94%;
-    height: 33rem;
+    height: 97%;
     border: 3px solid var(--unnamed, #01437C);
     position: absolute;
     bottom: 0.5rem;

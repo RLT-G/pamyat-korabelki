@@ -267,6 +267,8 @@ main .container5 .card .top{
 }
 main .container5 .bottom{
     height: 14rem;
+    background-color: #F0F0F0;
+
 }
 main .container5 .name{
     color: var(--unnamed, #01437C);

@@ -8,7 +8,25 @@
         <link rel="stylesheet" href="../static/css2/page1.css">
         <title>page1</title>
     </head>
+    
     <body>
+        <script>
+        function scrollToElement(elementId) {
+            const element = document.getElementById(elementId);
+            
+            if (element) {
+                // Вычисляем положение элемента относительно верха страницы
+                const offset = element.getBoundingClientRect().top + window.scrollY;
+                
+                // Прокручиваем страницу к элементу
+                window.scrollTo({
+                    top: offset,
+                    behavior: 'smooth' // Добавляем плавную анимацию
+                });
+            }
+        }
+
+    </script>
         <header>
             <div class="content">
                 <div class="logo"></div>
@@ -28,12 +46,12 @@
                 <div class="scrol">
                     <!-- JS Скрол -->
                     <button>
-                        <img src="../static/img/index/arrow.svg" alt="">
+                        <img onclick="scrollToElement('toscroll')" src="../static/img/index/arrow.svg" alt="">
                     </button>
                 </div>
             </div>
         </header>
-        <main>
+        <main id="toscroll">
             <div class="content">
                 <div class="container1">
                     <div class="left">

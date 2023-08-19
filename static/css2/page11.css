@@ -127,6 +127,9 @@ header .fuck{
 
 
 
+
+
+
 main{
     padding: 7.5rem; padding-left: 12.5%; padding-right: 12.5%;
 }
@@ -174,6 +177,7 @@ main .container5 .card .bottom{
     flex-direction: column;
     justify-content: space-around;
     flex-shrink: 0;
+    padding: 1rem;
 }
 main .container5 .card .bottom .item1{
     display: flex;
