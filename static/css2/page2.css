@@ -201,9 +201,114 @@ main .p .p-photo{
     background: url("../img/page1/ВасилийИвановичЧураков.svg"), no-repeat;
     background-size: 100% 100%;
 }
+
+main .switches{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: end;
+    width: 100%; height: auto;
+    margin-top: 8rem;
+
+    flex-wrap: nowrap;
+}
+main .switches .switch{
+    border: none; background-color: transparent; cursor: pointer;
+    /* width: 25%; */
+    min-width: 19.8%;
+    height: 3.125rem;
+    /* width: 19%;
+    height: 3.125rem; */
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    /* position: relative; */
+    background: url("../img/page2-t/Union.png"), no-repeat;
+    background-size: 100% 100%;
+    /* margin-right: 3.5%; */
+    /* z-index: 1; */
+}
+main .switches .switch::after{
+    /* content: "";
+    display: block;
+    width: 26%;
+    height: 3.125rem;
+    background: #FFFFFF;
+    position: absolute;
+    right: -13%; 
+    top: -1px;
+    transform: skewX(30deg);
+    border: var(--unnamed, #01437C) solid 1px;
+    border-left: 0;
+    z-index: -1; */
+}
+/* main .switches .last{
+    margin-right: 0;
+} */
+.index-one{
+    position: relative;
+    z-index: 1;
+    right: 6%;
+}
+.index-two{
+    position: relative;
+    z-index: 2;
+    right: 4.5%;
+}
+.index-three{
+    position: relative;
+    z-index: 3;
+    right: 3%;
+}
+.index-four{
+    position: relative;
+    z-index: 4;
+    right: 1.5%;
+}
+.index-five{
+    position: relative;
+    z-index: 5;
+    right: 0;
+}
+main .switches .active{
+    width: 26%;
+    height: 3.75rem;
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    position: relative;
+    z-index: 7;
+    background: var(--unnamed, #F0F0F0);
+    margin-right: 7%;
+    border: none;
+    white-space: nowrap;
+}
+main .switches .active::after{
+    content: "";
+    display: block;
+    width: 52%;
+    height: 3.75rem;
+    background: var(--unnamed, #F0F0F0);
+    position: absolute;
+    right: -26%; 
+    top: 0px;
+    transform: skewX(30deg);
+    z-index: -1;
+    border: none;
+}
+
 main .info{
     padding: 0.94rem;
-    margin-top: 8rem;
     background: var(--unnamed, #F0F0F0);
 }
 main .info .inner{
@@ -211,6 +316,7 @@ main .info .inner{
     display: flex;
     width: 100%;
     flex-direction: column;
+    position: relative;
 }
 
 main .info .hrefs1{
@@ -224,7 +330,6 @@ main .info .hrefs1{
 main .info .hrefs1 a,
 main .info .hrefs2 a{
     color: var(--unnamed, #01437C);
-
     font-family: Ubuntu;
     font-size: 0.7rem;
     font-style: normal;
@@ -233,12 +338,11 @@ main .info .hrefs2 a{
     letter-spacing: 0.04688rem;
     text-transform: uppercase;
     border-bottom: var(--1, #01437C) dashed 1px;
-
 }
 main .info .hrefs1 a:hover,
 main .info .hrefs2 a:hover{
     color: var(--unnamed, #00AEEF);
-    border-bottom: var(--1, #00AEEF) dashed 1px;
+    border-bottom: var(--1, #00AEEF) solid 1px;
 }
 main .info .hrefs2{
     width: 100%;
@@ -268,11 +372,15 @@ main .info .data .right{
     display: flex;
     flex-direction: column;
     width: 46%;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
 }
 main .info .data .photo{
+    /* width: 28rem; */
     width: 100%;
     height: 18.8rem;
-    background: url("../img/page2-t/фото.svg");
+    background: url("../img/page2-t/фото.png") no-repeat;
     background-size: 100% 100%;
 }
 main .info .data .textt{
@@ -283,8 +391,54 @@ main .info .data .textt{
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    max-width: 28rem;
 }
 .ws{width: 100%; height: 10rem; display: flex;}
+main .arrow{
+    display: flex;
+    width: 8rem;
+    height: 3.5rem;
+    position: absolute;
+    right: 0.94rem; bottom: 0.94rem;
+    flex-direction: column;
+    justify-content: space-around;
+}
+main .arrow .bottom button{
+    width: 100%; height: 100%; border: none; background-color: transparent; cursor: pointer;
+}
+main .arrow .bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .arrow .bottom .left, main .arrow .bottom .right{
+    width: 3.25rem; height: 1.5rem;
+    background: url("../img/page1/стрелка\ слайдера\ right.svg") no-repeat;
+    background-size: 100% 100%;
+}
+main .arrow .bottom .right{
+    background: url("../img/page1/стрелка\ слайдера\ left.svg") no-repeat;
+    background-size: 100% 100%;
+}
+main .arrow .top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+main .arrow .top{
+    color: var(--unnamed, #01437C);
+text-align: center;
+
+/* Хедер мал */
+font-family: Ubuntu;
+font-size: 0.9375rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.04688rem;
+text-transform: uppercase;
+}
 main .sometextandbutton{
     display: flex;
     width: 100%;
@@ -324,27 +478,33 @@ main .container5{
     justify-content: space-between; 
     width: 100%; height: auto;  
     align-items: stretch;
+    overflow: hidden;
 }
 main .container5 a{
-    width: 32%; height: 34rem;
+    width: 20rem; height: 34rem;
     z-index: 1;
 }
 main .container5 .card{
-    width: 100%; height: auto;
+    width: 20rem; 
+    height: auto;
     display: flex;
     flex-direction: column;
+    justify-content: 0;
     /* max-height: 34rem; */
 }
 main .container5 .card .top{
     width: 100%;
     height: 20rem;
-    flex-shrink: 0;
     background: var(--20, rgba(0, 0, 0, 0.20));
-    background: url("../img/page1/фото2.svg"), no-repeat;
+
+    background: url("../img/page1/фото2.svg") no-repeat;
     background-size: 100% 100%;
 }
+main .container5 .card .top:hover{
+
+}
 main .container5 .bottom{
-    height: 14rem;
+    height: 12rem;
     background-color: #F0F0F0;
 
 }
@@ -371,7 +531,7 @@ main .container5 .card-text{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-left: 8%; margin-bottom: 2.5rem;
+    margin-left: 8%; margin-bottom: 0.8rem;
 }
 main .container5 .tags{
     display: flex; flex-direction: row;
@@ -395,13 +555,18 @@ main .container5 .card{
 main .container5 .card .border{
     display:block;
     width: 94%;
-    height: 33rem;
+    height: 31rem;
     border: 3px solid var(--unnamed, #01437C);
     position: absolute;
     bottom: 0.5rem;
     left: 3%;
 }
-
+main .container5 .card .border:hover{
+    border: 3px solid var(--unnamed, #00AEEF);
+}
+/* main .container5 .card .border:hover + main .container5 .card .top{
+    background: url("../img/page2-t/Никитин\ Ю\ Г.svg");
+} */
 
 
 

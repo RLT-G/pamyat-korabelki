@@ -179,14 +179,14 @@ main .container .right h4{
 main .container .right .photo1{
     width: 100%; 
     height: 30.5rem;
-    background: url("../img/page3-t/фото.svg"), no-repeat;
+    background: url("../img/page3-t/фото.png"), no-repeat;
     background-size: 100% 100%;
     margin-top: 3.75rem;
 }
 main .container .right .photo2{
     width: 100%; 
     height: 28rem;
-    background: url("../img/page3-t/фото3.svg"), no-repeat;
+    background: url("../img/page3-t/фото3.png"), no-repeat;
     background-size: 100% 100%;
     margin-top: 3.75rem;
 }
@@ -232,12 +232,12 @@ main .tw{
 
 main .tw .left{
     width: 44%; height: 14.5rem;
-    background: url("../img/page3-t/фото2.svg"), no-repeat;
+    background: url("../img/page3-t/фото2.png"), no-repeat;
     background-size: 100% 100%;
 }
 main .tw .left2{
     width: 44%; height: 14.5rem;
-    background: url("../img/page3-t/фото4.svg"), no-repeat;
+    background: url("../img/page3-t/фото4.png"), no-repeat;
     background-size: 100% 100%;
     position: relative;
 }
@@ -259,7 +259,7 @@ main .tw .left::after{
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    margin-top: 14.5rem;
+    margin-top: 15.5rem;
 }
 main .tw .left2::after{
     content: 'Атомный ледокол “Ленин”';
@@ -272,6 +272,7 @@ main .tw .left2::after{
     /* margin-top: 14.5rem; */
     position: absolute;
     top: 14.5rem;
+    margin-top: 1rem;
 }
 main .c-last{
     margin-bottom: 0;

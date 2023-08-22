@@ -72,13 +72,13 @@
                     </div>
                     <div class="r last">
                         <h1>Пожалуйста, поделитесь впечатлениями от знакомства с историей ЛКИ</h1>
-                        <button>оставить отзыв</button>
+                        <button onclick="scrollToElement('toscroll')">оставить отзыв</button>
                     </div>
                 </div>
                 <div class="buttom">
                     <button>показать еще</button>
                 </div>
-                <h1>Оставьте отзыв!</h1>
+                <h1 id="toscroll">Оставьте отзыв!</h1>
                 <div class="c-form">
                     <form action="">
                         <input type="text" class="username" placeholder="ИМЯ*">
@@ -93,4 +93,20 @@
     <script src="../static/js/module/header.js"></script>
     <!-- подвал -->
     <script src="../static/js/module/footer.js"></script>
+    <script>
+        function scrollToElement(elementId) {
+            const element = document.getElementById(elementId);
+            
+            if (element) {
+                // Вычисляем положение элемента относительно верха страницы
+                const offset = element.getBoundingClientRect().top + window.scrollY;
+                
+                // Прокручиваем страницу к элементу
+                window.scrollTo({
+                    top: offset,
+                    behavior: 'smooth' // Добавляем плавную анимацию
+                });
+            }
+        }
+    </script>
 </html>

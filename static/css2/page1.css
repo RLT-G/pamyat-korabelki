@@ -288,6 +288,10 @@ main .container3 .right .bottom .inner .text{
 
 
 
+
+
+
+
 main .container4{
     margin-top: 7.5rem;
     width: 100%;
@@ -304,10 +308,8 @@ main .container4 .left{
     justify-content: space-between;
     align-items: flex-end;
 }
-main .container4 .left .h1{
+/* main .container4 .left .h1{
     color: var(--1, #00AEEF);
-
-    /* Н2-UP */
     font-family: Ubuntu;
     font-size: 2.5rem;
     font-style: normal;
@@ -316,7 +318,7 @@ main .container4 .left .h1{
     text-transform: uppercase;
     border-bottom: #00AEEF solid 0.25rem;
     position: relative; top: 0.25rem;
-}
+} */
 main .container4 .left button{
     border: none;
     background-color: transparent;
@@ -332,6 +334,24 @@ main .container4 .left button{
     height: 0rem;
     position: relative; top: -0.4rem;
 }
+main .container4 .left .active{
+    border-bottom: #00AEEF solid 0.25rem;
+    position: relative; top: 0.25rem;
+}
+main .container4 .left .active button{
+    border: none;
+    background-color: transparent; width: 100%; height: 100%;
+    color: var(--1, #00AEEF);
+    font-family: Ubuntu;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    position: relative;
+    top: 0.2rem;
+}
+
 main .container4 .right{
     text-align: center;
     
@@ -347,6 +367,12 @@ main .container4 .right a{
     color: var(--1, #00AEEF);
     text-decoration-line: underline;
 }
+
+
+
+
+
+
 
 
 main .container5{
@@ -399,7 +425,7 @@ main .container5 .card .top{
 }
 main .container5 .card .bottom{
     width: 100%;
-    height: 14rem;
+    height: 12rem;
     /* height: auto; */
     background: var(--unnamed, #F0F0F0);
     display: flex;
@@ -439,19 +465,20 @@ main .container5 .card .bottom .item1 .h2
     line-height: normal;
 }
 main .container5 .card .bottom .item2{
-    width: 90%;
-    margin-left: 5%;
+    width: 95%;
+    margin-left: 2.5%;
     color: var(--unnamed, #01437C);
     text-align: center;
     font-family: Ubuntu;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
 }
 main .container5 .card .bottom .item3
 {
-    margin-left: 5%;
+    margin-left: 9%;
     color: var(--1, #00AEEF);
     text-align: start;
     font-family: Ubuntu;
@@ -467,11 +494,15 @@ main .container5 .card{
 main .container5 .card .border{
     display:block;
     width: 94%;
-    height: 33rem;
+    height: 31rem;
     border: 3px solid var(--unnamed, #01437C);
     position: absolute;
     bottom: 0.5rem;
     left: 3%;
+}
+main .container5 .card .border:hover{
+    border: 3px solid var(--unnamed, #00AEEF);
+    
 }
 
 

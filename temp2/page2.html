@@ -26,6 +26,15 @@
                     </div>
                     <div class="p-photo"></div>
                 </div>
+
+
+                <div class="switches">
+                    <button class="switch index-five active">Биография</button>
+                    <button class="switch index-four">264-й ОПАБ</button>
+                    <button class="switch index-three">Память</button>
+                    <button class="switch index-two">Награды</button>
+                    <button class="switch index-one">Источники</button>
+                </div>
                 <div class="info">
                     <div class="inner">
                         <div class="hrefs1">
@@ -46,8 +55,22 @@
                             </div>
                         </div>
                         <div class="ws"></div>
+                        <div class="arrow">
+                            <div class="top">
+                                <div>
+                                    1/2
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                    <div class="left"><button></button></div>
+                                    <div class="right"><button></button></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+
+
                 <div class="sometextandbutton">
                     <h2>Персоналии</h2>
                     <a href="page4.html"><button>посмотреть всех</button></a>
@@ -55,7 +78,7 @@
                 <div class="container5">
                     <a href="">
                         <div class="card">
-                            <div class="top"></div>
+                            <div id="top" class="top top1"></div>
                             <div class="bottom">
                                 <div class="name">
                                     Никитин Юрий Галактионович
@@ -68,12 +91,12 @@
                                     <div>#студент</div>
                                 </div>
                             </div>
-                            <div class="border"></div>
+                            <div class="border" onmouseover="changeBackground('.top1')" onmouseout="returnBack('.top1')"></div>
                         </div>
                     </a>
                     <a href="">
                         <div class="card">
-                            <div class="top"></div>
+                            <div id="top" class="top top2"></div>
                             <div class="bottom">
                                 <div class="name">
                                     Никитин Юрий Галактионович
@@ -86,12 +109,12 @@
                                     <div>#студент</div>
                                 </div>
                             </div>
-                            <div class="border"></div>
+                            <div class="border" onmouseover="changeBackground('.top2')" onmouseout="returnBack('.top2')"></div>
                         </div>
                     </a>
                     <a href="">
                         <div class="card">
-                            <div class="top"></div>
+                            <div id="top" class="top top3"></div>
                             <div class="bottom">
                                 <div class="name">
                                     Никитин Юрий Галактионович
@@ -104,7 +127,8 @@
                                     <div>#студент</div>
                                 </div>
                             </div>
-                            <div class="border"></div>
+                            <div class="border" onmouseover="changeBackground('.top3')" onmouseout="returnBack('.top3')"></div>
+
                         </div>
                     </a>
                 </div>
@@ -115,4 +139,15 @@
     <script src="../static/js/module/header.js"></script>
     <!-- подвал -->
     <script src="../static/js/module/footer.js"></script>
+    <!-- для hover карточек -->
+    <script> 
+        function changeBackground(element) {
+            var targetElement = document.querySelector(element);
+            targetElement.style.backgroundImage = "url('../static/img/page2-t/Никитин Ю Г.svg')";
+        }
+        function returnBack(element){
+            var targetElement = document.querySelector(element)
+            targetElement.style.backgroundImage = "url('../static/img/page1/фото2.svg')"
+        }
+    </script>
 </html>

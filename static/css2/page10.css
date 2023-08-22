@@ -144,34 +144,41 @@ main .text{
     margin-bottom: 3rem;
 }
 main .container5{
-    margin-top: 2.5rem;
+    /* margin-top: 2.5rem; */
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
     width: 100%; height: auto;  
     align-items: stretch;
+    overflow: hidden;
 }
 main .container5 a{
-    width: 32%; height: 34rem;
+    width: 20rem; height: 34rem;
     z-index: 1;
 }
 main .container5 .card{
-    width: 100%; height: auto;
+    width: 20rem; 
+    height: auto;
     display: flex;
     flex-direction: column;
-    max-height: 34rem;
+    justify-content: 0;
+    /* max-height: 34rem; */
 }
 main .container5 .card .top{
     width: 100%;
     height: 20rem;
-    flex-shrink: 0;
     background: var(--20, rgba(0, 0, 0, 0.20));
-    background: url("../img/page1/фото2.svg"), no-repeat;
+
+    background: url("../img/page1/фото2.svg") no-repeat;
     background-size: 100% 100%;
+}
+main .container5 .card .top:hover{
+
 }
 main .container5 .bottom{
     height: 12rem;
     background-color: #F0F0F0;
+
 }
 main .container5 .name{
     color: var(--unnamed, #01437C);
@@ -189,25 +196,19 @@ main .container5 .card-text{
     color: var(--unnamed, #01437C);
     text-overflow: ellipsis;
     whitespace: nowrap;
+    
     /* Карточка персоны/текст-П */
     font-family: Ubuntu;
     font-size: 0.9rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
-
-
-    margin-left: 8%; 
-    margin-bottom: 1rem;
+    margin-left: 8%; margin-bottom: 0.8rem;
 }
 main .container5 .tags{
     display: flex; flex-direction: row;
     justify-content: space-between;
-
-
-
-    width: 45%; margin-left: 8%;
+    width: 40%; margin-left: 8%;
 }
 main .container5 .tags div{
     color: var(--1, #00AEEF);
@@ -226,11 +227,14 @@ main .container5 .card{
 main .container5 .card .border{
     display:block;
     width: 94%;
-    height: 97%;
+    height: 31rem;
     border: 3px solid var(--unnamed, #01437C);
     position: absolute;
     bottom: 0.5rem;
     left: 3%;
+}
+main .container5 .card .border:hover{
+    border: 3px solid var(--unnamed, #00AEEF);
 }
 main .buttom{
     width: 100%;
