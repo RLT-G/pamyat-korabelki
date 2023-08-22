@@ -62,8 +62,7 @@ header .scrol{
     top: 43rem; right: 12.5%;
 }
 header .scrol button{
-    border: none;
-    background-color: transparent;
+    all:unset;
 }
 header .scrol button:hover{
     cursor: pointer;
@@ -406,6 +405,10 @@ main .container5 .arrow-right{
     background: url("../img/page1/стрелка\ слайдера\ left.svg"), no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
+}
+main .container5 .cards_block{
+    all: unset;
+    position: relative;
 }
 main .container5 a{
     width: 32%; height: 34rem;
