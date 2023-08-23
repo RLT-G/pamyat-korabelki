@@ -12,38 +12,94 @@ document.querySelectorAll('main .container4 .left > div').forEach((element) => {
             // присвоит класс нажатому переключателю
             element.setAttribute('class', 'active');
             
-            // заменит контент в соответствии с переключателем
-            f_content_change(element);
+            // заменит карточки в соответствии с активным переключателем
+            f_content_change(element.getAttribute('data-switch'), element.querySelector('button').innerText);
         }
     });
 });
 
 
 // 
-let switch_news = [
-    {
-        image_path: '',
-        date: '22 июня 2022',
-        text: '22 июня 1941 г. в 4 часа утра фашистская Германия вероломно напала на Советский Союз',
-    },
-    {
-        image_path: '',
-        date: '22 июня 2022',
-        text: '22 июня 1941 г. в 4 часа утра фашистская Германия вероломно напала на Советский Союз',
-    },
-    {
-        image_path: '',
-        date: '22 июня 2022',
-        text: '22 июня 1941 г. в 4 часа утра фашистская Германия вероломно напала на Советский Союз',
-    },
-];
+let switch_container5 = {
+    news: [
+        {
+            image_path: '',
+            date: '22 июня 2022',
+            text: '22 июня 1941 г. в 4 часа утра фашистская Германия вероломно напала на Советский Союз',
+        },{
+            image_path: '',
+            date: '22 июня 2022',
+            text: '22 июня 1941 г. в 4 часа утра фашистская Германия вероломно напала на Советский Союз',
+        },{
+            image_path: '',
+            date: '22 июня 2022',
+            text: '22 июня 1941 г. в 4 часа утра фашистская Германия вероломно напала на Советский Союз',
+        },
+    ],
+    article: [
+        {
+            image_path: '',
+            date: '22 июня 2022',
+            text: '22 июня 1941 г. в 4 часа утра фашистская Германия вероломно напала на Советский Союз',
+        },{
+            image_path: '',
+            date: '22 июня 2022',
+            text: '22 июня 1941 г. в 4 часа утра фашистская Германия вероломно напала на Советский Союз',
+        },{
+            image_path: '',
+            date: '22 июня 2022',
+            text: '22 июня 1941 г. в 4 часа утра фашистская Германия вероломно напала на Советский Союз',
+        },
+    ],
+    feedback: [
+        {
+            image_path: '',
+            date: '22 июня 2022',
+            text: '22 июня 1941 г. в 4 часа утра фашистская Германия вероломно напала на Советский Союз',
+        },{
+            image_path: '',
+            date: '22 июня 2022',
+            text: '22 июня 1941 г. в 4 часа утра фашистская Германия вероломно напала на Советский Союз',
+        },{
+            image_path: '',
+            date: '22 июня 2022',
+            text: '22 июня 1941 г. в 4 часа утра фашистская Германия вероломно напала на Советский Союз',
+        },
+    ],
+};
 // 
 // let switch_article = 
 // 
 // let switch_feedback = 
 
 
-// 
-function f_content_change(element) {
-    alert(element.getAttribute('data-switch'))
+// заменит карточки в соответствии с активным переключателем
+function f_content_change(switch_type, section_rus) {
+
+    // удалит карточки
+    document.querySelectorAll('main .container5 > [data-card]').forEach((card) => {
+        card.remove();
+    });
+
+
+    // база карточки
+    let card_base = document.querySelectorAll('body > [data-block_js] > [data-card="'+ switch_type +'"]');
+    // let card_base = document.querySelectorAll('body > [data-block_js] > [data-card="'+ switch_type +'"]'); 
+
+    // переберет карточки (item, index, array)
+    switch_container5[switch_type].forEach((item)=> {
+
+        // 
+        let card = card_base[0].cloneNode(true);
+        // 
+        card.querySelector('.card .bottom .h1').innerHTML = section_rus;
+        card.querySelector('.card .bottom .h2').innerHTML = item['date'];
+        card.querySelector('.card .bottom .item2').innerHTML = item['text'];
+
+        // добавит карточку
+        document.querySelector('main .container5 > .arrow-right').insertAdjacentHTML('beforeBegin', card.outerHTML);
+    });
 }
+
+// добавит карточки при загрзке страницы 
+f_content_change('news', 'НОВОСТИ');
