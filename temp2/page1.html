@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../static/css/reset.css">
         <link rel="stylesheet" href="../static/css/fonts.css">
+        <!-- страница -->
         <link rel="stylesheet" href="../static/css2/page1.css">
+        <link rel="stylesheet" href="../static/css2/module/switch_news_article_feedback.css">
         <title>page1</title>
     </head>
     
@@ -125,28 +127,55 @@
 
                 </div>
                 <div class="container5">
-                    <div class="arrow-left"><button></button></div>
+                    <!-- <div class="arrow-left"><button></button></div> -->
 
-                        <!-- <a href="" data-card="news">
-                            <div class="card">
-                                <div class="top"></div>
-                                <div class="bottom">
-                                    <div class="item1">
-                                        <div class="h1">НОВОСТЬ</div>
-                                        <div class="h2">22 июня 2022</div>
-                                    </div>
-                                    <div class="item2">
-                                        22 июня 1941 г. в 4 часа утра фашистская Германия вероломно напала на Советский Союз
-                                    </div>
-                                    <div class="item3">
-                                        Читать полностью
-                                    </div>
+                        <div class="card feedback" data-card="article">
+                            <div class="content">
+                                <!-- тип и дата -->
+                                <div class="top">
+                                    <p class="type">
+                                        отзыв
+                                    </p>
+                                    <p class="date">
+                                        22 июня 2022
+                                    </p>
                                 </div>
-                                <div class="border"></div>
-                            </div>
-                        </a> -->
+                                <!-- имя -->
+                                <p class="name">
+                                    Иванов Иван Иванович
+                                </p>
+                                <!-- текст -->
+                                <p class="text">
+                                    “Заходили с семьей в ваше заведение несколько дней назад по совету друзей. Мы были очень при домой , взяли ещё с собой десерты, девушка администратор рассказала абсолютно про каждый десерт так, что хотелось купить их все. Обязательно вернёмся ещё!
 
-                    <div class="arrow-right"><button></button></div>
+                                </p>
+                                <!-- ссылка больше -->
+                                <p class="then">
+                                    Читать полностью
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card news" data-card="article">
+                            <div class="img"></div>
+                            <div class="content">
+                                <!-- тип и дата -->
+                                <div class="top">
+                                    <p class="type">отзыв</p>
+                                    <p class="date">22 июня 2022</p>
+                                </div>
+                                <!-- текст -->
+                                <p class="text">
+                                    “Заходили с семьей в ваше заведение нес
+                                </p>
+                                <!-- ссылка больше -->
+                                <p class="then">
+                                    Читать полностью
+                                </p>
+                            </div>
+                        </div>
+
+                    <!-- <div class="arrow-right"><button></button></div> -->
                 </div>
             </div>
         </main>
@@ -156,7 +185,7 @@
         <div style="display: none" data-block_js>
 
             <!-- карточка для переключателя НОВОСТИ, СТАТЬИ -->
-            <a href="" data-card="news">
+            <!-- <a href="" class="news" data-card="news">
                 <div class="card">
                     <div class="top"></div>
                     <div class="bottom">
@@ -171,10 +200,10 @@
                     </div>
                     <div class="border"></div>
                 </div>
-            </a>
+            </a> -->
 
             <!-- карточка для переключателя НОВОСТИ -->
-            <a href="" data-card="article">
+            <a href="" class="news" data-card="article">
                 <div class="card">
                     <div class="top"></div>
                     <div class="bottom">
@@ -192,14 +221,14 @@
             </a>
 
             <!-- карточка для переключателя ОТЗЫВЫ -->
-            <a href="" data-card="feedback">
+            <a href="" class="feedback" data-card="feedback">
                 <div class="card">
-                    <div class="top"></div>
                     <div class="bottom">
                         <div class="item1">
                             <div class="h1"></div>
                             <div class="h2"></div>
                         </div>
+                        <div class="name"></div>
                         <div class="item2"></div>
                         <div class="item3">
                             Читать полностью
@@ -215,5 +244,8 @@
         <script src="../static/js/module/footer.js"></script>
         <!-- js страницы -->
         <script src="../static/js/pages/page1.js"></script>
+        <!-- модуль переключатель -->
+        <script src="../static/js/module/switch_news_article_feedback/data.js"></script>
+        <script src="../static/js/module/switch_news_article_feedback/switch_news_article_feedback.js"></script>
     </body>
 </html>

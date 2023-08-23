@@ -1,0 +1,215 @@
+.container5 {
+    width: 1200px;
+    height: 598px;
+    flex-shrink: 0;
+
+    /* от себя */
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #557d8b56;
+}
+
+
+.container5 .card .content {
+    display: flex;
+    width: 357px;
+    height: 568px;
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    flex-shrink: 0;
+
+    border: 3px solid var(--unnamed, #01437C);
+
+    /* от себя */
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container5 .card .content .top {
+    height: 17px;
+    flex-shrink: 0;
+    align-self: stretch;
+
+    /* от себя */
+    display: flex;
+    justify-content: space-between;
+}
+.container5 .card .content .top .type {
+    width: 57.767px;
+
+    color: var(--unnamed, #01437C);
+    /* Хедер мал */
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+}
+.container5 .card .content .top .date {
+    width: 99.028px;
+
+    color: var(--unnamed, #01437C);
+    text-align: center;
+
+    /* Статья/дата */
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.container5 .card .content .then {
+    color: var(--unnamed, #00AEEF);
+    text-align: left;
+    /* ссылки в тексте */
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration-line: underline;
+
+    /* от себя */
+    position: absolute;
+    bottom: 15px;
+}
+
+
+
+
+/* тип новости */
+/* тип новости */
+
+.container5 .card.news {
+    display: flex;
+    width: 386px;
+    height: 598px;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    
+    background: var(--unnamed, #F0F0F0);
+
+    /* от себя */
+    position: relative;
+}
+
+.container5 .card.news .img {
+    width: 386px;
+    height: 359px;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    background: var(--20, rgba(0, 0, 0, 0.20));
+}
+
+.container5 .card.news .content {
+    /* от себя */
+    padding-top: 374px;
+}
+
+.container5 .card.news .text {
+    width: 100%;
+
+    color: var(--unnamed, #01437C);
+    text-align: center;
+
+    /* Статья/H4 */
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    /* от себя */
+    height: 118px;
+    flex-shrink: 0;
+    align-self: stretch;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+
+
+
+/* тип отзывы */
+/* тип отзывы */
+
+.container5 .card.feedback {
+    background: var(--unnamed, #F0F0F0);
+
+    display: flex;
+    width: 387px;
+    height: 598px;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.container5 .card.feedback .content {
+    display: flex;
+    width: 357px;
+    height: 568px;
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    flex-shrink: 0;
+
+    border: 3px solid var(--unnamed, #01437C);
+
+    /* от себя */
+    position: relative;
+}
+
+
+.container5 .card.feedback .content .name {
+    align-self: stretch;
+    /* padding: 15px 0; */
+
+    color: var(--unnamed, #01437C);
+    /* Статья/H4 */
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.container5 .card.feedback .content .text {
+    height: 428px;
+    flex-shrink: 0;
+    align-self: stretch;
+
+    overflow: hidden;
+    color: var(--unnamed, #01437C);
+    text-overflow: ellipsis;
+    whitespace: nowrap;
+    /* текст */
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    /* от себя  */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 21;
+    -webkit-box-orient: vertical;
+}
