@@ -1,11 +1,11 @@
 
 // новости-статьи-отзывы
-document.querySelectorAll('main .container4 .left > div').forEach((element) => {
+document.querySelectorAll('#module_switch_news_article_feedback .news_article_feedback_switch .left > div').forEach((element) => {
     element.addEventListener('click', (event) => {
         // если нажато на активный переключатель 
         if (! element.classList.contains('active')) {
             // удалит класс у активного переключателя
-            document.querySelector('main .container4 .left > div.active').removeAttribute('class', 'active');
+            document.querySelector('#module_switch_news_article_feedback .news_article_feedback_switch .left > div.active').removeAttribute('class', 'active');
             // присвоит класс нажатому переключателю
             element.setAttribute('class', 'active');
             
@@ -17,42 +17,67 @@ document.querySelectorAll('main .container4 .left > div').forEach((element) => {
 
 
 
-
 // заменит карточки в соответствии с активным переключателем
 function f_content_change(switch_type, section_rus) {
 
     // удалит карточки
-    document.querySelectorAll('main .container5 > [data-card]').forEach((card) => {
+    document.querySelectorAll('#module_switch_news_article_feedback .news_article_feedback_cards [data-card]').forEach((card) => {
         card.remove();
     });
 
 
-    // база карточки
-    let card_base = document.querySelectorAll('body > [data-block_js] > [data-card="'+ switch_type +'"]');
-    // let card_base = document.querySelectorAll('body > [data-block_js] > [data-card="'+ switch_type +'"]'); 
+    // 
+    if (switch_type == 'news' || switch_type == 'article') {
 
-    // переберет карточки (item, index, array)
-    switch_container5[switch_type].forEach((item)=> {
-        
-        // 
-        let card = card_base[0].cloneNode(true);
-        
-        card.querySelector('.card .bottom .h1').innerHTML = section_rus;
-        card.querySelector('.card .bottom .h2').innerHTML = item['date'];
-        card.querySelector('.card .bottom .item2').innerHTML = item['text'];
+        // переберет карточки (item, index, array)
+        switch_news_article_feedback_data[switch_type].forEach((item)=> {
+            // html карточки
+            card_html = `
+                <a href="">
+                    <div class="card news" data-card="`+ switch_type +`">
+                        <div class="img"></div>
+                        <div class="content">
+                            <div class="top">
+                                <p class="type">`+ section_rus +`</p>
+                                <p class="date">`+ item['date'] +`</p>
+                            </div>
+                            <p class="text">`+ item['text'] +`</p>
+                            <p class="then">Читать полностью</p>
+                        </div>
+                    </div>
+                </a>
+            `
+            // добавит карточку
+            document.querySelector('#module_switch_news_article_feedback .news_article_feedback_cards > .arrow-right').insertAdjacentHTML('beforeBegin', card_html);
+        });
 
-        // 
-        if (switch_type == 'news' || switch_type == 'article') {
-            // card.querySelector('.card .bottom .item2').innerHTML = item['text'];
-        } else {
-            card.querySelector('.card .bottom .name').innerHTML = item['name'];
-        }
+    } else {
 
-        // добавит карточку
-        document.querySelector('main .container5 > .arrow-right').insertAdjacentHTML('beforeBegin', card.outerHTML);
-    });
+        // переберет карточки (item, index, array)
+        switch_news_article_feedback_data[switch_type].forEach((item)=> {
+            // html карточки
+            card_html = `
+                <a href="">
+                    <div class="card feedback" data-card="`+ switch_type +`">
+                        <div class="content">
+                            <div class="top">
+                                <p class="type">`+ section_rus +`</p>
+                                <p class="date">`+ item['date'] +`</p>
+                            </div>
+                            <p class="name">`+ item['name'] +`</p>
+                            <p class="text">`+ item['text'] +`</p>
+                            <p class="then">Читать полностью</p>
+                        </div>
+                    </div>
+                </a>
+            `        
+            // добавит карточку
+            document.querySelector('#module_switch_news_article_feedback .news_article_feedback_cards > .arrow-right').insertAdjacentHTML('beforeBegin', card_html);
+        });
+    }
 }
+
 
 // добавит карточки при загрзке страницы 
 f_content_change('news', 'НОВОСТИ');
-// f_content_change('feedback', 'НОВОСТИ');
+// f_content_change('feedback', 'ОТЗЫВЫ');
