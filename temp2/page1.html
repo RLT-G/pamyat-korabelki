@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../static/css/reset.css">
         <link rel="stylesheet" href="../static/css/fonts.css">
+        <!-- страница -->
         <link rel="stylesheet" href="../static/css2/page1.css">
+        <link rel="stylesheet" href="../static/css2/module/switch_news_article_feedback.css">
         <title>page1</title>
     </head>
     
@@ -26,7 +28,7 @@
             }
         }
 
-    </script>
+        </script>
         <header>
             <div class="content">
                 <div class="logo"></div>
@@ -108,79 +110,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="container4">
 
-                    <div class="left">
+                <!-- модуль -->
+                <div id="module_switch_news_article_feedback">
+                    <div class="news_article_feedback_switch">
+                        <div class="left">
+                            <div class="h1 active" data-switch="news"><button>НОВОСТИ</button></div>
+                            <div class="h2" data-switch="article"><button>СТАТЬИ</button></div>
+                            <div class="h3" data-switch="feedback"><button>ОТЗЫВЫ</button></div>
+                        </div>
 
-                        <div class="h1 active"><button>НОВОСТИ</button></div>
-                        <div class="h2"><button>СТАТЬИ</button></div>
-                        <div class="h3"><button>ОТЗЫВЫ</button></div>
-
+                        <div class="right">
+                            <a href="page11.html">Все новости</a>
+                        </div>
                     </div>
 
-                    <div class="right">
-                        <a href="page11.html">Все новости</a>
+                    <div class="news_article_feedback_cards">
+                        <!-- место для карточек -->
+                        <button class="arrow-left active_not"></button>
+                        <button class="arrow-right"></button>
                     </div>
+                </div>
+                <!-- конец модуль -->
 
-                </div>
-                <div class="container5">
-                    <div class="arrow-left"><button></button></div>
-                    <a href="">
-                        <div class="card">
-                            <div class="top"></div>
-                            <div class="bottom">
-                                <div class="item1">
-                                    <div class="h1">НОВОСТЬ</div>
-                                    <div class="h2">22 июня 2022</div>
-                                </div>
-                                <div class="item2">
-                                    22 июня 1941 г. в 4 часа утра фашистская Германия вероломно напала на Советский Союз
-                                </div>
-                                <div class="item3">
-                                    Читать полностью
-                                </div>
-                            </div>
-                            <div class="border"></div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="card">
-                            <div class="top"></div>
-                            <div class="bottom">
-                                <div class="item1">
-                                    <div class="h1">НОВОСТЬ</div>
-                                    <div class="h2">22 июня 2022</div>
-                                </div>
-                                <div class="item2">
-                                    22 июня 1941 г. в 4 часа утра фашистская Германия вероломно напала на Советский Союз
-                                </div>
-                                <div class="item3">
-                                    Читать полностью
-                                </div>
-                            </div>
-                            <div class="border"></div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="card">
-                            <div class="top"></div>
-                            <div class="bottom">
-                                <div class="item1">
-                                    <div class="h1">НОВОСТЬ</div>
-                                    <div class="h2">22 июня 2022</div>
-                                </div>
-                                <div class="item2">
-                                    22 июня 1941 г. в 4 часа утра фашистская Германия вероломно напала на Советский Союз
-                                </div>
-                                <div class="item3">
-                                    Читать полностью
-                                </div>
-                            </div>
-                            <div class="border"></div>
-                        </div>
-                    </a>
-                    <div class="arrow-right"><button></button></div>
-                </div>
             </div>
         </main>
         <div id="pop_up_2" class="pop_up">
@@ -229,7 +181,11 @@
                 </div>
             </div>
         </div>
+
+        <!-- подвал -->
+        <script src="../static/js/module/footer.js"></script>
+        <!-- модуль переключатель -->
+        <script src="../static/js/module/switch_news_article_feedback/data.js"></script>
+        <script src="../static/js/module/switch_news_article_feedback/switch_news_article_feedback.js"></script>
     </body>
-    <!-- подвал -->
-    <script src="../static/js/module/footer.js"></script>
 </html>
