@@ -1,80 +1,108 @@
 // html шапки
 let header_html = `
 <header>
-            <div class="content">
-                <div class="top">
-                    <a class="logo-href" href="page1.html">
-                        <div class="logo"></div>
+    <div class="content">
+        <div class="top">
+            <a class="logo-href" href="page1.html">
+                <div class="logo"></div>
+            </a>
+            <div class="nav">
+                <a href="page7.html">264-Й ОПАБ</a>
+                <a href="page3.html">ИСТОРИЯ</a>
+                <a href="page4.html">ПЕРСОНАЛИИ</a>
+                <a href="page14.html">КОНТАКТЫ</a>
+                <a href="page13.html">ОТЗЫВЫ</a>
+                <!-- Поп каво? -->
+                <a href="/">
+                    <img src="../static/img/index/поиск.svg" alt="поиск.svg">
+                </a>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <a class="base-href" href="page10.html">
+                <div class="c1">Герои</div>
+            </a>
+
+            <div data-popup_list>
+                <div class="c1">264-ОПАБ</div>
+                <div class="all-block opab" data-active="false">
+                    <a href="page3.html">
+                        <div class="block">ИСТОРИЯ</div>
                     </a>
-                    <div class="nav">
-                        <a href="page7.html">264-Й ОПАБ</a>
-                        <a href="page3.html">ИСТОРИЯ</a>
-                        <a href="page4.html">ПЕРСОНАЛИИ</a>
-                        <a href="page14.html">КОНТАКТЫ</a>
-                        <a href="page13.html">ОТЗЫВЫ</a>
-                        <!-- Поп каво? -->
-                        <a href="/">
-                            <img src="../static/img/index/поиск.svg" alt="поиск.svg">
-                        </a>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <a class="base-href" href="page10.html">
-                        <div class="c1">Герои</div>
+                    <a href="page8.html">
+                        <div class="block">КАЛЕНДАРЬ СОБЫТИЙ</div>
                     </a>
-                    <details>
-                        <summary>264-ОПАБ</summary>
-                        <div class="all-block opab">
-                            <div class="block">
-                                <a href="page3.html">ИСТОРИЯ</a>
-                            </div>
-                            <div class="block">
-                                <a href="page8.html">КАЛЕНДАРЬ СОБЫТИЙ</a>
-                            </div>
-                            <div class="block">
-                                <a href="page7.html">УЧАСТНИКИ</a>
-                            </div>
-                            <div class="block last">
-                                <a href="page9.html">ВИДЕОПРОЕКТ</a>
-                            </div>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Факультеты</summary>
-                        <div class="all-block fuck">
-                            <div class="block">
-                                <a href="page6.html">Кораблестроения<br>и океанотехники</a>
-                            </div>
-                            <div class="block">
-                                <a href="page6.html">корабельной<br>энергетики<br>и автоматики</a>
-                            </div>
-                            <div class="block">
-                                <a href="page6.html">морского<br>приборостроения </a>
-                            </div>
-                            <div class="block">
-                                <a href="page6.html">Инженерно-<br>экономический</a>
-                            </div>
-                            <div class="block">
-                                <a href="page6.html">цифровых<br>промышленных<br>технологий</a>
-                            </div>
-                            <div class="block last">
-                                <a href="page6.html">естественнонаучного<br>и гуманитарного<br>образования</a>
-                            </div>
-                        </div>
-                    </details>
-                    <a class="base-href" href="page10.html">
-                        <div class="c1">Студенты</div>
+                    <a href="page7.html">
+                        <div class="block">УЧАСТНИКИ</div>
                     </a>
-                    <a class="base-href" href="page10.html">
-                        <div class="c1">Преподователи</div>
-                    </a>
-                    <a class="base-href" href="page10.html">
-                        <div class="c1">Выпускники</div>
+                    <a href="page9.html">
+                        <div class="block">ВИДЕОПРОЕКТ</div>
                     </a>
                 </div>
             </div>
-        </header>
+
+            <div data-popup_list>
+                <div class="c1">Факультеты</div>
+                <div class="all-block fuck" data-active="false">
+                    <a href="page6.html">
+                        <div class="block">Кораблестроения<br>и океанотехники</div>
+                    </a>
+                    <a href="page6.html">
+                        <div class="block">корабельной<br>энергетики<br>и автоматики</div>
+                    </a>
+                    <a href="page6.html">
+                        <div class="block">морского<br>приборостроения</div>
+                    </a>
+                    <a href="page6.html">
+                        <div class="block">Инженерно-<br>экономический</div>
+                    </a>
+                    <a href="page6.html">
+                        <div class="block">цифровых<br>промышленных<br>технологий</div>
+                    </a>
+                    <a href="page6.html">
+                        <div class="block">естественнонаучного<br>и гуманитарного<br>образования</div>
+                    </a>
+                </div>
+            </div>
+
+            <a class="base-href" href="page10.html">
+                <div class="c1">Студенты</div>
+            </a>
+            <a class="base-href" href="page10.html">
+                <div class="c1">Преподователи</div>
+            </a>
+            <a class="base-href" href="page10.html">
+                <div class="c1">Выпускники</div>
+            </a>
+        </div>
+    </div>
+</header>
 `
 
 // вставит html шапки в начале body
 document.querySelector('body').insertAdjacentHTML('afterBegin', header_html);
+
+
+
+// нажатие на странице
+document.addEventListener('click', (event) => {
+    if (document.querySelector('header .bottom [data-popup_list] .all-block[data-active]').getAttribute('data-active') == 'true') {
+        alert(2)
+        document.querySelector('header .bottom [data-popup_list] .all-block[data-active]').setAttribute('data-active', 'false');
+    }
+});
+
+
+document.querySelectorAll('header .bottom [data-popup_list]').forEach((element) => {
+    element.addEventListener('mouseover', () => {
+        if (element.querySelector('.all-block[data-active]').getAttribute('data-active') == 'false') {
+            element.querySelector('.all-block[data-active]').setAttribute('data-active', 'true');
+        }
+    });
+    element.addEventListener('mouseout', () => {
+        if (element.querySelector('.all-block[data-active]').getAttribute('data-active') == 'true') {
+            element.querySelector('.all-block[data-active]').setAttribute('data-active', 'false');
+        }
+    });
+});
