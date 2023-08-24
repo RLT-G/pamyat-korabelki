@@ -10,7 +10,7 @@ document.querySelectorAll('#module_switch_news_article_feedback .news_article_fe
             element.setAttribute('class', 'active');
             
             // заменит карточки в соответствии с активным переключателем
-            f_content_change(element.getAttribute('data-switch'), element.querySelector('button').innerText);
+            f_content_change(0);
         }
     });
 });
@@ -18,23 +18,29 @@ document.querySelectorAll('#module_switch_news_article_feedback .news_article_fe
 
 
 // заменит карточки в соответствии с активным переключателем
-function f_content_change(switch_type, section_rus) {
+function f_content_change(card_all_index_begin) {
+
+    // название активного переключателя
+    const switch_type = document.querySelector('#module_switch_news_article_feedback .news_article_feedback_switch .left .active').getAttribute('data-switch');
+    // активный переключатель на русском
+    const section_rus = document.querySelector('#module_switch_news_article_feedback .news_article_feedback_switch .left .active button').innerText;
+    
 
     // удалит карточки
-    document.querySelectorAll('#module_switch_news_article_feedback .news_article_feedback_cards [data-card]').forEach((card) => {
-        card.remove();
+    document.querySelectorAll('#module_switch_news_article_feedback .news_article_feedback_cards [data-card]').forEach((element) => {
+        element.remove();
     });
 
-
+    
     // 
     if (switch_type == 'news' || switch_type == 'article') {
 
-        // переберет карточки (item, index, array)
-        switch_news_article_feedback_data[switch_type].forEach((item)=> {
+        // переберет 3 карточки (item, index, array)
+        switch_news_article_feedback_data[switch_type].slice(card_all_index_begin, card_all_index_begin + 3).forEach((item, index)=> {
             // html карточки
             card_html = `
                 <a href="">
-                    <div class="card news" data-card="`+ switch_type +`">
+                    <div class="card news" data-card="`+ switch_type +`" data-index="`+ String(index + card_all_index_begin) +`">
                         <div class="img"></div>
                         <div class="content">
                             <div class="top">
@@ -48,17 +54,17 @@ function f_content_change(switch_type, section_rus) {
                 </a>
             `
             // добавит карточку
-            document.querySelector('#module_switch_news_article_feedback .news_article_feedback_cards > .arrow-right').insertAdjacentHTML('beforeBegin', card_html);
+            document.querySelector('#module_switch_news_article_feedback .news_article_feedback_cards').insertAdjacentHTML('beforeEnd', card_html);
         });
 
     } else {
 
-        // переберет карточки (item, index, array)
-        switch_news_article_feedback_data[switch_type].forEach((item)=> {
+        // переберет 3 карточки (item, index, array)
+        switch_news_article_feedback_data[switch_type].slice(card_all_index_begin, card_all_index_begin + 3).forEach((item, index)=> {
             // html карточки
             card_html = `
                 <a href="">
-                    <div class="card feedback" data-card="`+ switch_type +`">
+                    <div class="card feedback" data-card="`+ switch_type +`" data-index="`+ String(index + card_all_index_begin) +`">
                         <div class="content">
                             <div class="top">
                                 <p class="type">`+ section_rus +`</p>
@@ -72,12 +78,66 @@ function f_content_change(switch_type, section_rus) {
                 </a>
             `        
             // добавит карточку
-            document.querySelector('#module_switch_news_article_feedback .news_article_feedback_cards > .arrow-right').insertAdjacentHTML('beforeBegin', card_html);
+            document.querySelector('#module_switch_news_article_feedback .news_article_feedback_cards').insertAdjacentHTML('beforeEnd', card_html);
         });
+    }
+
+
+    // де/активация стрелки левой
+    if (card_all_index_begin == 0) {
+        document.querySelector('#module_switch_news_article_feedback .news_article_feedback_cards button.arrow-left').classList.add('active_not');
+    } else {
+        document.querySelector('#module_switch_news_article_feedback .news_article_feedback_cards button.arrow-left').classList.remove('active_not');
+    }
+
+    // де/активация стрелки правой
+    if (document.querySelectorAll('#module_switch_news_article_feedback .news_article_feedback_cards [data-card]')[2].getAttribute('data-index') == String(switch_news_article_feedback_data[switch_type].length -1)) {
+        document.querySelector('#module_switch_news_article_feedback .news_article_feedback_cards button.arrow-right').classList.add('active_not');
+    } else {
+        document.querySelector('#module_switch_news_article_feedback .news_article_feedback_cards button.arrow-right').classList.remove('active_not');
     }
 }
 
 
 // добавит карточки при загрзке страницы 
-f_content_change('news', 'НОВОСТИ');
-// f_content_change('feedback', 'ОТЗЫВЫ');
+f_content_change(0);
+
+
+
+// нажатие на стрелки
+function f_arrow_click(side) {
+
+    // если left стрелка
+    if (side == 'left') {
+        // alert('OK left');
+        if (
+            // document.querySelectorAll('#module_switch_news_article_feedback .news_article_feedback_cards [data-card]')[0].getAttribute('data-index') == '0'
+            // &&
+            ! document.querySelector('#module_switch_news_article_feedback .news_article_feedback_cards button.arrow-left').classList.contains('active_not')
+        ) {
+            // заменит карточки в соответствии с активным переключателем
+            f_content_change(Number(document.querySelectorAll('#module_switch_news_article_feedback .news_article_feedback_cards [data-card]')[0].getAttribute('data-index')) - 1);
+        }
+    }
+    // если right стрелка
+    else if (side == 'right') {
+        // alert('OK right');
+        if (
+            // document.querySelectorAll('#module_switch_news_article_feedback .news_article_feedback_cards [data-card]')[2].getAttribute('data-index') !== String(switch_news_article_feedback_data[document.querySelector('#module_switch_news_article_feedback .news_article_feedback_switch .left .active').getAttribute('data-switch')].length -1)
+            // &&
+            ! document.querySelector('#module_switch_news_article_feedback .news_article_feedback_cards button.arrow-right').classList.contains('active_not')
+        ) {
+            // заменит карточки в соответствии с активным переключателем
+            f_content_change(Number(document.querySelectorAll('#module_switch_news_article_feedback .news_article_feedback_cards [data-card]')[0].getAttribute('data-index')) + 1);
+        }
+    }
+}
+
+
+// если нажатие на стрелки  :not(.active_not)
+document.querySelector('#module_switch_news_article_feedback .news_article_feedback_cards button.arrow-left').addEventListener('click', (event) => {
+    f_arrow_click('left');
+});
+document.querySelector('#module_switch_news_article_feedback .news_article_feedback_cards button.arrow-right').addEventListener('click', (event) => {
+    f_arrow_click('right');
+});

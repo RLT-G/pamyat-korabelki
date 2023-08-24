@@ -62,7 +62,7 @@ header .scrol{
     top: 43rem; right: 12.5%;
 }
 header .scrol button{
-    all:unset;
+    all: unset;
 }
 header .scrol button:hover{
     cursor: pointer;
@@ -282,25 +282,6 @@ main .container3 .right .bottom .inner .text{
     letter-spacing: 0.07063rem;
     text-transform: uppercase;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
