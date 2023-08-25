@@ -25,40 +25,6 @@ main .main-text h2{
     margin-bottom: 60px;
 }
 
-header .last{
-    border: 3px solid var(--unnamed, #01437C);
-}
-header .opab{
-    left:18.5%;
-}
-header .fuck{
-    left: 30.5%;
-}
-
-main .main-text h1{
-    color: var(--unnamed, #01437C);
-
-    /* Н1 */
-    font-family: Ubuntu;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    width: 100%;
-    margin-bottom: 20px;
-}
-main .main-text h2{
-    color: var(--unnamed, #01437C);
-
-    /* Sub-H1 */
-    font-family: Ubuntu;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    width: 100%;
-    margin-bottom: 60px;
-}
 
 main{padding: 7.5rem; padding-left: 12.75%; padding-right: 12.75%;}
 main .content{
