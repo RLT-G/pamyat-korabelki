@@ -1,125 +1,7 @@
-a{
-    text-decoration: none;
-}
-header .content{
-    width: 100%; height: 14.5rem;
-    padding-left: 12.5%; padding-right: 12.5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background: url("../img/page1/хедер.svg"), no-repeat;
-    background-size: auto 100%
-}
-header .content .top{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-header .content .top .logo-href{
-    width: 35%;
-    height: 8rem;
-}
-header .content .top .logo{
-    background: url("../img/index/логоfooter.svg"), no-repeat;
-    width: 100%;
-    height: 8rem;
-    background-size: 100% 100%;
-}
-header .top .nav{
-    width: 55%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-height: 2rem;
-    position: relative;
-    top: 1rem
-}
-header .top .nav a{
-    color: var(--unnamed, #FFF);
-    font-family: Ubuntu;
-    font-size: 0.9375rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.04688rem;
-    text-transform: uppercase;
-}
-header .top .nav img{
-    position: relative;
-    bottom: 0.1rem;
-}
-header .content .bottom,
-header .content .bottom .base-href{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: var(--unnamed, #FFF);
-    font-family: Ubuntu;
-    font-size: 1.1875rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.05938rem;
-    text-transform: uppercase;
-}
-header .content .bottom summary{
-    color: var(--unnamed, #FFF);
-    font-family: Ubuntu;
-    font-size: 1.1875rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.05938rem;
-    text-transform: uppercase;
-}
-details, summary {
-list-style: none;
-margin: 0;
-padding: 0;
-}
-summary{
-    position: relative;
-}
-header .all-block{
-    position: absolute;
-    top: 14.4rem;
-}
-header .block {
-    border: 3px solid var(--unnamed, #01437C);
-    border-bottom: 0;
-    background: #FFF;
-    display: flex;
-    width: 100%;
-    padding: 0.8rem 4%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-header .block a{
-    color: var(--unnamed, #00AEEF);
-
-    /* Хедер мал */
-    font-family: Ubuntu;
-    font-size: 0.8rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.04688rem;
-    text-transform: uppercase;
-}
-header .last{
-    border: 3px solid var(--unnamed, #01437C);
-}
-header .opab{
-    left:18.5%;
-}
-header .fuck{
-    left: 30.5%;
-}
 
 
-main{padding: 7.5rem; padding-left: 12.75%; padding-right: 12.75%;}
+
+main{padding: 7.5rem; padding-left: 12.75%; padding-right: 12.75%; overflow: hidden;}
 main h1{
     color: var(--unnamed, #01437C);
     font-family: Ubuntu;
@@ -128,6 +10,30 @@ main h1{
     font-weight: 700;
     line-height: normal;
     margin-bottom: 3.75rem;
+}
+main .ar_and_t{
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .ar_and_t .ar{
+    display: flex;
+    max-width: 124px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .ar_and_t .ar .a-l{
+    width: 52px;
+    height: 24px;
+    background: url("../img/page1/стрелка\ слайдера\ left.svg") no-repeat;
+    background-size: 100% 100%; cursor: pointer;
+}
+main .ar_and_t .ar .a-r{
+    width: 52px;
+    height: 24px;
+    background: url("../img/page1/стрелка\ слайдера\ right.svg") no-repeat;
+    background-size: 100% 100%; cursor: pointer;
 }
 main .container{
     display: flex;
@@ -151,6 +57,8 @@ main .container .left h2{
     font-weight: 700;
     line-height: normal;
     margin-bottom: 1.6rem;
+    cursor: pointer;
+
 }
 main .container .left h3{
     color: var(--unnamed, #01437C);
@@ -162,6 +70,8 @@ main .container .left h3{
     letter-spacing: 0.04688rem;
     text-transform: uppercase;
     margin-bottom: 2.3rem;
+    cursor: pointer;
+
 }
 main .container .right h4{
     color: var(--unnamed, #01437C);
@@ -195,6 +105,7 @@ margin-top: 1.25rem;
 
 main .container .right button{
     width: 40%;
+    max-width: 270px;
     border: 0;
     padding: 0.9375rem 3.7%;
     background: var(--unnamed, #01437C);
@@ -217,113 +128,212 @@ main .container .right div{
     width: 85%;
     align-self: self-end;
 }
+main .container .right .carousel{
+    width: 90%;
+    overflow: visible;
+    white-space: nowrap;
+    position: relative;
+}
+main .carousel .a-left{
+    position: absolute;
+    max-width: 52px;
+    height: 24px;
+    background: url("../img/page1/стрелка\ слайдера\ left.svg") no-repeat;
+    background-size: 52px 24px;
+    left: -77px; bottom: calc(17rem - 12px);
+    z-index: 9;
+    cursor: pointer;
+}
+main .carousel .a-right{
+    position: absolute;
+    max-width: 52px;
+    height: 24px;
+    background: url("../img/page1/стрелка\ слайдера\ right.svg") no-repeat;
+    background-size: 52px 24px;
+    left: calc(40rem + 20px + 5rem); bottom: calc(17rem - 12px);
+    z-index: 9;
+    cursor: pointer;
+}
+main .carousel .a2-l, main .carousel .a2-r{
+    bottom: 138px;
+}
+main .container .right .carousel .items2{
+    width: calc(60rem + 40px);
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .container .right .carousel .items{
+    width: calc(60rem + 40px);
+    height: 34rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .container .right .carousel .items2 .v{
+    width: 20rem; 
+    height: 300px;
+    background: var(--unnamed, #F0F0F0);
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+main .container .right .carousel .items2 .v .inner{
+    width: 100%; height: 100%;
+    border: #01437C solid 3px;
+    padding: 10px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer .content{
+}
+main .container .right .carousel .items2 .v .inner .title{
+    color: var(--unnamed, #01437C);
+font-family: Ubuntu;
+font-size: 23px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 32.2px */
+letter-spacing: 0.46px;
+margin-bottom: 35px;
+}
+main .container .right .carousel .items2 .v .inner .text{
+    color: var(--unnamed, #01437C);
+font-family: Ubuntu;
+font-size: 21.5px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.125px;
+text-transform: uppercase;
+}
+main .container .right .carousel .items2 .v .inner .vv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 24.4rem;
-    background: url("../img/index/plashka.svg"), no-repeat;
-    z-index: 6;
-    display: flex;
-    flex-direction: column;
+    height: 100px;
+    margin-bottom: 35px;
 }
-footer .top{
+main .container .right .carousel .items2 .v .inner .vv .v-ico{
+    width: 90px;
+    height: 90px;
+    background: url("../img/page9/ion_play-circle-outline.svg");
+}
+main .carousel .inner .fog{
+    width: 20rem; min-height: 300px;
+    position: absolute;
+    background-color: #FFF;
+    left: 0; top: 0;
+
+}
+main .carousel .inner .fog1{
+opacity: 0;
+}
+main .carousel .inner .fog2{
+opacity: 0.5;
+}
+main .carousel .inner .fog3{
+opacity: 0.8;
+}
+main .c-up{
+    position: relative;
+    top: -20px;
+    margin-bottom: 0;
+}
+main .container .right .carousel .items a{
+    width: 20rem;
+    height: 34rem;
+    position: relative;
+}
+main .container .right .carousel .items a .border{
+    position: absolute;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border: 3px solid var(--unnamed, #01437C);
+    top: 10px; left: 10px;
+}
+
+main .container .right .carousel .items a .fog{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    background: var(--unnamed, #F0F0F0);
+    background-color: #FFF;
+}
+main .container .right .carousel .items a .fog1{
+    opacity: 0;
+}
+main .container .right .carousel .items a .fog2{
+    opacity: 0.5;
+}
+main .container .right .carousel .items a .fog3{
+    opacity: 0.8;
+}
+
+main .container .right .carousel .items a .top{
+    width: 100%;
+    height: 20rem;
+    background: url("../img/page1/фото2.svg") no-repeat;
+    background-size: 100% 100%;
+}
+main .container .right .carousel .items a .top{
+    width: 100%;
+    height: 20rem;
+    background: url("../img/page1/фото2.svg") no-repeat;
+    background-size: 100% 100%;
+}
+main .container .right .carousel .items a .bottom{
+    width: 100%;
+    height: 14rem;
+    background-color: #F0F0F0;
+    padding: 20px; padding-top: 10px;
+}
+main .container .right .carousel .items a .bottom h1{
+    color: var(--unnamed, #01437C);
+
+/* Карточка персоны/H4-П */
+font-family: Ubuntu;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 10px;
+}
+main .container .right .carousel .items a .bottom h2{
+color: var(--unnamed, #01437C);
+text-overflow: ellipsis;
+
+/* Карточка персоны/текст-П */
+font-family: Ubuntu;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 12px;
+}
+main .container .right .carousel .items a .bottom div{
     display: flex;
-    width: 75%; margin-left: 12.5%;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 2.8rem;
-    align-items: flex-start;
 }
-footer .top .right{
+main .container .right .carousel .items a .bottom h3{
+    color: var(--1, #00AEEF);
+
+/* подписи под фото */
+font-family: Ubuntu;
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+margin-right: 20px;
+}
+/* main .c-left{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    
-}
-footer .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 2.5rem;
-}
-
-
-footer .container div{
-    color: var(--unnamed, #FFF);
-    font-family: Ubuntu;
-    font-size: 0.9375rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.04688rem;
-    text-decoration: none;
-}
-
-footer h1{
-    color: var(--unnamed, #FFF);
-    /* text-align: center; */
-    font-family: Ubuntu;
-    font-size: 1.40625rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.07031rem;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-footer .first{
-    height: 9rem;
-}
-footer .second{
-    height: 12rem;
-}
-footer .thirt{
-    height: 9rem;
-}
-
-footer .bottom{
-    display: flex;
-    width: 75%;
-    margin-left: 12.5%;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 5rem;
-}
-footer .bottom .left{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 17%;
-}
-footer .bottom .right{
-    color: var(--unnamed, #FFF);
-    text-align: right;
-    font-family: Ubuntu;
-    font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.04688rem;
-    text-transform: uppercase;
-}
-
-
+    justify-content: start;
+    align-items: start;
+    border: red solid 1px;
+} */
 #pop_up_4{
     position: fixed;
     width: 100%; height: 100%;
