@@ -31,41 +31,41 @@
 
 
                 <div class="switches">
-                    <button class="switch index-five active">Биография</button>
-                    <button class="switch index-four">264-й ОПАБ</button>
-                    <button class="switch index-three">Память</button>
-                    <button class="switch index-two">Награды</button>
-                    <button class="switch index-one">Источники</button>
+                    <button class="switch index-five active" data-switch_name_1="биография">Биография</button>
+                    <button class="switch index-four" data-switch_name_1="й_опаб">264-й ОПАБ</button>
+                    <button class="switch index-three" data-switch_name_1="память">Память</button>
+                    <button class="switch index-two" data-switch_name_1="награды">Награды</button>
+                    <button class="switch index-one" data-switch_name_1="источники">Источники</button>
                 </div>
                 <div class="info">
                     <div class="inner">
-                        <div class="hrefs1">
-                            <a href="">Советско-финская война (1939—1940)</a>
-                            <a href="">Великая Отечественная война (1941-1945)</a>
-                            <a href="">Дальнейшая служба в РККА</a>
-                        </div>
-                        <div class="hrefs2">
-                            <a href="">После Великой Отечественной войны</a>
-                        </div>
+                        <!-- вернуть href="" -->
+                        <!-- <div class="hrefs1" data-hrefs>
+                            <a class="active" data-switch_name_2="советско_финская_война">Советско-финская война (1939—1940)</a>
+                            <a class="" data-switch_name_2="великая_отечественная_война">Великая Отечественная война (1941-1945)</a>
+                        </div> -->
                         <div class="data">
                             <div class="left">
-                                1 сентября 1939 года началась Вторая мировая война, и советское правительство приняло решение о призывы в армию юношей, достигших 18-ти лет и имеющих среднее образование. Поэтому в октябре 1939 г., в связи с отменой отсрочки от призыва в армию, многочисленная группа студентов первого курса ЛКИ была призвана в ряды РККА. <br><br>В ноябре 1939 года началась советско-финляндская война (1939—1940) и Ленинград стал фронтовым городом, тысячи ленинградцев вступили в лыжные батальоны, чтобы с оружием в руках защищать город. Среди них был студент Василий Чураков. Вместе с товарищами по учёбе он вступил в отряд лыжников-добровольцев. Все они в основном попали в 100-й добровольческий лыжный батальон, формировавшийся в Инженерном замке. Здесь же проходили занятия по боевой и лыжной подготовке. Вскоре батальон вступил в бой.
+                                <!-- 1 сентября 1939 года началась Вторая мировая война, и советское правительство приняло решение о призывы в армию юношей, достигших 18-ти лет и имеющих среднее образование. Поэтому в октябре 1939 г., в связи с отменой отсрочки от призыва в армию, многочисленная группа студентов первого курса ЛКИ была призвана в ряды РККА. <br><br>В ноябре 1939 года началась советско-финляндская война (1939—1940) и Ленинград стал фронтовым городом, тысячи ленинградцев вступили в лыжные батальоны, чтобы с оружием в руках защищать город. Среди них был студент Василий Чураков. Вместе с товарищами по учёбе он вступил в отряд лыжников-добровольцев. Все они в основном попали в 100-й добровольческий лыжный батальон, формировавшийся в Инженерном замке. Здесь же проходили занятия по боевой и лыжной подготовке. Вскоре батальон вступил в бой. -->
                             </div>
                             <div class="right">
                                 <div class="photo"></div>
-                                <div class="textt">Советско-финская война 1939—1940 годов. Красноармейцы-снайперы в засаде. Карелия / Фото с сайта news.myseldon.com</div>
+                                <div class="textt">
+                                    <!-- Советско-финская война 1939—1940 годов. Красноармейцы-снайперы в засаде. Карелия / Фото с сайта news.myseldon.com -->
+                                </div>
                             </div>
                         </div>
                         <div class="ws"></div>
                         <div class="arrow">
                             <div class="top">
-                                <div>
-                                    1/2
+                                <div data-index="1">
+                                    <!-- 1/2 -->
                                 </div>
                             </div>
                             <div class="bottom">
-                                    <div class="left"><button></button></div>
-                                    <div class="right"><button></button></div>
+                                <!-- JS -->
+                                <div class="left"><button></button></div>
+                                <div class="right"><button></button></div>
                             </div>
                         </div>
                     </div>
@@ -151,20 +151,25 @@
         </div>
 
 
+        <!-- шапка -->
+        <script src="../static/js/module/header.js"></script>
+        <!-- подвал -->
+        <script src="../static/js/module/footer.js"></script>
+        <!-- страница -->
+        <script src="../static/js/pages/page2/data.js"></script>
+        <script src="../static/js/pages/page2/switch_name_2.js"></script>
+        <script src="../static/js/pages/page2/switch_name_1.js"></script>
+        <!-- для hover карточек -->
+        <script> 
+            function changeBackground(element) {
+                var targetElement = document.querySelector(element);
+                targetElement.style.backgroundImage = "url('../static/img/page2-t/Никитин Ю Г.svg')";
+            }
+            function returnBack(element){
+                var targetElement = document.querySelector(element)
+                targetElement.style.backgroundImage = "url('../static/img/page1/фото2.svg')"
+            }
+        </script>
+
     </body>
-    <!-- шапка -->
-    <script src="../static/js/module/header.js"></script>
-    <!-- подвал -->
-    <script src="../static/js/module/footer.js"></script>
-    <!-- для hover карточек -->
-    <script> 
-        function changeBackground(element) {
-            var targetElement = document.querySelector(element);
-            targetElement.style.backgroundImage = "url('../static/img/page2-t/Никитин Ю Г.svg')";
-        }
-        function returnBack(element){
-            var targetElement = document.querySelector(element)
-            targetElement.style.backgroundImage = "url('../static/img/page1/фото2.svg')"
-        }
-    </script>
 </html>
