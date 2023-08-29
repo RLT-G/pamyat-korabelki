@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../static/css2/module/header.css">
         <link rel="stylesheet" href="../static/css2/module/footer.css">
         <link rel="stylesheet" href="../static/css2/page12.css">
+        <link rel="stylesheet" href="../static/css2/adaptive/page12.css">
         <title>page12</title>
     </head>
     <body>
@@ -24,7 +25,7 @@
                     <div class="left">
                         <h3>автор:</h3>
                         <h4>Тряскина Ирина</h4>
-                        <h3>время прочтения:</h3>
+                        <h3 class="replace">время прочтения:</h3>
                         <h4>30 минут</h4>
                     </div>
                     <div class="right">
@@ -187,4 +188,12 @@
     <script src="../static/js/module/header.js"></script>
     <!-- подвал -->
     <script src="../static/js/module/footer.js"></script>
+    <script>
+        if (window.innerWidth <= 320){
+            var content320 = '<h3>время чтения:</h3>'
+            var oldContent = document.querySelector('.replace');
+            var newContent = document.createRange().createContextualFragment(content320);
+            oldContent.parentNode.replaceChild(newContent, oldContent);
+        }
+    </script>
 </html>

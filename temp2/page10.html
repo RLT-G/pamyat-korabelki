@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../static/css2/module/header.css">
         <link rel="stylesheet" href="../static/css2/module/footer.css">
         <link rel="stylesheet" href="../static/css2/page10.css">
+        <link rel="stylesheet" href="../static/css2/adaptive/page10.css">
         <title>page10</title>
     </head>
     <body>
@@ -213,6 +214,14 @@
         function returnBack(element){
             var targetElement = document.querySelector(element)
             targetElement.style.backgroundImage = "url('../static/img/page1/фото2.svg')"
+        }
+    </script>
+    <script>
+        if (window.innerWidth <= 320){
+            var content320 = '<div class="text">Герои войны</div>'
+            var oldContent = document.querySelector('.text');
+            var newContent = document.createRange().createContextualFragment(content320);
+            oldContent.parentNode.replaceChild(newContent, oldContent);
         }
     </script>
 </html>

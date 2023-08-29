@@ -264,8 +264,8 @@ main .text-and-arrow button{
     overflow-x: hidden;
     z-index: 10;
 
-    /* visibility: hidden;
-    opacity: 0; */
+    visibility: hidden;
+    opacity: 0;
 }
 #pop_up_3 .pop_up__body{
     display: flex;
