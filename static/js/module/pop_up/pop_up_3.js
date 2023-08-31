@@ -45,6 +45,7 @@ function f_pop_up_3_hide () {
             document.body.style.overflow = 'auto';
             // 
             $("#pop_up_3").fadeOut(300);
+            $("#pop_up_3").remove();
 
             return false;
         }
