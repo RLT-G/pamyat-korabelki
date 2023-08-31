@@ -2,11 +2,11 @@
 // 
 function f_pop_up_3 (element, img_path) {
     
+    // 
+    if (element.getAttribute('data-img_block_number')) {
+        img_path = element.getAttribute('data-img_path') + element.getAttribute('data-img_index') + element.getAttribute('data-img_format');
+    }
 
-    console.log(
-        // element.backgroundImage.split(/"/)[1]
-        // $(element).css("background-image").split(/"/)[1]
-    )
     // 
     let popup3_html = `
         <div id="pop_up_3" class="pop_up"">
