@@ -177,14 +177,6 @@ main .container1 .left .bottom .bottom-right:hover{
 
 
 
-
-
-
-
-
-
-
-
 main .container1 .right{
     width: 32%;
     padding: 15px;
@@ -289,3 +281,202 @@ main .container3 .right .bottom .inner .text{
     letter-spacing: 0.07063rem;
     text-transform: uppercase;
 }
+
+
+
+#pop_up_2{
+    position: fixed;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0; left: 0;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+}
+#pop_up_2 .pop_up__body{
+    display: flex;
+    width: 100%; height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12.5%;
+
+}
+#pop_up_2 .pop_up__close{
+    width: 100%; height: 100%;
+    position: absolute; left: 0; top: 0;
+    cursor: pointer;
+}
+#pop_up_2 .pop_up__content{
+    width: 770px; height: auto;
+    background: var(--unnamed, #F0F0F0);
+    position: relative;
+    padding: 15px;
+}
+#pop_up_2 .close{
+    width: 25px; height: 25px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    background: url("../img/page13-t/heroicons_x-mark.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: -25px; top: 0;
+}
+#pop_up_2 .pop_up__content .inner{
+    width: 100%; height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border: 3px solid var(--unnamed, #01437C);
+    padding: 15px;
+}
+#pop_up_2 .pop_up__content .inner .title{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+#pop_up_2 .pop_up__content .inner .title .item1{
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+}
+#pop_up_2 .pop_up__content .inner .title .item2{
+    color: var(--unnamed, #01437C);
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+#pop_up_2 .pop_up__content .inner .name{
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+#pop_up_2 .pop_up__content .inner .text{
+    color: var(--unnamed, #01437C);
+font-family: Ubuntu;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+margin-bottom: 15px;
+}
+#pop_up_2 .pop_up__content .inner .exit{
+    color: var(--unnamed, #00AEEF);
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+footer .content{
+    width: 100%;
+    height: 24.4rem;
+    background: url("../img/index/plashka.svg"), no-repeat;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+}
+footer .top{
+    display: flex;
+    width: 75%; margin-left: 12.5%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2.8rem;
+    align-items: flex-start;
+}
+footer .top .right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+footer .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2.5rem;
+}
+
+
+footer .container div{
+    color: var(--unnamed, #FFF);
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-decoration: none;
+}
+
+footer h1{
+    color: var(--unnamed, #FFF);
+    /* text-align: center; */
+    font-family: Ubuntu;
+    font-size: 1.40625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.07031rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+footer .first{
+    height: 9rem;
+}
+footer .second{
+    height: 12rem;
+}
+footer .thirt{
+    height: 9rem;
+}
+
+footer .bottom{
+    display: flex;
+    width: 75%;
+    margin-left: 12.5%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+footer .bottom .left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 17%;
+}
+footer .bottom .right{
+    color: var(--unnamed, #FFF);
+    text-align: right;
+    font-family: Ubuntu;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-transform: uppercase;
+}
+
+

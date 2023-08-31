@@ -1,123 +1,3 @@
-a{
-    text-decoration: none;
-}
-header .content{
-    width: 100%; height: 14.5rem;
-    padding-left: 12.5%; padding-right: 12.5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background: url("../img/page1/хедер.svg"), no-repeat;
-    background-size: auto 100%
-}
-header .content .top{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-header .content .top .logo-href{
-    width: 35%;
-    height: 8rem;
-}
-header .content .top .logo{
-    background: url("../img/index/логоfooter.svg"), no-repeat;
-    width: 100%;
-    height: 8rem;
-    background-size: 100% 100%;
-}
-header .top .nav{
-    width: 55%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-height: 2rem;
-    position: relative;
-    top: 1rem
-}
-header .top .nav a{
-    color: var(--unnamed, #FFF);
-    font-family: Ubuntu;
-    font-size: 0.9375rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.04688rem;
-    text-transform: uppercase;
-}
-header .top .nav img{
-    position: relative;
-    bottom: 0.1rem;
-}
-header .content .bottom,
-header .content .bottom .base-href{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: var(--unnamed, #FFF);
-    font-family: Ubuntu;
-    font-size: 1.1875rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.05938rem;
-    text-transform: uppercase;
-}
-header .content .bottom summary{
-    color: var(--unnamed, #FFF);
-    font-family: Ubuntu;
-    font-size: 1.1875rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.05938rem;
-    text-transform: uppercase;
-}
-details, summary {
-list-style: none;
-margin: 0;
-padding: 0;
-}
-summary{
-    position: relative;
-}
-header .all-block{
-    position: absolute;
-    top: 14.4rem;
-}
-header .block {
-    border: 3px solid var(--unnamed, #01437C);
-    border-bottom: 0;
-    background: #FFF;
-    display: flex;
-    width: 100%;
-    padding: 0.8rem 4%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-header .block a{
-    color: var(--unnamed, #00AEEF);
-
-    /* Хедер мал */
-    font-family: Ubuntu;
-    font-size: 0.8rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.04688rem;
-    text-transform: uppercase;
-}
-header .last{
-    border: 3px solid var(--unnamed, #01437C);
-}
-header .opab{
-    left:18.5%;
-}
-header .fuck{
-    left: 30.5%;
-}
-
 
 main{padding: 7.5rem; padding-left: 12.75%; padding-right: 12.75%;}
 
@@ -179,7 +59,8 @@ main .container .right h4{
 main .container .right .photo1{
     width: 100%; 
     height: 30.5rem;
-    background: url("../img/page3-t/фото.png"), no-repeat;
+    background-image: url("../img/page3-t/слайдер1/фото1.png");
+    background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-top: 3.75rem;
 }
@@ -202,21 +83,21 @@ main .container .right h5{
     position: relative;
     display: flex;
 }
-main .container .right h5 .a-r{
-    position: absolute;
-    width: 3.25rem; height: 1.5rem;
-    background: url("../img/page1/стрелка\ слайдера\ right.svg"), no-repeat;
-    background-size: 100% 100%;
-    left: 400%;
-    top: -0.5rem;
-}
+main .container .right h5 .a-r,
 main .container .right h5 .a-l{
     position: absolute;
     width: 3.25rem; height: 1.5rem;
-    background: url("../img/page1/стрелка\ слайдера\ left.svg"), no-repeat;
-    background-size: 100% 100%;
-    left: 450%;
     top: -0.5rem;
+    background-size: 100% 100%;
+    background-color: #01437C;
+}
+main .container .right h5 .a-r{
+    background: url("../img/page1/стрелка\ слайдера\ right.svg"), no-repeat;
+    left: 400%;
+}
+main .container .right h5 .a-l{
+    background: url("../img/page1/стрелка\ слайдера\ left.svg"), no-repeat;
+    left: 450%;
 }
 main .container .right h5 button{
     width: 100%; height: 100%; background-color: transparent; border: 0; cursor: pointer;
@@ -281,9 +162,6 @@ main .c-last{
 
 
 
-
-
-
 main .text-and-arrow{
     display: flex;
     flex-direction: row;
@@ -299,126 +177,89 @@ main .text-and-arrow .arrow{
     position: relative;
     bottom: -0.7rem;
 }
-main .text-and-arrow .arrow .a-right{
-    width: 3.25rem; height: 1.5rem;
-    background: url("../img/page1/стрелка\ слайдера\ right.svg"), no-repeat;
+main .text-and-arrow .arrow .a-right,
+main .text-and-arrow .arrow .a-left {
+    width: 3.25rem;
+    height: 1.5rem;
+    background-repeat: no-repeat;
     background-size: 100% 100%;
-}
-main .text-and-arrow .arrow .a-left{
-    width: 3.25rem; height: 1.5rem;
-    background: url("../img/page1/стрелка\ слайдера\ left.svg"), no-repeat;
-    background-size: 100% 100%;
-}
-main .text-and-arrow button{
-    width: 100%; height: 100%; background-color: transparent; border: 0;
     cursor: pointer;
 }
+main .text-and-arrow .arrow .a-right{
+    background-image: url("../img/page1/стрелка\ слайдера\ right.svg");
+}
+main .text-and-arrow .arrow .a-left{   
+    background-image: url("../img/page1/стрелка\ слайдера\ left.svg");
+}
+main .text-and-arrow .arrow .a-right.active_not,
+main .text-and-arrow .arrow .a-left.active_not {
+    filter: opacity(40%);
+} 
+/* main .text-and-arrow button{
+    width: 100%; height: 100%;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+} */
 
 
 
 
+#pop_up_3{
+    position: fixed;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0; left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 10;
 
-
-
-
-
-
-footer .content{
-    width: 100%;
-    height: 24.4rem;
-    background: url("../img/index/plashka.svg"), no-repeat;
-    z-index: 6;
+    visibility: hidden;
+    opacity: 0;
+}
+#pop_up_3 .pop_up__body{
     display: flex;
+    width: 100%; height: 100%;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
 }
-footer .top{
-    display: flex;
-    width: 75%; margin-left: 12.5%;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 2.8rem;
-    align-items: flex-start;
+#pop_up_3 .pop_up__close{
+    width: 100%; height: 100%;
+    position: absolute; left: 0; top: 0;
+    cursor: pointer;
 }
-footer .top .right{
+#pop_up_3 .pop_up__content{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
-footer .container{
-    display: flex;
+    width: 800px; height: auto;
+    background: var(--unnamed, #F0F0F0);
+    position: relative;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    margin-left: 2.5rem;
 }
-
-
-footer .container div{
-    color: var(--unnamed, #FFF);
+#pop_up_3 .close{
+    width: 25px; height: 25px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    background: url("../img/page13-t/heroicons_x-mark.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: -25px;
+}
+#pop_up_3 img{
+    width: 800px;
+}
+#pop_up_3 .text{
+    color: #FFF;
     font-family: Ubuntu;
-    font-size: 0.9375rem;
+    font-size: 23px;
     font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.04688rem;
-    text-decoration: none;
+    font-weight: 400;
+    line-height: 140%; /* 32.2px */
+    letter-spacing: 0.46px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
-footer h1{
-    color: var(--unnamed, #FFF);
-    /* text-align: center; */
-    font-family: Ubuntu;
-    font-size: 1.40625rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.07031rem;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-footer .first{
-    height: 9rem;
-}
-footer .second{
-    height: 12rem;
-}
-footer .thirt{
-    height: 9rem;
-}
-
-footer .bottom{
-    display: flex;
-    width: 75%;
-    margin-left: 12.5%;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 5rem;
-}
-footer .bottom .left{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 17%;
-}
-footer .bottom .right{
-    color: var(--unnamed, #FFF);
-    text-align: right;
-    font-family: Ubuntu;
-    font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.04688rem;
-    text-transform: uppercase;
-}
-
-
-
-
-
-
-
-
-
-
-

@@ -1,13 +1,13 @@
 
 // новости-статьи-отзывы
 document.querySelectorAll('#module_switch_news_article_feedback .news_article_feedback_switch .left > div').forEach((element) => {
-    element.addEventListener('click', (event) => {
+    element.addEventListener('click', () => {
         // если нажато на активный переключатель 
         if (! element.classList.contains('active')) {
             // удалит класс у активного переключателя
-            document.querySelector('#module_switch_news_article_feedback .news_article_feedback_switch .left > div.active').removeAttribute('class', 'active');
+            document.querySelector('#module_switch_news_article_feedback .news_article_feedback_switch .left > div.active').classList.remove('active');
             // присвоит класс нажатому переключателю
-            element.setAttribute('class', 'active');
+            element.classList.add('active');
             
             // заменит карточки в соответствии с активным переключателем
             f_content_change(0);
@@ -32,7 +32,7 @@ function f_content_change(card_all_index_begin) {
     });
 
     
-    // 
+    // формат карточки в зависимости от типа
     if (switch_type == 'news' || switch_type == 'article') {
 
         // переберет 3 карточки (item, index, array)
@@ -109,7 +109,6 @@ function f_arrow_click(side) {
 
     // если left стрелка
     if (side == 'left') {
-        // alert('OK left');
         if (
             // document.querySelectorAll('#module_switch_news_article_feedback .news_article_feedback_cards [data-card]')[0].getAttribute('data-index') == '0'
             // &&
@@ -121,7 +120,6 @@ function f_arrow_click(side) {
     }
     // если right стрелка
     else if (side == 'right') {
-        // alert('OK right');
         if (
             // document.querySelectorAll('#module_switch_news_article_feedback .news_article_feedback_cards [data-card]')[2].getAttribute('data-index') !== String(switch_news_article_feedback_data[document.querySelector('#module_switch_news_article_feedback .news_article_feedback_switch .left .active').getAttribute('data-switch')].length -1)
             // &&
@@ -132,7 +130,6 @@ function f_arrow_click(side) {
         }
     }
 }
-
 
 // если нажатие на стрелки  :not(.active_not)
 document.querySelector('#module_switch_news_article_feedback .news_article_feedback_cards button.arrow-left').addEventListener('click', (event) => {

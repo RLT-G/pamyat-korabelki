@@ -1,125 +1,5 @@
-a{
-    text-decoration: none;
-}
-header .content{
-    width: 100%; height: 14.5rem;
-    padding-left: 12.5%; padding-right: 12.5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background: url("../img/page1/хедер.svg"), no-repeat;
-    background-size: auto 100%
-}
-header .content .top{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-header .content .top .logo-href{
-    width: 35%;
-    height: 8rem;
-}
-header .content .top .logo{
-    background: url("../img/index/логоfooter.svg"), no-repeat;
-    width: 100%;
-    height: 8rem;
-    background-size: 100% 100%;
-}
-header .top .nav{
-    width: 55%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-height: 2rem;
-    position: relative;
-    top: 1rem
-}
-header .top .nav a{
-    color: var(--unnamed, #FFF);
-    font-family: Ubuntu;
-    font-size: 0.9375rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.04688rem;
-    text-transform: uppercase;
-}
-header .top .nav img{
-    position: relative;
-    bottom: 0.1rem;
-}
-header .content .bottom,
-header .content .bottom .base-href{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: var(--unnamed, #FFF);
-    font-family: Ubuntu;
-    font-size: 1.1875rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.05938rem;
-    text-transform: uppercase;
-}
-header .content .bottom summary{
-    color: var(--unnamed, #FFF);
-    font-family: Ubuntu;
-    font-size: 1.1875rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.05938rem;
-    text-transform: uppercase;
-}
-details, summary {
-list-style: none;
-margin: 0;
-padding: 0;
-}
-summary{
-    position: relative;
-}
-header .all-block{
-    position: absolute;
-    top: 14.4rem;
-}
-header .block {
-    border: 3px solid var(--unnamed, #01437C);
-    border-bottom: 0;
-    background: #FFF;
-    display: flex;
-    width: 100%;
-    padding: 0.8rem 4%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-header .block a{
-    color: var(--unnamed, #00AEEF);
 
-    /* Хедер мал */
-    font-family: Ubuntu;
-    font-size: 0.8rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.04688rem;
-    text-transform: uppercase;
-}
-header .last{
-    border: 3px solid var(--unnamed, #01437C);
-}
-header .opab{
-    left:18.5%;
-}
-header .fuck{
-    left: 30.5%;
-}
-
-
-main{padding: 7.5rem; padding-left: 12.75%; padding-right: 12.75%;}
+main{padding: 7.5rem; padding-left: 12.75%; padding-right: 12.75%; overflow: hidden;}
 main h1{
     color: var(--unnamed, #01437C);
     font-family: Ubuntu;
@@ -129,6 +9,40 @@ main h1{
     line-height: normal;
     margin-bottom: 3.75rem;
 }
+main .ar_and_t{
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .ar_and_t .ar{
+    display: flex;
+    max-width: 124px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .ar_and_t .ar .a-l{
+    width: 52px;
+    height: 24px;
+    background-image: url("../img/page1/стрелка\ слайдера\ left.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+main .ar_and_t .ar .a-r{
+    width: 52px;
+    height: 24px;
+    background-image: url("../img/page1/стрелка\ слайдера\ right.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+main .ar_and_t .ar .a-l.active_not,
+main .ar_and_t .ar .a-r.active_not {
+    filter: opacity(40%);
+}
+
+
 main .container{
     display: flex;
     flex-direction: row;
@@ -151,6 +65,8 @@ main .container .left h2{
     font-weight: 700;
     line-height: normal;
     margin-bottom: 1.6rem;
+    cursor: pointer;
+
 }
 main .container .left h3{
     color: var(--unnamed, #01437C);
@@ -162,6 +78,8 @@ main .container .left h3{
     letter-spacing: 0.04688rem;
     text-transform: uppercase;
     margin-bottom: 2.3rem;
+    cursor: pointer;
+
 }
 main .container .right h4{
     color: var(--unnamed, #01437C);
@@ -177,7 +95,8 @@ main .container .right h4{
 main .container .right .photo1{
     width: 100%; 
     height: 30.5rem;
-    background: url("../img/page7-t/фото1.png"), no-repeat;
+    background-image: url("../img/page7-t/слайдер1/фото1.png");
+    background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-top: 3.75rem;
 }
@@ -195,6 +114,7 @@ margin-top: 1.25rem;
 
 main .container .right button{
     width: 40%;
+    max-width: 270px;
     border: 0;
     padding: 0.9375rem 3.7%;
     background: var(--unnamed, #01437C);
@@ -217,255 +137,264 @@ main .container .right div{
     width: 85%;
     align-self: self-end;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer .content{
-    width: 100%;
-    height: 24.4rem;
-    background: url("../img/index/plashka.svg"), no-repeat;
-    z-index: 6;
-    display: flex;
-    flex-direction: column;
-}
-footer .top{
-    display: flex;
-    width: 75%; margin-left: 12.5%;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 2.8rem;
-    align-items: flex-start;
-}
-footer .top .right{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
-footer .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 2.5rem;
-}
-
-
-footer .container div{
-    color: var(--unnamed, #FFF);
-    font-family: Ubuntu;
-    font-size: 0.9375rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.04688rem;
-    text-decoration: none;
-}
-
-footer h1{
-    color: var(--unnamed, #FFF);
-    /* text-align: center; */
-    font-family: Ubuntu;
-    font-size: 1.40625rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.07031rem;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-footer .first{
-    height: 9rem;
-}
-footer .second{
-    height: 12rem;
-}
-footer .thirt{
-    height: 9rem;
-}
-
-footer .bottom{
-    display: flex;
-    width: 75%;
-    margin-left: 12.5%;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 5rem;
-}
-footer .bottom .left{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 17%;
-}
-footer .bottom .right{
-    color: var(--unnamed, #FFF);
-    text-align: right;
-    font-family: Ubuntu;
-    font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.04688rem;
-    text-transform: uppercase;
-}
-
-
-#pop_up_4{
-    position: fixed;
-    width: 100%; height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 0; left: 0;
-    z-index: 10;
-    
-    visibility: hidden; 
-    opacity: 0;
-}
-#pop_up_4 .pop_up__body{
-    display: flex;
-    width: 100%; height: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-#pop_up_4 .pop_up__close{
-    width: 100%; height: 100%;
-    position: absolute; left: 0; top: 0;
-    cursor: pointer;
-}
-#pop_up_4 .pop_up__content{
-    display: flex;
-    width: 934px; height: auto;
-    background: var(--unnamed, #F0F0F0);
+main .container .right .carousel{
+    width: 90%;
+    overflow: visible;
+    /* white-space: nowrap; */
     position: relative;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-    padding: 50px;
 }
-#pop_up_4 .close{
-    width: 25px; height: 25px;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    background: url("../img/page13-t/heroicons_x-mark.png") no-repeat;
-    background-size: 100% 100%;
+
+main .carousel .a-left{
     position: absolute;
-    right: -25px; top: 0px;
+    max-width: 52px;
+    height: 24px;
+    background-image: url("../img/page1/стрелка\ слайдера\ left.svg");
+    background-repeat: no-repeat;
+    background-size: 52px 24px;
+    left: -77px; bottom: calc(17rem - 12px);
+    z-index: 9;
+    cursor: pointer;
 }
-#pop_up_4 .pop_up__content .title{
-    color: var(--unnamed, #01437C);
-    text-align: center;
-    font-family: Ubuntu;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-top: 50px;
+main .carousel .a-right{
+    position: absolute;
+    max-width: 52px;
+    height: 24px;
+    background-image: url("../img/page1/стрелка\ слайдера\ right.svg");
+    background-repeat: no-repeat;
+    background-size: 52px 24px;
+    left: calc(40rem + 20px + 5rem); bottom: calc(17rem - 12px);
+    z-index: 9;
+    cursor: pointer;
 }
-#pop_up_4 .pop_up__content .text{
-    color: var(--unnamed, #01437C);
-    text-align: center;
-    font-family: Ubuntu;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    margin-bottom: 50px;
+main .carousel .a-left.active_not,
+main .carousel .a-right.active_not {
+    filter: opacity(40%);
 }
-#pop_up_4 form{
+
+main .carousel .a2-l, main .carousel .a2-r{
+    bottom: 138px;
+}
+main .container .right .carousel .items2{
+    width: calc(60rem + 40px);
+    height: 300px;
     display: flex;
-    width: 100%;
     flex-direction: row;
     justify-content: space-between;
 }
-#pop_up_4 form .search{
-    width: 590px; height: 62px;
-    padding: 20px 30px;
-    color: var(--non-active, rgb(1, 67, 124));
-    font-family: Ubuntu;
-    font-size: 19px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.95px;
-    text-transform: uppercase;
-    border: 2px solid var(--unnamed, #01437C);
-
-}
-#pop_up_4 form .search::placeholder{
-    color: var(--non-active, rgba(1, 67, 124, 0.40));
-}
-#pop_up_4 form button{
-    width: 188px; height: 47;
-    background: var(--unnamed, #01437C);
+main .container .right .carousel .items{
+    width: calc(60rem + 40px);
+    height: 34rem;
     display: flex;
-    padding: 15px 60px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: 0;
-    color: var(--unnamed, #FFF);
-    font-family: Ubuntu;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.75px;
-    text-transform: uppercase;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .container .right .carousel .items2 .v{
+    width: 20rem; 
+    height: 300px;
+    background: var(--unnamed, #F0F0F0);
+
+    /* background-image: url("../img/page1/фото2.svg"); */
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding: 10px;
+    position: relative;
     cursor: pointer;
 }
-#pop_up_4 form button:hover{
-    background: var(--unnamed, #00AEEF);
-}
-#pop_up_4 .item1{
-    margin-top: 20px; margin-bottom: 60px;
-    color: #000;
-    font-family: Ubuntu;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
+main .container .right .carousel .items2 .v .inner{
+    width: 100%; height: 100%;
+    border: #01437C solid 3px;
+    padding: 10px;
 
-#pop_up_4 .item2{
-    font-family: Ubuntu;
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 140%; /* 32.2px */
-    letter-spacing: 0.46px;
-
+}
+main .container .right .carousel .items2 .v .inner .title{
     color: var(--unnamed, #01437C);
-    border-bottom: var(--unnamed, #01437C) dashed 2px;
-}
-#pop_up_4 .item2:hover{
-    color: var(--unnamed, #00AEEF);
-    border-bottom: var(--unnamed, #00AEEF) solid 2px;
-}
-#pop_up_4 .item3{
-    margin-top: 50px;
-    color: #000;
     font-family: Ubuntu;
     font-size: 23px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 32.2px */
     letter-spacing: 0.46px;
+    margin-bottom: 35px;
 }
-#pop_up_4 h10::before{
-    content: 'ЧОРАКОФФ';
+main .container .right .carousel .items2 .v .inner .text{
+    width: 105%;
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 21.5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.125px;
+    text-transform: uppercase;
+
+    /* text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; */
+}
+main .container .right .carousel .items2 .v .inner .vv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 35px;
+}
+main .container .right .carousel .items2 .v .inner .vv .v-ico{
+    width: 90px;
+    height: 90px;
+    background: url("../img/page9/ion_play-circle-outline.svg");
+}
+main .carousel .inner .fog{
+    width: 20rem; min-height: 300px;
+    position: absolute;
+    background-color: #FFF;
+    left: 0; top: 0;
+
+}
+main .carousel .inner .fog1{
+opacity: 0;
+}
+main .carousel .inner .fog2{
+opacity: 0.5;
+}
+main .carousel .inner .fog3{
+opacity: 0.8;
+}
+main .c-up{
+    position: relative;
+    top: -20px;
+    margin-bottom: 0;
+}
+
+
+main .container .right .carousel .items a{
+    width: 20rem;
+    height: 34rem;
+    position: relative;
+}
+main .container .right .carousel .items a .border{
+    position: absolute;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border: 3px solid var(--unnamed, #01437C);
+    top: 10px; left: 10px;
+}
+
+main .container .right .carousel .items a .fog{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    background: var(--unnamed, #F0F0F0);
+    background-color: #FFF;
+}
+main .container .right .carousel .items a .fog1{
+    opacity: 0;
+}
+main .container .right .carousel .items a .fog2{
+    opacity: 0.5;
+}
+main .container .right .carousel .items a .fog3{
+    opacity: 0.8;
+}
+
+main .container .right .carousel .items a .top{
+    width: 100%;
+    height: 20rem;
+    background-image: url("../img/page1/фото2.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+main .container .right .carousel .items a .bottom{
+    width: 100%;
+    height: 14rem;
+    background-color: #F0F0F0;
+    padding: 20px;
+    padding-top: 10px;
+}
+main .container .right .carousel .items a .bottom > .text_main {
+    height: 176px;
+}
+main .container .right .carousel .items a .bottom .name{
+    position: relative;
+    width: 100%;
+    /* height: 90px; */
+    color: var(--unnamed, #01437C);
+    /* Карточка персоны/H4-П */
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+main .container .right .carousel .items a .bottom .description{
+    position: relative;
+    width: 100%;
+    color: var(--unnamed, #01437C);
+    /* Карточка персоны/текст-П */
+    font-family: Ubuntu;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 12px;
+    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+main .container .right .carousel .items a .bottom .hashtag{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+main .container .right .carousel .items a .bottom > .hashtag span{
+    color: var(--1, #00AEEF);
+    /* подписи под фото */
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-right: 20px;
+}
+/* main .c-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    border: red solid 1px;
+} */
+
+main .m-b{
+    margin-bottom: 1.81rem;
+}
+main .container .right .carousel .items a .bottom h1 {
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
 }

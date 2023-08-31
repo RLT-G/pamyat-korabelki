@@ -1,128 +1,3 @@
-a{
-    text-decoration: none;
-}
-header .content{
-    width: 100%; height: 14.5rem;
-    padding-left: 12.5%; padding-right: 12.5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background: url("../img/page1/хедер.svg"), no-repeat;
-    background-size: auto 100%
-}
-header .content .top{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-header .content .top .logo-href{
-    width: 35%;
-    height: 8rem;
-}
-header .content .top .logo{
-    background: url("../img/index/логоfooter.svg"), no-repeat;
-    width: 100%;
-    height: 8rem;
-    background-size: 100% 100%;
-}
-header .top .nav{
-    width: 55%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-height: 2rem;
-    position: relative;
-    top: 1rem
-}
-header .top .nav a{
-    color: var(--unnamed, #FFF);
-    font-family: Ubuntu;
-    font-size: 0.9375rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.04688rem;
-    text-transform: uppercase;
-}
-header .top .nav img{
-    position: relative;
-    bottom: 0.1rem;
-}
-header .content .bottom,
-header .content .bottom .base-href{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: var(--unnamed, #FFF);
-    font-family: Ubuntu;
-    font-size: 1.1875rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.05938rem;
-    text-transform: uppercase;
-}
-header .content .bottom summary{
-    color: var(--unnamed, #FFF);
-    font-family: Ubuntu;
-    font-size: 1.1875rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.05938rem;
-    text-transform: uppercase;
-}
-details, summary {
-list-style: none;
-margin: 0;
-padding: 0;
-}
-summary{
-    position: relative;
-}
-header .all-block{
-    position: absolute;
-    top: 14.4rem;
-}
-header .block {
-    border: 3px solid var(--unnamed, #01437C);
-    border-bottom: 0;
-    background: #FFF;
-    display: flex;
-    width: 100%;
-    padding: 0.8rem 4%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-header .block a{
-    color: var(--unnamed, #00AEEF);
-
-    /* Хедер мал */
-    font-family: Ubuntu;
-    font-size: 0.8rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.04688rem;
-    text-transform: uppercase;
-}
-header .last{
-    border: 3px solid var(--unnamed, #01437C);
-}
-header .opab{
-    left:18.5%;
-}
-header .fuck{
-    left: 30.5%;
-}
-
-
-
-
-
-
 main{
     padding: 12.5%; padding-top: 7.5rem; padding-bottom: 7.5rem;
 }
@@ -324,16 +199,22 @@ main .info .hrefs1,
 main .info .hrefs2 {
     display: flex;
     flex-direction: row;
-    cursor: pointer;
 }
 main .info .hrefs1{
-    display: flex;
-    width: 80%;
-    flex-direction: row;
+    width: 84%;
     justify-content: space-between;
-    margin-left: 10%;
     margin-top: 1.88rem;
+    margin-left: 8%;
+    /* background-color: antiquewhite; */
 }
+main .info .hrefs2{
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.94rem;
+    /* margin-bottom: 3.12rem; */
+    /* background-color: rgb(113, 144, 223); */
+}
+
 main .info .hrefs1 a,
 main .info .hrefs2 a{
     color: var(--unnamed, #01437C);
@@ -345,26 +226,32 @@ main .info .hrefs2 a{
     letter-spacing: 0.04688rem;
     text-transform: uppercase;
     border-bottom: var(--1, #01437C) dashed 1px;
+    
+    /* pointer-events:none; */
 }
-main .info .hrefs1 a:hover,
-main .info .hrefs2 a:hover{
+main .info .hrefs1 a:not(.active):hover,
+main .info .hrefs2 a:not(.active):hover{
+    border-bottom: var(--1, #00AEEF) solid 1px;
+}
+main .info .hrefs1 a.active,
+main .info .hrefs2 a.active{
     color: var(--unnamed, #00AEEF);
     border-bottom: var(--1, #00AEEF) solid 1px;
 }
-main .info .hrefs2{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+main .info .hrefs1.less_three {
     justify-content: center;
-    margin-top: 0.94rem;
-    margin-bottom: 3.12rem;
 }
+main .info .hrefs2 > a:nth-child(n+2),
+main .info .hrefs1.less_three > a:nth-child(n+2) {
+    margin-left: 60px;
+}
+
 main .info .data{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-
+    margin-top: 3.12rem;
 }
 main .info .data .left{
     color: var(--unnamed, #01437C);
@@ -387,7 +274,8 @@ main .info .data .photo{
     /* width: 28rem; */
     width: 100%;
     height: 18.8rem;
-    background: url("../img/page2-t/фото.png") no-repeat;
+    /* background-image: url("../img/page2-t/фото.png"); */
+    background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 main .info .data .textt{
@@ -418,15 +306,22 @@ main .arrow .bottom{
     flex-direction: row;
     justify-content: space-between;
 }
-main .arrow .bottom .left, main .arrow .bottom .right{
+main .arrow .bottom .left,
+main .arrow .bottom .right{
     width: 3.25rem; height: 1.5rem;
-    background: url("../img/page1/стрелка\ слайдера\ right.svg") no-repeat;
+    background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+main .arrow .bottom .left {
+    background-image: url("../img/page1/стрелка\ слайдера\ left.svg");
 }
 main .arrow .bottom .right{
-    background: url("../img/page1/стрелка\ слайдера\ left.svg") no-repeat;
-    background-size: 100% 100%;
+    background-image: url("../img/page1/стрелка\ слайдера\ right.svg");
 }
+main .arrow .bottom .active_not {
+    filter: opacity(40%);
+}
+
 main .arrow .top{
     width: 100%;
     display: flex;
@@ -573,8 +468,68 @@ main .container5 .card .border:hover{
 }
 /* main .container5 .card .border:hover + main .container5 .card .top{
     background: url("../img/page2-t/Никитин\ Ю\ Г.svg");
+<<<<<<< HEAD
 } */
 
 
 
+
+#pop_up_3{
+    position: fixed;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0; left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 10;
+
+    visibility: hidden;
+    opacity: 0;
+}
+#pop_up_3 .pop_up__body{
+    display: flex;
+    width: 100%; height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+#pop_up_3 .pop_up__close{
+    width: 100%; height: 100%;
+    position: absolute; left: 0; top: 0;
+    cursor: pointer;
+}
+#pop_up_3 .pop_up__content{
+    display: flex;
+    width: 800px; height: auto;
+    background: var(--unnamed, #F0F0F0);
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#pop_up_3 .close{
+    width: 25px; height: 25px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    background: url("../img/page13-t/heroicons_x-mark.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: -25px;
+}
+#pop_up_3 img{
+    width: 800px;
+}
+#pop_up_3 .text{
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 32.2px */
+    letter-spacing: 0.46px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
