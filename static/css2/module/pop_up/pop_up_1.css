@@ -1,0 +1,65 @@
+
+#pop_up_1{
+    position: fixed;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0; left: 0;
+
+    
+    visibility: hidden;
+    opacity: 0;
+}
+#pop_up_1 .pop_up__body{
+    display: flex;
+    width: 100%; height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+#pop_up_1 .pop_up__close{
+    width: 100%; height: 100%;
+    position: absolute; left: 0; top: 0;
+    cursor: pointer;
+}
+#pop_up_1 .pop_up__content{
+    display: flex;
+    width: 600px; height: 200px;
+    background: var(--unnamed, #F0F0F0);
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#pop_up_1 .close{
+    width: 25px; height: 25px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    background: url("../img/page13-t/heroicons_x-mark.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: -25px;
+}
+#pop_up_1 .pop_up__content .title{
+    color: var(--unnamed, #01437C);
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 50px;
+}
+#pop_up_1 .pop_up__content .text{
+    color: var(--unnamed, #01437C);
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 50px;
+}

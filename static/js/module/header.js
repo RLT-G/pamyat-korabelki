@@ -6,6 +6,7 @@ let header_html = `
             <a class="logo-href" href="page1.html">
                 <div class="logo"></div>
             </a>
+            <button class="ad-button"></button>
             <div class="nav">
                 <a href="page7.html">264-Й ОПАБ</a>
                 <a href="page3.html">ИСТОРИЯ</a>

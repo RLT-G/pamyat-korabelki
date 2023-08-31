@@ -7,7 +7,9 @@
         <link rel="stylesheet" href="../static/css/fonts.css">
         <link rel="stylesheet" href="../static/css2/module/header.css">
         <link rel="stylesheet" href="../static/css2/module/footer.css">
+        <link rel="stylesheet" href="../static/css2/module/pop_up/pop_up_4.css">
         <link rel="stylesheet" href="../static/css2/page11.css">
+        <link rel="stylesheet" href="../static/css2/adaptive/page11.css">
         <title>page11</title>
     </head>
     <body>
@@ -200,4 +202,12 @@
     <script src="../static/js/module/header.js"></script>
     <!-- подвал -->
     <script src="../static/js/module/footer.js"></script>
+    <script>
+        if (window.innerWidth <= 320){
+            var content320 = '<div class="text">Новости</div>'
+            var oldContent = document.querySelector('.text');
+            var newContent = document.createRange().createContextualFragment(content320);
+            oldContent.parentNode.replaceChild(newContent, oldContent);
+        }
+    </script>
 </html>
