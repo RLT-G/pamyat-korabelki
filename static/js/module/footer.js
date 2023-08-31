@@ -4,7 +4,7 @@ let footer_html = `
     <div class="content">
         <div class="top">
             <a href="page1.html">
-                <div>
+                <div class="img-block">
                     <img src="../static/img/index/логоfooter.svg" alt="logo.svg">
                 </div>
             </a>

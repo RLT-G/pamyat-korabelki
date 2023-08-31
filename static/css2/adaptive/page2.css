@@ -1,0 +1,904 @@
+.ad-button{
+    display: none;
+}
+
+@media (min-width: 620px) and (max-width: 1024px) {
+    header .content {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    main {
+        padding: 7.5rem;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    footer .top, footer .bottom {
+        margin-left: 0;
+        width: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    footer .bottom{
+        margin-top: 6.5rem;
+    }
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 4rem;
+        position: relative;
+        top: 70px;
+    }
+    footer .top .right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+    footer .thirt {
+        height: 9rem;
+        position: absolute;
+        flex-direction: row;
+        width: 24.65rem;
+        top: 1rem;
+    }
+}
+@media (min-width: 320px) and (max-width: 640px) {
+    header .content .top .logo-href {
+        width: 361px;
+        height: 136px;
+    }
+    header .top .nav {
+        display: none;
+    }
+    .ad-button{
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: 0;
+        background-color: transparent;
+        background: url("../../img/index/menu_mob.svg") no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+        position: relative;
+        top: 20px;
+        right: 20px;
+    }
+    header .content .bottom{
+        flex-wrap: wrap;
+    }
+    header .content .bottom .base-href, header .bottom [data-popup_list] {
+        width: 30%;
+    }
+    header .content .bottom .c1 {
+        margin: 0 auto;
+    }
+    .bottom > div:nth-child(1) .c1{
+        margin-bottom: 20px;
+    }
+    .bottom > div:nth-child(2) .c1{
+        margin: 0 39px;
+        margin-bottom: 20px;
+    }
+    .bottom > div:nth-child(3) .c1{
+        margin: 0 20px;
+        margin-bottom: 20px;
+    }
+    header .bottom [data-popup_list] .all-block.opab {
+        width: 147px;
+        left: -21px;
+        top: 29px;
+    }
+    header .bottom [data-popup_list] .all-block.fuck {
+        width: 198px;
+        left: -26px;
+        top: 29px;
+    }
+
+    main .container {
+        flex-direction: column;
+    }
+    main .container .left{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    main .container .left a h2, main .container .left a h3{
+        margin-bottom: 0;
+    }
+    main .container .right {
+        width: 100%;
+    }
+    main .container .right h4 {
+        width: 100%;
+    }
+    main .container .right .photo1 {
+        height: 420px;
+    }
+    main .tw .right {
+        max-height: 14.5rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        position: relative;
+        left: 10px;
+    }
+    main .container .right .photo2 {
+        height: 380px;
+    }
+    main .tw .left2 {
+        width: 105%;
+        height: 14.5rem;
+    }
+
+    footer .content{
+        width: 100%;
+        height: 24.4rem;
+        background: url("../../img/index/plashka.svg"), no-repeat;
+        z-index: 6;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .top{
+        display: flex;
+        width: 75%; margin-left: 12.5%;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 2.8rem;
+        align-items: flex-start;
+    }
+    footer .top .right{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    footer .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 2.5rem;
+    }
+    
+    
+    footer .container div{
+        color: var(--unnamed, #FFF);
+        font-family: Ubuntu;
+        font-size: 0.9375rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.04688rem;
+        text-decoration: none;
+    }
+    
+    footer h1{
+        color: var(--unnamed, #FFF);
+        /* text-align: center; */
+        font-family: Ubuntu;
+        font-size: 1.40625rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.07031rem;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    footer .first{
+        height: 9rem;
+    }
+    footer .second{
+        height: 12rem;
+    }
+    footer .thirt{
+        height: 9rem;
+    }
+    
+    footer .bottom{
+        display: flex;
+        width: 75%;
+        margin-left: 12.5%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5rem;
+    }
+    footer .bottom .left{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 17%;
+    }
+    footer .bottom .right{
+        color: var(--unnamed, #FFF);
+        text-align: right;
+        font-family: Ubuntu;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.04688rem;
+        text-transform: uppercase;
+    }
+
+    footer .top, footer .bottom {
+        margin-left: 0;
+        width: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    footer .thirt {
+        height: 9rem;
+        /* position: absolute; */
+        position: relative;
+        flex-direction: column;
+        width: 24.65rem;
+        /* top: 1rem; */
+    }
+    footer .container {
+        /* top: 70px; */
+        top: 40px;
+    }
+    footer .content {
+        width: 100%;
+        height: auto;
+        background: url(../../img/index/плашка.png), no-repeat;
+        background-size: 100% 100%;
+        z-index: 6;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .top, footer .bottom {
+        margin-left: 0;
+        width: calc(100% - 10px);
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+    footer .bottom .left {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 28%;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    main .p {
+        width: 100%;
+    }
+    main .p .p-text {
+        width: calc(50% - 10px);
+    }
+    main .p .p-text h1 {
+        font-size: 30px;
+    }
+    main .p .p-text .date {
+        font-size: 20px;
+    }
+    main .p .p-text .text {
+        font-size: 18px;
+    }
+    main .p .p-text .tags a{
+        margin-bottom: 10px;
+    }
+    main .p .p-photo {
+        width: 50%;
+    }
+    main .switches .switch {
+        font-size: 12px;
+    }
+    main .p .p-text .tags {
+        font-size: 16px;
+        flex-wrap: wrap;
+    }
+    main .switches .switch {
+        min-width: 17%;
+    }
+    main .switches .switch {
+        height: 40px;
+    }
+    main .switches .active {
+        font-size: 30px;
+        min-width: 27.8%;
+        height: 50px;
+    }
+    .index-four {
+        position: relative;
+        z-index: 4;
+        right: 0%;
+        padding-left: 12px;
+        white-space: nowrap;
+    }
+    .index-three {
+        position: relative;
+        z-index: 3;
+        right: 1%;
+    }
+    .index-two {
+        position: relative;
+        z-index: 2;
+        right: 2%;
+    }
+    .index-one {
+        position: relative;
+        z-index: 1;
+        right: 3%;
+    }
+
+    main .info .hrefs1 {
+        margin-left: 15px;
+        width: calc(100% - 30px);
+        flex-wrap: wrap;
+    }
+    main .info .hrefs1 a, main .info .hrefs2 a{
+        width: 50%;
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    main .info .hrefs2 a {
+        position: absolute;
+        top: calc(1.88rem + 27px);
+        left: 50%;
+        width: calc(50% - 15px);
+    }
+    main .info .hrefs1 a.active, main .info .hrefs2 a.active {
+        border: 0;
+        color: var(--unnamed, #00AEEF);
+        text-decoration: underline;
+
+    }
+    main .info .hrefs1 a, main .info .hrefs2 a {
+        border: 0;
+        text-decoration: underline dotted;
+    }
+    main .info .hrefs1 a:hover, main .info .hrefs2 a:hover {
+        color: #00AEEF;
+        text-decoration: underline;
+        border: 0;
+    }
+    main .info .hrefs1 a:not(.active):hover, main .info .hrefs2 a:not(.active):hover {
+        border-bottom: var(--1, #00AEEF) solid 1px;
+        border: 0;
+    }
+    main .info .hrefs2 > a:nth-child(n+2), main .info .hrefs1.less_three > a:nth-child(n+2) {
+        margin-left: 1px;
+    }
+    main .info .data {
+        flex-direction: column;
+        width: calc(100% - 30px);
+    }
+    main .info .data .left {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    main .info .inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    main .info .data .right {
+        width: 100%;
+    }
+    main .info .data .photo {
+        width: 472px;
+        height: 265px;
+    }
+    .ws {
+        display: none;
+    }
+    main .arrow {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: calc(100% - 30px);
+        margin-bottom: 20px;
+    }
+    main .arrow .top {
+        position: relative;
+    top: 20px;
+    }
+
+
+
+    main .sometextandbutton h2 {
+        color: var(--unnamed, #01437C);
+
+        /* 640/Н2 */
+        font-family: Ubuntu;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    main .sometextandbutton button{
+        color: var(--unnamed, #FFF);
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    height: 37px;
+    width: 214px;
+    padding: 10px 30px;
+    }
+    main .sometextandbutton{
+        margin-bottom: 30px;
+    }
+    main .container5 {
+        margin-top: 0;
+        min-width: 980px;
+    }
+}
+@media (max-width: 320px) {
+    header .content .bottom {
+        display: none;
+    }
+    header .content .top .logo-href {
+        width: 260px;
+        height: 210px;
+    }
+    header .content .top .logo {
+        background: url("../../img/index/a-logo320px.png"), no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+    }
+    header .content .top {
+        position: relative;
+    }
+    .ad-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header .content .top {
+        justify-content: center;
+    }
+    header .content {
+        min-height: 270px;
+    }
+    footer .content .top img{
+        display: none;
+    }
+    footer .content .img-block{
+        width: 260px;
+        height: 210px;
+        background: url("../../img/index/a-logo320px.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    footer .top .right {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        height: 570px;
+    }
+    footer .container {
+        margin-left: 0;
+    }
+    footer .bottom {
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+    }
+    footer .bottom .left {
+        width: calc(40% + 75px);
+        margin-bottom: 20px;
+    }
+    footer .bottom .right {
+        text-align: start;
+        font-size: 10px;
+        margin-bottom: 75px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+
+    main .p {
+        flex-direction: column;
+    }
+    main .p .p-text {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    main {
+        padding: 70px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    main .p .p-text .text {
+        margin-bottom: 30px;
+    }
+    main .p .p-photo {
+        width: 100%;
+    }
+
+
+
+    /*  */
+    main .switches {
+        margin-top: 70px;
+    }
+    main .switches .switch {
+        height: 30px;
+        font-size: 9.5px;
+        padding-left: 0;
+    }
+    .index-four {
+        padding-left: 0px;
+        white-space: pre-wrap;
+    }
+
+    
+    main .switches .switch {
+        min-width: none;
+        width: 0;
+        min-width: 100px;
+        padding-left: 32px;
+
+        min-width: 30%;
+    }
+    main .switches .active {
+        font-size: 12px;
+        min-width: 22%;
+        padding: 0;
+    }
+    main .switches .active::after {
+        height: 30px;
+        width: 20px;
+        right: -10px;
+    }
+    
+    main .index-four{
+        /* right: 12%; */
+    }
+    .index-three{
+        /* right: 24% */
+    }
+    .index-two{
+        /* right: 36% */
+    }
+    .index-one{
+        /* right: 48% */
+    }
+    .index-five{
+        padding-left: 10px
+    }
+
+    /*  */
+
+    main .switches .switch, main .switches .switch::after{
+        padding: 0;
+        margin: 0;
+        height: auto;
+        width: auto;
+        min-width: 0;
+        min-height: 0;
+        max-width: none;
+        max-height: none;
+        border: 0;
+        background-image: none;
+        background: transparent;
+        position: relative;
+        bottom: 0;
+        top: 0;
+    }
+    main .switches .switch.index-five{
+        width: 100px;
+        height: 30px;
+        background: url("../../img/page2-t/Union.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    main .switches .switch.index-five.active{
+        width: 100px;
+        height: 30px;
+        background: url("../../img/page2-t/Union2.png") no-repeat;
+        background-size: 100% 100%;
+    }
+
+
+    main .switches .switch.index-four{
+        width: 47.5px;
+        height: 30px;
+        border: #01437C solid 1px;
+        background: var(--unnamed, #F0F0F0);
+        color: transparent;
+        transform: skewX(21deg);
+        position: relative;
+        left: -7px;
+    }
+    main .switches .switch.index-four.active{
+        border: none;
+    }
+    main .switches .switch.index-four::after{
+        content: '264-й ОПАБ';
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+        position: absolute;
+        left: 7px;
+        top: 3px;
+        color: var(--unnamed, #01437C);
+        font-family: Ubuntu;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        transform: skewX(-21deg);
+    }
+    main .switches .switch.index-four.active::after{
+        content: '264-й ОПАБ';
+        color: var(--unnamed, #01437C);
+        width: 35px;
+        /* 320/Н-био */
+        font-family: Ubuntu;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        white-space: pre-wrap;
+    }
+
+    main .switches .switch.index-three{
+        width: 47.5px;
+        height: 30px;
+        border: #01437C solid 1px;
+        background: var(--unnamed, #F0F0F0);
+        color: transparent;
+        transform: skewX(21deg);
+        position: relative;
+        left: -8px;
+    }
+    main .switches .switch.index-three.active{
+        border: none;
+    }
+    main .switches .switch.index-three::after{
+        content: 'Память';
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+        position: absolute;
+        left: 2px;
+        top: 8px;
+        color: var(--unnamed, #01437C);
+        font-family: Ubuntu;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        transform: skewX(-21deg);
+    }
+    main .switches .switch.index-three.active::after{
+        color: var(--unnamed, #01437C);
+        width: 35px;
+        /* 320/Н-био */
+        font-family: Ubuntu;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        white-space: pre-wrap;
+    }
+
+
+    main .switches .switch.index-two{
+        width: 47.5px;
+        height: 30px;
+        border: #01437C solid 1px;
+        background: var(--unnamed, #F0F0F0);
+        color: transparent;
+        transform: skewX(21deg);
+        position: relative;
+        left: -9px;
+    }
+    main .switches .switch.index-two.active{
+        border: none;
+    }
+    main .switches .switch.index-two::after{
+        content: 'Награды';
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+        position: absolute;
+        left: -1px;
+        top: 8px;
+        color: var(--unnamed, #01437C);
+        font-family: Ubuntu;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        transform: skewX(-21deg);
+    }
+    main .switches .switch.index-two.active::after{
+        color: var(--unnamed, #01437C);
+
+        /* 320/Н-био */
+        font-family: Ubuntu;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    main .switches {
+        position: relative;
+
+    }
+
+    main .switches .switch.index-one{
+        width: 47.5px;
+        height: 30px;
+        border: #01437C solid 1px;
+        background: var(--unnamed, #F0F0F0);
+        color: transparent;
+        transform: skewX(21deg);
+        position: absolute;
+        left: 227px;
+    }
+    main .switches .switch.index-one.active{
+        border: none;
+    }
+    main .switches .switch.index-one::after{
+        content: 'Источники';
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+        position: absolute;
+        left: -1px;
+        top: 8px;
+        color: var(--unnamed, #01437C);
+        font-family: Ubuntu;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        transform: skewX(-21deg);
+    }
+    main .switches .switch.index-one.active::after{
+        color: var(--unnamed, #01437C);
+
+        /* 320/Н-био */
+        font-family: Ubuntu;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    main .switches .switch::after{
+        font-size: 8px;
+    }
+    main .switches .switch.active::after{
+        font-size: 10px;
+    }
+
+    main .arrow .top {
+        position: relative;
+        top: 20px;
+        width: auto;
+    }
+    main .arrow {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: calc(100% - 30px);
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    main .arrow .bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: stretch;
+    }
+    
+    /* main .switches .switch {
+        min-width: 100px;
+        height: 30px;
+        background: url("../../img/page2-t/Union.png") no-repeat;
+        background-size: 100% 100%;
+        text-align: right;
+        padding-right: 10px;
+    }
+    main .switches .active {
+        background: url("../../img/page2-t/Union2.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    .index-four{
+        right: 56.25px;
+        padding-left: 38px;
+    padding-right: 14px;
+    }
+    .index-three{
+        right: 116.75px;
+    }
+    .index-two{
+        right: 172.25px;
+    }
+    .index-one{
+        right: 218.75px;
+    }
+    .index-five{
+    } */
+
+
+
+    main .info .hrefs1 a.active, main .info .hrefs2 a.active{
+        width: 100%;
+    }
+    main .info .hrefs1 a, main .info .hrefs2 a{
+        width: 100%;
+        font-size: 9.15px;
+    }
+    main .info .hrefs1 a:not(.active), main .info .hrefs2 a:not(.active) {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    main .info .hrefs1 {
+        width: calc(100% - 10px);
+        margin-left: 0;
+    }
+    main .info .hrefs2 {
+        width: calc(100% - 10px);
+        margin-top: 0;
+    }
+    main .info .data .left {
+        font-size: 15px;
+    }
+    main .info .data {
+        width: calc(100% - 10px);
+        margin-top: 40px;
+    }
+    main .info .data .photo {
+        width: 100%;
+        height: 170px;
+    }
+    main .info .data .textt {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+
+    main .container5 .card, main .container5 a{
+        width: 17.5rem;
+    }
+    main .container5 .card .top{
+        height: 17.5rem;
+    }
+    main .container5 .card .border {
+        height: 28.5rem;
+    }
+    main .sometextandbutton {
+        position: relative;
+    }
+    main .sometextandbutton button {
+        position: absolute;
+        bottom: -550px;
+        left: 0px;
+        width: 100%;
+        height: 50px;
+    }
+    main .container5 .card-text {
+        font-size: 12px;
+    }
+    main .container5 .tags {
+        width: 52%;
+    }
+    main .container5 .card, main .container5 a {
+        width: 17.5rem;
+        height: 472px;
+    }
+
+    main .container5 {
+        margin-bottom: 30px;
+    }
+    main .sometextandbutton button {
+        position: absolute;
+        bottom: -570px;
+    }
+
+
+    
+}

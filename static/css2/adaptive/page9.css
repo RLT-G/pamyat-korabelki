@@ -1,10 +1,8 @@
 .ad-button{
     display: none;
 }
-@media only screen and (max-width:1200px) {
-    
-}
-@media only screen and (max-width:1024px) {
+
+@media (min-width: 620px) and (max-width: 1024px) {
     header .content {
         padding-left: 12px;
         padding-right: 12px;
@@ -45,7 +43,7 @@
         top: 1rem;
     }
 }
-@media only screen and (max-width:640px) {
+@media (min-width: 320px) and (max-width: 640px) {
     header .content .top .logo-href {
         width: 361px;
         height: 136px;
@@ -270,8 +268,11 @@
         left: 35px;
         top: -2px;
     }
+    #block_video_generation #i .p-container .title{
+        display: none;
+    }
 }
-@media only screen and (max-width:320px) {
+@media (max-width: 320px) {
     header .content .bottom {
         display: none;
     }
@@ -372,4 +373,8 @@
         width: 100%;
         margin-bottom: 0px;
     }
+    footer .top .right {
+        left: 0;
+    }
+    
 }

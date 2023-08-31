@@ -5,40 +5,55 @@
 function f_video_generation () {
 
     // 
-    let html = '';
+    let block_video_html = '';
 
     // 
     for (let i = 0; i < data_video.length; i++) {
 
-        // // ссылка
-        // item.setAttribute('data-video_href', data_video[i]['ссылка']);
-        // // глава
-        // item.querySelector('.title').innerHTML = data_video[i]['глава'];
-        // // заголовок
-        // item.querySelector('.text').innerHTML = data_video[i]['заголовок'];
-        // // изображение_обложка
-        // item.style.backgroundImage = 'url(' + data_video[i]['изображение_обложка'] + ')';
-
-        let html += `
-            <div id="ii">
+        block_video_html += `
+            <div id="`+ data_video[i]['id'] + `">
                 <div class="p-container">
                     <div class="title"></div>
                     <div class="p">
-                        <div class="I1">Глава II. Ты записался добровольцем?</div>
+                        <div class="I1">`+ data_video[i]['глава'] + '. ' + data_video[i]['заголовок'] +`</div>
                     </div>
                 </div>
+        `
+
+        if (i !== 0) {
+            block_video_html += `
                 <div class="p-container">
                     <div class="title"></div>
                     <div class="p v">
                         <div class="vv"></div>
                     </div>
                 </div>
-            </div>
             `
+        } else {
+            block_video_html += `
+                <div class="p-container">
+                    <div class="title">`
+            
+            for (let i2 = 0; i2 < data_video.length; i2++) {
+                block_video_html += '<a href="#'+ data_video[i2]['id'] +'">'+ data_video[i2]['глава'] +'</a>'
+            }
+                        
+            block_video_html += `
+                    </div>
+                    <div class="p v">
+                        <div class="vv"></div>
+                    </div>
+                </div>
+            `
+        }
+
+        block_video_html += '</div>'
 
     };
     
     // 
-    document.querySelector('#block_video_generation').insertAdjacentHTML('afterBegin', '');
+    document.querySelector('#block_video_generation').innerHTML = block_video_html;
 
 }
+
+f_video_generation();
