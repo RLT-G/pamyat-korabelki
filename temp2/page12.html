@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="../static/css2/adaptive/page12.css">
 
         <link rel="stylesheet" href="../hide/file1.css">
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
         <title>page12</title>
     </head>
     <body>
@@ -24,7 +26,7 @@
                     <div class="left">26 января 2022</div>
                     <div class="right">
                         <div class="text">Ленинградский кораблестроительный институт в годы Великой Отечественной войны (1941 — 1945)</div>
-                        <div class="photo"></div>
+                        <div class="photo" onclick="f_pop_up_3(this, '../static/img/page12-t/Rectangle 1263.png')" alt="Тут большая белая подпись к фото / Источник (тест)"></div>
                     </div>
                 </div>
                 <div class="item2" style="margin-top: 5rem;">
@@ -46,7 +48,7 @@
                 <div class="item3" style="margin-top: 3.75rem;">
                     <div class="left"></div>
                     <div class="right">
-                        <div class="photo" data-img_block_number="1" data-img_element="img" data-img_index="1" data-img_path="../static/img/page12-t/слайдер1/фото" data-img_format=".png">
+                        <div class="photo" data-img_block_number="1" data-img_element="img" data-img_index="1" data-img_path="../static/img/page12-t/слайдер1/фото" data-img_format=".png" onclick="f_pop_up_3(this, '../static/img/page12-t/фото_тест2.png')" alt="Тут большая белая подпись к фото / Источник (тест)">
                             <div class="inner"></div>
                         </div>
                         <div class="text-and-arrow">
@@ -76,7 +78,7 @@
                         <div class="block">
                             <div class="ph">
                                 <div class="mn">
-                                    <div class="mn-inner"></div>
+                                    <div class="mn-inner" onclick="f_pop_up_3(this, '../static/img/page12-t/фото_тест2.png')" alt="Тут большая белая подпись к фото / Источник (тест)"></div>
                                 </div>
                                 <div class="tx">Студенты на оборонных работах/ Источник</div>
                             </div>
@@ -108,7 +110,7 @@
                         <b>источник:</b><br><br>Архивы Санкт-Петербурга.<br>Повседневные документы ленинградцев в годы войны и блокады 1941–1945 гг.: Альбом — ЦГА СПб., «Издательство «Арт-Экспресс» — 2020 — 236 с.
                     </div>
                     <div class="right">
-                        <div class="photo">
+                        <div class="photo" onclick="f_pop_up_3(this, '../static/img/page12-t/фото_тест2.png')" alt="Тут большая белая подпись к фото / Источник (тест)">
                             <div class="inner"></div>
                         </div>
                         <div class="text">Снайперы-комсомольцы - студенты ЛКИ, участники ВОВ</div>
@@ -163,7 +165,7 @@
                 <div class="item3" style="margin-top: 3.75rem;">
                     <div class="left"></div>
                     <div class="right">
-                        <div class="photo">
+                        <div class="photo" onclick="f_pop_up_3(this, '../static/img/page12-t/фото_тест2.png')" alt="Тут большая белая подпись к фото / Источник (тест)">
                             <div class="inner"></div>
                         </div>
                         <div class="text-and-arrow">
@@ -178,25 +180,11 @@
             </div>
         </main>
 
-        <div id="pop_up_3" class="pop_up" style="display: none;">
-            <div class="pop_up__body">
-                <div class="pop_up__close">
-                </div>
-                <div class="pop_up__content">
-                    <button class="close"></button>
-                    <img src="../static/img/page13-t/Rectangle 207.png" alt="">
-                    <!-- <img src="../static/img/page3-t/фото2.png" alt=""> -->
-                    <!-- <img src="../static/img/page2-t/Никитин Ю Г.svg" alt=""> -->
-                </div>
-                <div class="text">Тут большая белая подпись к фото / Источник </div>
-            </div>
-        </div>
-
-
-        <!-- модули -->
+                <!-- модули -->
         <script src="../static/js/module/header.js"></script>
         <script src="../static/js/module/footer.js"></script>
         <script src="../static/js/module/slider_img/slider_img.js"></script>
+        <script src="../static/js/module/pop_up/pop_up_3.js"></script>
         
         <script>
             if (window.innerWidth <= 320){

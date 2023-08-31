@@ -1,6 +1,9 @@
 .ad-button{
     display: none;
 }
+.m-t-ad{
+    margin-top: 40px;
+}
 @media only screen and (max-width:1200px) {
     
 }
