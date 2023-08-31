@@ -13,6 +13,8 @@
         <!--  -->
         <link rel="stylesheet" href="../static/css2/page6.css">
         <link rel="stylesheet" href="../static/css2/adaptive/page6.css">
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
         <title>page6</title>
     </head>
     <body>
@@ -33,7 +35,7 @@
                     <div class="left">
                         Факультет кораблестроения и океанотехники («Корфак») ведет свою историю от основанного в 1899 г. Кораблестроительного отдела (позже – отделения и факультета) Санкт-Петербургского, а затем Ленинградского политехнического института (ППИ, а затем ЛПИ).<br><br>В 1930 г. на базе кораблестроительного факультета ЛПИ был создан Ленинградский кораблестроительный институт (ЛКИ), получивший в обиходе хорошо известное имя «Корабелка». Основная специальность на Корфаке – «Кораблестроение». Позже на факультете открыли новую морскую специальность – «Океанотехника», и Корфак получил свое нынешнее название: факультет кораблестроения и океанотехники - ФКиО.
                     </div>
-                    <div class="right"></div>
+                    <div class="right" onclick="f_pop_up_3(this, '../static/img/page12-t/фото_тест2.png')" alt="Тут большая белая подпись к фото / Источник (тест)"></div>
                 </div>
                 <div class="sometextandbutton">
                     <h2>Персоналии</h2>
@@ -169,52 +171,53 @@
             </div>
         </div>
         
+        <!-- module -->
+        <script src="../static/js/module/header.js"></script>
+        <script src="../static/js/module/footer.js"></script>
+        <script src="../static/js/module/pop_up/pop_up_3.js"></script>
+        <!-- для hover карточек -->
+        <script> 
+            function changeBackground(element) {
+                var targetElement = document.querySelector(element);
+                targetElement.style.backgroundImage = "url('../static/img/page2-t/Никитин Ю Г.svg')";
+            }
+            function returnBack(element){
+                var targetElement = document.querySelector(element)
+                targetElement.style.backgroundImage = "url('../static/img/page1/фото2.svg')"
+            }
+        </script>
+        <script>
+            // Проверяем ширину устройства
+            if (window.innerWidth <= 640) {
+                // Создаем переменную t с HTML-кодом
+                var t = '<div class="href"><a href="">Кораблестроения и океанотехники</a><a href="">корабельной энергетики и автоматики</a><a href="">цифровых промышленных технологий</a><a href="">Инженерно-экономический</a><a href="">морского приборостроения</a><a href="">естественнонаучного и<br>гуманитарного образования</a></div>';
+                var none = '<div></div>'
+                // Находим блоки с id href1 и href2
+                var href1Block = document.querySelector(".href1");
+                var href2Block = document.querySelector(".href2");
+                if (window.innerWidth <= 320){
+                    t = '<div class="href"><a href="">КИО</a><a href="">ЦПТ</a><a href="">ИЭ</a><a href="">КЭИА</a><a href="">МП</a><a href="">ФЕНГО</a></div>';
+                
+                }
+                // Проверяем, существуют ли блоки
+                if (href1Block && href2Block) {
+                    // Создаем фрагмент на основе HTML-кода переменной t
+                    var newContentFragment = document.createRange().createContextualFragment(t);
+                    var newNoneContent = document.createRange().createContextualFragment(none);
+                    var lastCardLine = document.querySelector('.c5-last');
+
+                    // Заменяем блок href1 содержимым HTML-кода переменной t
+                    href1Block.parentNode.replaceChild(newContentFragment.cloneNode(true), href1Block);
+
+                    // Заменяем блок href2 содержимым HTML-кода переменной t
+                    href2Block.parentNode.replaceChild(newNoneContent.cloneNode(true), href2Block);
+
+                    lastCardLine.parentNode.replaceChild(newNoneContent.cloneNode(true), lastCardLine);
+                }
+
+            }
+
+        </script>
+        
     </body>
-    <!-- шапка -->
-    <script src="../static/js/module/header.js"></script>
-    <!-- подвал -->
-    <script src="../static/js/module/footer.js"></script>
-    <!-- для hover карточек -->
-    <script> 
-        function changeBackground(element) {
-            var targetElement = document.querySelector(element);
-            targetElement.style.backgroundImage = "url('../static/img/page2-t/Никитин Ю Г.svg')";
-        }
-        function returnBack(element){
-            var targetElement = document.querySelector(element)
-            targetElement.style.backgroundImage = "url('../static/img/page1/фото2.svg')"
-        }
-    </script>
-    <script>
-        // Проверяем ширину устройства
-        if (window.innerWidth <= 640) {
-            // Создаем переменную t с HTML-кодом
-            var t = '<div class="href"><a href="">Кораблестроения и океанотехники</a><a href="">корабельной энергетики и автоматики</a><a href="">цифровых промышленных технологий</a><a href="">Инженерно-экономический</a><a href="">морского приборостроения</a><a href="">естественнонаучного и<br>гуманитарного образования</a></div>';
-            var none = '<div></div>'
-            // Находим блоки с id href1 и href2
-            var href1Block = document.querySelector(".href1");
-            var href2Block = document.querySelector(".href2");
-            if (window.innerWidth <= 320){
-                t = '<div class="href"><a href="">КИО</a><a href="">ЦПТ</a><a href="">ИЭ</a><a href="">КЭИА</a><a href="">МП</a><a href="">ФЕНГО</a></div>';
-            
-            }
-            // Проверяем, существуют ли блоки
-            if (href1Block && href2Block) {
-                // Создаем фрагмент на основе HTML-кода переменной t
-                var newContentFragment = document.createRange().createContextualFragment(t);
-                var newNoneContent = document.createRange().createContextualFragment(none);
-                var lastCardLine = document.querySelector('.c5-last');
-
-                // Заменяем блок href1 содержимым HTML-кода переменной t
-                href1Block.parentNode.replaceChild(newContentFragment.cloneNode(true), href1Block);
-
-                // Заменяем блок href2 содержимым HTML-кода переменной t
-                href2Block.parentNode.replaceChild(newNoneContent.cloneNode(true), href2Block);
-
-                lastCardLine.parentNode.replaceChild(newNoneContent.cloneNode(true), lastCardLine);
-            }
-
-        }
-
-    </script>
 </html>
