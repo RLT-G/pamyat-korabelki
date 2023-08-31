@@ -358,6 +358,7 @@ main .c-form .submit{
     letter-spacing: 0.04688rem;
     text-transform: uppercase;
     cursor: pointer;
+<<<<<<< Updated upstream
 }main .c-form .submit:hover{background-color: #00AEEF;}
 
 
@@ -781,3 +782,6 @@ margin-bottom: 15px;
 #pop_up_4 h10::before{
     content: 'ЧОРАКОФФ';
 }
+=======
+}main .c-form .submit:hover{background-color: #00AEEF;}
+>>>>>>> Stashed changes

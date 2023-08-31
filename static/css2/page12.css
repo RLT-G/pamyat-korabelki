@@ -386,6 +386,7 @@ main .text-and-arrow .arrow .a-left{
 main .text-and-arrow button{
     width: 100%; height: 100%; background-color: transparent; border: 0;
     cursor: pointer;
+<<<<<<< Updated upstream
 }
 
 
@@ -699,4 +700,6 @@ footer .bottom .right{
 }
 #pop_up_4 h10::before{
     content: 'ЧОРАКОФФ';
+=======
+>>>>>>> Stashed changes
 }

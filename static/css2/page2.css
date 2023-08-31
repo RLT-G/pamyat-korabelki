@@ -319,6 +319,16 @@ main .info .inner{
     position: relative;
 }
 
+<<<<<<< Updated upstream
+=======
+
+main .info .hrefs1,
+main .info .hrefs2 {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+>>>>>>> Stashed changes
 main .info .hrefs1{
     display: flex;
     width: 80%;
@@ -571,6 +581,7 @@ main .container5 .card .border:hover{
 
 
 
+<<<<<<< Updated upstream
 
 
 
@@ -874,3 +885,5 @@ footer .bottom .right{
 #pop_up_4 h10::before{
     content: 'ЧОРАКОФФ';
 }
+=======
+>>>>>>> Stashed changes
