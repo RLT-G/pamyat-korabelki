@@ -308,4 +308,7 @@
     body{
         overflow-x: hidden;
     }
+    footer .top .right {
+        left: 0;
+    }
 }

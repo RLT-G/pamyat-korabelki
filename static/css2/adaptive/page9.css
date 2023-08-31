@@ -372,4 +372,7 @@
         width: 100%;
         margin-bottom: 0px;
     }
+    footer .top .right {
+        left: 0;
+    }
 }

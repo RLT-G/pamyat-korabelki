@@ -352,4 +352,7 @@
     main .p-container .s1 {
         margin-bottom: 30px;
     }
+    footer .top .right {
+        left: 0;
+    }
 }
