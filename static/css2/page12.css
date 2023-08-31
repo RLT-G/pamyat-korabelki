@@ -1,14 +1,7 @@
 
-
-
-
-
-
 main{
     padding: 7.5rem; padding-left: 12.5%; padding-right: 12.5%;
 }
-
-
 
 
 
@@ -55,7 +48,7 @@ main .item1 .right .photo{
     width: 100%;
     height: 23rem;
     background: url("../img/page12-t/Rectangle\ 163.svg"), no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 main .item2 .left{
     display: flex;
@@ -111,13 +104,17 @@ main .item2 .right b{
     text-transform: uppercase;
 }
 main .item3 .right .photo{
-    width: 100%; height: 37.5rem;
+    width: 100%;
+    height: 37.5rem;
     padding: 0.94rem;
-    background-color: #F0F0F0
+    background-image: url("../img/page12-t/слайдер1/фото1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 main .item3 .right .photo .inner{
+    width: 100%;
+    height: 100%;
     border: 3px solid var(--unnamed, #01437C);
-    width: 100%; height: 100%;
 }
 main .item3 .right .text{
     color: var(--unnamed, #01437C);
@@ -138,6 +135,9 @@ main .item3 .left{
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+
+    width: 284px;
+    padding-right: 10px;
 }
 main .item3 .left b{
     color: var(--unnamed, #01437C);
@@ -168,13 +168,14 @@ main .item4 .right .text2{
     margin-top: 3.75rem;
     padding: 0.625rem 0rem 0.625rem 1.25rem;
     border-left: 2px solid var(--1, #00AEEF);
-color: var(--unnamed, #01437C);
-font-family: Ubuntu;
-font-size: 1.4375rem;
-font-style: italic;
-font-weight: 400;
-line-height: 150%; /* 2.15625rem */
-letter-spacing: 0.04313rem;
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    /* font-size: 1.4375rem; */
+    font-size: 1.20625rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%; /* 2.15625rem */
+    letter-spacing: 0.04313rem;
 }
 main .item4 .right .block{
     display: flex;
@@ -194,7 +195,10 @@ main .item4 .right .block .ph .mn{
     width: 100%;
     height: 17rem;
     padding: 0.9375rem;
-    background-color: #F0F0F0;
+    /* background-color: #F0F0F0; */
+
+    background: url("../img/page12-t/Rectangle\ 163.svg"), no-repeat;
+    background-size: cover;
 }
 main .item4 .right .block .ph .mn .mn-inner{
     border: 3px solid var(--unnamed, #01437C);
@@ -240,15 +244,13 @@ main .text-and-arrow .arrow{
 main .text-and-arrow .arrow .a-right{
     width: 3.25rem; height: 1.5rem;
     background: url("../img/page1/стрелка\ слайдера\ right.svg"), no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    cursor: pointer;
 }
 main .text-and-arrow .arrow .a-left{
     width: 3.25rem; height: 1.5rem;
     background: url("../img/page1/стрелка\ слайдера\ left.svg"), no-repeat;
-    background-size: 100% 100%;
-}
-main .text-and-arrow button{
-    width: 100%; height: 100%; background-color: transparent; border: 0;
+    background-size: cover;
     cursor: pointer;
 }
 
@@ -283,11 +285,14 @@ main .text-and-arrow button{
 #pop_up_3 .pop_up__content{
     display: flex;
     width: 800px; height: auto;
-    background: var(--unnamed, #F0F0F0);
+    /* background: var(--unnamed, #F0F0F0); */
     position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    
+    background: url("../img/page12-t/Rectangle\ 163.svg"), no-repeat;
+    background-size: cover;
 }
 #pop_up_3 .close{
     width: 25px; height: 25px;
@@ -295,7 +300,7 @@ main .text-and-arrow button{
     border: 0;
     cursor: pointer;
     background: url("../img/page13-t/heroicons_x-mark.png") no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     position: absolute;
     right: -25px;
 }
@@ -318,148 +323,4 @@ main .text-and-arrow button{
 
 
 
-#pop_up_4{
-    position: fixed;
-    width: 100%; height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 0; left: 0;
-    z-index: 10;
-    
-    visibility: hidden; 
-    opacity: 0;
-}
-#pop_up_4 .pop_up__body{
-    display: flex;
-    width: 100%; height: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-#pop_up_4 .pop_up__close{
-    width: 100%; height: 100%;
-    position: absolute; left: 0; top: 0;
-    cursor: pointer;
-}
-#pop_up_4 .pop_up__content{
-    display: flex;
-    width: 934px; height: auto;
-    background: var(--unnamed, #F0F0F0);
-    position: relative;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-    padding: 50px;
-}
-#pop_up_4 .close{
-    width: 25px; height: 25px;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    background: url("../img/page13-t/heroicons_x-mark.png") no-repeat;
-    background-size: 100% 100%;
-    position: absolute;
-    right: -25px; top: 0px;
-}
-#pop_up_4 .pop_up__content .title{
-    color: var(--unnamed, #01437C);
-    text-align: center;
-    font-family: Ubuntu;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-top: 50px;
-}
-#pop_up_4 .pop_up__content .text{
-    color: var(--unnamed, #01437C);
-    text-align: center;
-    font-family: Ubuntu;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    margin-bottom: 50px;
-}
-#pop_up_4 form{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-}
-#pop_up_4 form .search{
-    width: 590px; height: 62px;
-    padding: 20px 30px;
-    color: var(--non-active, rgb(1, 67, 124));
-    font-family: Ubuntu;
-    font-size: 19px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.95px;
-    text-transform: uppercase;
-    border: 2px solid var(--unnamed, #01437C);
 
-}
-#pop_up_4 form .search::placeholder{
-    color: var(--non-active, rgba(1, 67, 124, 0.40));
-}
-#pop_up_4 form button{
-    width: 188px; height: 47;
-    background: var(--unnamed, #01437C);
-    display: flex;
-    padding: 15px 60px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: 0;
-    color: var(--unnamed, #FFF);
-    font-family: Ubuntu;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.75px;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-#pop_up_4 form button:hover{
-    background: var(--unnamed, #00AEEF);
-}
-#pop_up_4 .item1{
-    margin-top: 20px; margin-bottom: 60px;
-    color: #000;
-    font-family: Ubuntu;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-#pop_up_4 .item2{
-    font-family: Ubuntu;
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 140%; /* 32.2px */
-    letter-spacing: 0.46px;
-
-    color: var(--unnamed, #01437C);
-    border-bottom: var(--unnamed, #01437C) dashed 2px;
-}
-#pop_up_4 .item2:hover{
-    color: var(--unnamed, #00AEEF);
-    border-bottom: var(--unnamed, #00AEEF) solid 2px;
-}
-#pop_up_4 .item3{
-    margin-top: 50px;
-    color: #000;
-    font-family: Ubuntu;
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%; /* 32.2px */
-    letter-spacing: 0.46px;
-}
-#pop_up_4 h10::before{
-    content: 'ЧОРАКОФФ';
-}

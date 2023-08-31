@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../static/css/fonts.css">
         <link rel="stylesheet" href="../static/css2/module/header.css">
         <link rel="stylesheet" href="../static/css2/module/footer.css">
+        <link rel="stylesheet" href="../static/css2/module/pop_up.css">
         <link rel="stylesheet" href="../static/css2/page3.css">
         <link rel="stylesheet" href="../static/css2/adaptive/page3.css">
         <title>page3</title>
@@ -29,21 +30,14 @@
                             Организация и подготовка к его открытию началась на год раньше и осуществлялась директором Кораблестроительного института И.И. Яковлевым и тогда еще доцентом, к.э.н. С.П. Логиновым. В том же году факультет приступил к набору студентов и организации занятий сразу на первых трех курсах, при этом на первый курс приняты отличники и лица успешно сдавшие вступительные экзамены. Второй и третий курсы были укомплектованы "переводниками" из других вузов и факультетов ЛКИ. Деканом факультета был утвержден к.э.н. доцент С.П. Логинов. <br><br>
                             
                             Инженер-кораблестроитель, оканчивающий курс обучения в ЛКИ или на инженерно-экономическом факультете, должен был владеть в совершенстве как инженерными знаниями по специальности, так и достаточными знаниями в области экономики и организации производства, знать и уметь вести учет работы, выявлять резервы производства, определять экономическую эффективность новой техники и технологий, повышать эффективность производства.</h4>
-                        <div class="photo1"></div>
-                        <!-- <h5>
-                            Первый выпуск ЛКИ 1935г. 
-                            <div class="a-r">
-                                <button></button>
-                            </div>
-                            <div class="a-l">
-                                <button></button>
-                            </div>
-                        </h5> -->
+
+                        <!-- слайдер1 -->
+                        <div class="photo1" data-img_block_number="1" data-img_element="img" data-img_index="1" data-img_path="../static/img/page3-t/слайдер1/фото" data-img_format=".png"></div>
                         <div class="text-and-arrow">
                             <div class="text"><h5>Первый выпуск ЛКИ 1935г.</h5></div>
                             <div class="arrow">
-                                <div class="a-right"><button></button></div>
-                                <div class="a-left"><button></button></div>
+                                <div class="a-left active_not" data-img_block_number="1" data-img_arrow="left"></div>
+                                <div class="a-right" data-img_block_number="1" data-img_arrow="right"></div>
                             </div>
                         </div>
                     </div>
@@ -109,10 +103,11 @@
                 <div class="text">Тут большая белая подпись к фото / Источник </div>
             </div>
         </div>
-        
+            
+        <!-- модули -->
+        <script src="../static/js/module/header.js"></script>
+        <script src="../static/js/module/footer.js"></script>
+        <script src="../static/js/module/slider_img/slider_img.js"></script>
+
     </body>
-    <!-- шапка -->
-    <script src="../static/js/module/header.js"></script>
-    <!-- подвал -->
-    <script src="../static/js/module/footer.js"></script>
 </html>
