@@ -309,4 +309,7 @@
     main .text {
         font-size: 40px;
     }
+    footer .top .right {
+        left: 0;
+    }
 }

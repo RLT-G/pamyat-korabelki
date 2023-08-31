@@ -383,4 +383,8 @@
     main .c-last::after{
         display: none;
     }
+
+    footer .top .right {
+        left: 0;
+    }
 }

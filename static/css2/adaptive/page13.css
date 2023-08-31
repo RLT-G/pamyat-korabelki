@@ -329,4 +329,7 @@
     main .c-form .submit {
         width: 100%;
     }
+    footer .top .right {
+        left: 0;
+    }
 }
