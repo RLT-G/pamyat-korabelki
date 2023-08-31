@@ -287,6 +287,26 @@
         justify-content: space-between;
         width: 28%;
     }
+    main .main-buttom > a {
+        border: none;
+        background: transparent;
+        color: var(--unnamed, #01437C);
+        font-family: Ubuntu;
+        font-size: 1.5625rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.07063rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        width: 7%;
+        text-align: center;
+    }
+    main .table > .cell {
+        width: 30%;
+        margin-bottom: 60px;
+        width: 50%;
+    }
 }
 @media only screen and (max-width:320px) {
     header .content .bottom {
@@ -398,5 +418,14 @@
         width: 300px;
         height: 74px;
         padding: 15px 60px;
+    }
+    main .main-buttom > a {
+        width: 20%;
+    }
+    main .main-buttom {
+        justify-content: start;
+    }
+    main .table > .cell {
+        width: 100%;
     }
 }

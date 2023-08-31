@@ -109,7 +109,6 @@ function f_arrow_click(side) {
 
     // если left стрелка
     if (side == 'left') {
-        // alert('OK left');
         if (
             // document.querySelectorAll('#module_switch_news_article_feedback .news_article_feedback_cards [data-card]')[0].getAttribute('data-index') == '0'
             // &&
@@ -121,7 +120,6 @@ function f_arrow_click(side) {
     }
     // если right стрелка
     else if (side == 'right') {
-        // alert('OK right');
         if (
             // document.querySelectorAll('#module_switch_news_article_feedback .news_article_feedback_cards [data-card]')[2].getAttribute('data-index') !== String(switch_news_article_feedback_data[document.querySelector('#module_switch_news_article_feedback .news_article_feedback_switch .left .active').getAttribute('data-switch')].length -1)
             // &&
