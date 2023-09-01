@@ -330,7 +330,8 @@
         width: calc(100% - 30px);
         flex-wrap: wrap;
     }
-    main .info .hrefs1 a, main .info .hrefs2 a{
+    main .info .hrefs1 a,
+    main .info .hrefs2 a{
         width: 50%;
         font-size: 10px;
         margin-bottom: 15px;
