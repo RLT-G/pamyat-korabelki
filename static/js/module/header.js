@@ -15,7 +15,7 @@ let header_html = `
                 <a href="page13.html">ОТЗЫВЫ</a>
                 <!-- Поп каво? -->
                 <a href="/">
-                    <img src="../static/img/index/поиск.svg" alt="поиск.svg">
+                    <img src="../../static/img/index/поиск.svg" alt="поиск.svg">
                 </a>
             </div>
         </div>

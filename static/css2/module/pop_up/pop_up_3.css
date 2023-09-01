@@ -85,7 +85,7 @@
         justify-content: space-between;
     }
 }
-@media (max-width: 320px) {
+@media (max-width: 640px) {
     #pop_up_3 .text {
         color: #FFF;
         font-family: Ubuntu;

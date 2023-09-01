@@ -1,3 +1,4 @@
+
 let switch_news_article_feedback_data = {
     news: [
         {

@@ -430,7 +430,7 @@
         min-width: 980px;
     }
 }
-@media (max-width: 320px) {
+@media (max-width: 640px) {
     header .content .bottom {
         display: none;
     }

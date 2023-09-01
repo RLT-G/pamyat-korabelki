@@ -382,7 +382,7 @@
     }
 
 }
-@media (max-width: 320px) {
+@media (max-width: 640px) {
     header .logo {
         min-width: 80%;
         position: relative;
