@@ -2,7 +2,7 @@
     display: none;
 }
 
-@media (min-width: 620px) and (max-width: 1024px) {
+@media (min-width: 640px) and (max-width: 1024px) {
     header .content {
         padding-left: 12px;
         padding-right: 12px;
@@ -236,7 +236,7 @@
         padding: 15px 60px;
     }
 }
-@media (max-width: 640px) {
+@media (max-width: 320px) {
     header .content .bottom {
         display: none;
     }
