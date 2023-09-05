@@ -3,13 +3,14 @@
 /* имг */
 
 #pop_up_header_adaptive{
-
     z-index: 10;
     position: fixed;
     width: 100%; height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
+    overflow-y: scroll;
+    display: none;
 }
 
 #pop_up_header_adaptive .pop_up__body{
@@ -30,34 +31,12 @@
     align-items: center;
     justify-content: space-between;
 }
-#pop_up_header_adaptive .item1{
-    width: 100%;
-    color: var(--, #01437C);
-    font-family: Ubuntu;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    background-color: #FFF;
-}
-#pop_up_header_adaptive .item1{
-    border: 3px solid var(--20, rgba(0, 0, 0, 0.20));
-}
-#pop_up_header_adaptive .item3 div{
-    display: block;
-    width: 40px;
-    height: 17px;
-    background: url("../../../img/index/ArrowHeader.png") no-repeat;
-    background-size: 100% 100%;
-}
-#pop_up_header_adaptive .i, .ii{
-    display: flex;
-    width: 100%;
-    padding: 15px 71px 15px 20px;
-    align-items: center;
-    gap: 10px;
+#pop_up_header_adaptive .item{
+    width: 250px;
+    height: 50px;
     border: 3px solid var(--20, rgba(0, 0, 0, 0.20));
     background: #FFF;
+    border-top: 0;
     color: var(--__, #00AEEF);
     font-family: Ubuntu;
     font-size: 15px;
@@ -66,16 +45,50 @@
     line-height: normal;
     letter-spacing: 0.75px;
     text-transform: uppercase;
-    border-top: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
 }
-.ii{
-    align-items: end;
-    padding: 15px;
+#pop_up_header_adaptive .i1{
+    color: #01437C;
+    font-family: Ubuntu;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    height: auto;
+}
+#pop_up_header_adaptive .i2{
+    border-top: 3px solid var(--20, rgba(0, 0, 0, 0.20));
+}
+#pop_up_header_adaptive .i3{
+    position: relative;
+}
+#pop_up_header_adaptive .i3::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 17px;
+    background: url("../../../img/page10/стрелка\ вниз-вверх.svg") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.hide-block{
+    width: 250px;
+    height: auto;
+    /* display: none; */
+}
+.hide-block .item{
     justify-content: end;
+    padding-left: 20px;
 }
-@media only screen and (max-width:640px) {
+
+@media (min-width: 320px) and (max-width: 640px) {
     
 }
-@media only screen and (max-width:320px) {
+@media (max-width: 320px) {
     
 }

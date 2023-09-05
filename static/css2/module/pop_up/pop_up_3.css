@@ -67,7 +67,7 @@
     cursor: default;
 }
 
-@media only screen and (max-width:640px) {
+@media (min-width: 320px) and (max-width: 640px) {
     #pop_up_3 img {
         width: 100%;
         height: auto;
@@ -85,7 +85,7 @@
         justify-content: space-between;
     }
 }
-@media only screen and (max-width:320px) {
+@media (max-width: 320px) {
     #pop_up_3 .text {
         color: #FFF;
         font-family: Ubuntu;

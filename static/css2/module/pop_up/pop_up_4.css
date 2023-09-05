@@ -1,11 +1,15 @@
 
-/* поиск */
-/* поиск */
+html {
+    overflow-x:hidden;
+}
 
 .active_not {
     filter: opacity(40%);
 }
 
+
+/* поиск */
+/* поиск */
 
 #pop_up_4{
     position: fixed;

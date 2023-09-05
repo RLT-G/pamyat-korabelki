@@ -3,19 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../static/css/reset.css">
-        <link rel="stylesheet" href="../static/css/fonts.css">
+        <link rel="stylesheet" href="../../static/css/reset.css">
+        <link rel="stylesheet" href="../../static/css/fonts.css">
         <!--  -->
-        <link rel="stylesheet" href="../static/css2/module/header.css">
-        <link rel="stylesheet" href="../static/css2/module/footer.css">
-        <link rel="stylesheet" href="../static/css2/module/pop_up/pop_up_3.css">
-        <link rel="stylesheet" href="../static/css2/module/pop_up/pop_up_4.css">
+        <link rel="stylesheet" href="../../static/css2/module/header.css">
+        <link rel="stylesheet" href="../../static/css2/module/footer.css">
+        <link rel="stylesheet" href="../../static/css2/module/pop_up/pop_up_header.css">
+        <link rel="stylesheet" href="../../static/css2/module/pop_up/pop_up_3.css">
+        <link rel="stylesheet" href="../../static/css2/module/pop_up/pop_up_4.css">
         <!--  -->
-        <link rel="stylesheet" href="../static/css2/page2.css">
+        <link rel="stylesheet" href="../../static/css2/page2.css">
         <!-- jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-        <link rel="stylesheet" href="../static/css2/adaptive/page2.css">
-        <link rel="stylesheet" href="../hide/file1.css">
+        <link rel="stylesheet" href="../../static/css2/adaptive/page2.css">
+        <link rel="stylesheet" href="../../hide/file1.css">
         <title>page2</title>
     </head>
     <body>
@@ -34,7 +35,7 @@
                             <a href="">#кораблестроительный</a>
                         </div>
                     </div>
-                    <div class="p-photo" onclick="f_pop_up_3(this, '../static/img/page12-t/фото_тест2.png')" alt="Тут большая белая подпись к фото / Источник (тест)"></div>
+                    <div class="p-photo" onclick="f_pop_up_3(this, '../../static/img/page12-t/фото_тест2.png')" alt="Тут большая белая подпись к фото / Источник (тест)"></div>
                 </div>
 
 
@@ -57,7 +58,7 @@
                                 <!-- 1 сентября 1939 года началась Вторая мировая война, и советское правительство приняло решение о призывы в армию юношей, достигших 18-ти лет и имеющих среднее образование. Поэтому в октябре 1939 г., в связи с отменой отсрочки от призыва в армию, многочисленная группа студентов первого курса ЛКИ была призвана в ряды РККА. <br><br>В ноябре 1939 года началась советско-финляндская война (1939—1940) и Ленинград стал фронтовым городом, тысячи ленинградцев вступили в лыжные батальоны, чтобы с оружием в руках защищать город. Среди них был студент Василий Чураков. Вместе с товарищами по учёбе он вступил в отряд лыжников-добровольцев. Все они в основном попали в 100-й добровольческий лыжный батальон, формировавшийся в Инженерном замке. Здесь же проходили занятия по боевой и лыжной подготовке. Вскоре батальон вступил в бой. -->
                             </div>
                             <div class="right">
-                                <div class="photo" onclick="f_pop_up_3(this, '../static/img/page12-t/фото_тест2.png')" alt="Тут большая белая подпись к фото / Источник (тест)"></div>
+                                <div class="photo" onclick="f_pop_up_3(this, '../../static/img/page12-t/фото_тест2.png')" alt="Тут большая белая подпись к фото / Источник (тест)"></div>
                                 <div class="textt">
                                     <!-- Советско-финская война 1939—1940 годов. Красноармейцы-снайперы в засаде. Карелия / Фото с сайта news.myseldon.com -->
                                 </div>
@@ -146,23 +147,24 @@
 
         
         <!-- модули -->
-        <script src="../static/js/module/header.js"></script>
-        <script src="../static/js/module/footer.js"></script>
-        <script src="../static/js/module/pop_up/pop_up_3.js"></script>
+        <script src="../../static/js/module/header.js"></script>
+        <script src="../../static/js/module/footer.js"></script>
+        <script src="../../static/js/module/pop_up/pop_up_header_adaptive.js"></script>
+        <script src="../../static/js/module/pop_up/pop_up_3.js"></script>
         <!-- страница -->
-        <script src="../static/js/pages/page2/data.js"></script>
-        <script src="../static/js/pages/page2/switch_name_2.js"></script>
-        <script src="../static/js/pages/page2/switch_name_1.js"></script>
+        <script src="../../static/js/data/data_person_switch.js"></script>
+        <script src="../../static/js/pages/page2/switch_name_2.js"></script>
+        <script src="../../static/js/pages/page2/switch_name_1.js"></script>
 
         <!-- для hover карточек -->
         <script> 
             function changeBackground(element) {
                 var targetElement = document.querySelector(element);
-                targetElement.style.backgroundImage = "url('../static/img/page2-t/Никитин Ю Г.svg')";
+                targetElement.style.backgroundImage = "url('../../static/img/page2-t/Никитин Ю Г.svg')";
             }
             function returnBack(element){
                 var targetElement = document.querySelector(element)
-                targetElement.style.backgroundImage = "url('../static/img/page1/фото2.svg')"
+                targetElement.style.backgroundImage = "url('../../static/img/page1/фото2.svg')"
             }
         </script>
 

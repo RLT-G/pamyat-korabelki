@@ -50,13 +50,22 @@ main .container{
     width: 100%;
     margin-bottom: 7.5rem;
 }
+
 main .container .left,
 main .container .right{
-    width: 30%;
     display: flex;
     flex-direction: column;
 }
-main .container .right{width: 80%;}
+main .container .left {
+    width: 30%;
+}
+main .container .right{
+    width: 80%;
+}
+main .container.container_button .left {
+    width: 0;
+}
+
 main .container .left h2{
     color: var(--unnamed, #01437C);
     font-family: Ubuntu;
@@ -102,13 +111,13 @@ main .container .right .photo1{
 }
 main .container .right h5{
     color: var(--unnamed, #01437C);
-font-family: Ubuntu;
-font-size: 0.75rem;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
-align-self: self-start;
-margin-top: 1.25rem;
+    font-family: Ubuntu;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    align-self: self-start;
+    margin-top: 1.25rem;
 }
 
 
@@ -139,20 +148,23 @@ main .container .right div{
 }
 main .container .right .carousel{
     width: 90%;
+    align-self: start;
     overflow: visible;
     /* white-space: nowrap; */
     position: relative;
+    /* float: left; */
 }
 
 main .carousel .a-left{
+    z-index: 9;
     position: absolute;
     max-width: 52px;
     height: 24px;
     background-image: url("../img/page1/стрелка\ слайдера\ left.svg");
     background-repeat: no-repeat;
     background-size: 52px 24px;
-    left: -77px; bottom: calc(17rem - 12px);
-    z-index: 9;
+    left: -77px;
+    bottom: calc(17rem - 12px);
     cursor: pointer;
 }
 main .carousel .a-right{
@@ -377,13 +389,14 @@ main .container .right .carousel .items a .bottom > .hashtag span{
     line-height: normal;
     margin-right: 20px;
 }
-/* main .c-left{
-    display: flex;
+main .c-left{
+    /* display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: start;
-    border: red solid 1px;
-} */
+    border: red solid 1px; */
+    /* margin-left: 60px; */
+}
 
 main .m-b{
     margin-bottom: 1.81rem;

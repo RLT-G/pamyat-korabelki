@@ -6,7 +6,7 @@
         overflow-x: hidden
     }
 }
-@media only screen and (max-width:1024px) {
+@media (min-width: 640px) and (max-width: 1024px) {
     header .content {
         padding-left: 12px;
         padding-right: 12px;
@@ -93,7 +93,7 @@
         top: 1rem;
     }
 }
-@media only screen and (max-width:640px) {
+@media (min-width: 320px) and (max-width: 640px) {
     header .content .top .logo-href {
         width: 361px;
         height: 136px;
@@ -360,7 +360,7 @@
         background-size: 100% 100%;
     }
 }
-@media only screen and (max-width:320px) {
+@media (max-width: 320px) {
     header .content .bottom {
         display: none;
     }
@@ -495,5 +495,29 @@
     }
     main .content-body .a-item3:hover {
         background-image: none;
+    }
+    main .content .title {
+        width: 100%;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        /* border: red solid 1px; */
+    }
+    main .content-body .item1 .left .top {
+        height: 280px;
+    }
+    main .content-body .item1 .left .bottom .left {
+        bottom: 0px;
+    }
+    main .content-body .item1 .left .bottom .right {
+        right: 0px;
+        top: 0;
+    }
+    main .item3 {
+        height: 280px;
+    }
+    footer .content .img-block {
+        margin-bottom: 50px;
     }
 }

@@ -5,7 +5,7 @@ let footer_html = `
         <div class="top">
             <a href="page1.html">
                 <div class="img-block">
-                    <img src="../static/img/index/логоfooter.svg" alt="logo.svg">
+                    <img src="../../static/img/index/логоfooter.svg" alt="logo.svg">
                 </div>
             </a>
             <div class="right">
@@ -34,10 +34,10 @@ let footer_html = `
         </div>
         <div class="bottom">
             <div class="left">
-                <a href="http://vk.com/"><div><img src="../static/img/index/vk.svg" alt=""></div></a>
-                <a href="https://web.telegram.org/"><div><img src="../static/img/index/tg.svg" alt=""></div></a>
-                <a href="http://instagram.com/"><div><img src="../static/img/index/insta.svg" alt=""></div></a>
-                <a href="https://www.linkedin.com/"><div><img src="../static/img/index/in.svg" alt=""></div></a>
+                <a href="http://vk.com/"><div><img src="../../static/img/index/vk.svg" alt=""></div></a>
+                <a href="https://web.telegram.org/"><div><img src="../../static/img/index/tg.svg" alt=""></div></a>
+                <a href="http://instagram.com/"><div><img src="../../static/img/index/insta.svg" alt=""></div></a>
+                <a href="https://www.linkedin.com/"><div><img src="../../static/img/index/in.svg" alt=""></div></a>
             </div>
             <div class="right">
                 При перепечатке материалов сайта<br>

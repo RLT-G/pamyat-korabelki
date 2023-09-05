@@ -1,10 +1,8 @@
 .ad-button{
     display: none;
 }
-@media only screen and (max-width:1200px) {
-    
-}
-@media only screen and (max-width:1024px) {
+
+@media (min-width: 640px) and (max-width: 1024px) {
     main {
         width: 100%;
         height: auto;
@@ -81,7 +79,7 @@
     
     
 }
-@media only screen and (max-width:640px) {
+@media (min-width: 320px) and (max-width: 640px) {
     main .container1 {
         display: flex;
         justify-content: space-between;
@@ -384,7 +382,7 @@
     }
 
 }
-@media only screen and (max-width:320px) {
+@media (max-width: 320px) {
     header .logo {
         min-width: 80%;
         position: relative;
@@ -673,5 +671,13 @@
     }
     body{
         overflow-x: hidden;
+    }
+    main {
+        padding: 0;
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    footer .content .img-block {
+        margin-bottom: 50px;
     }
 }

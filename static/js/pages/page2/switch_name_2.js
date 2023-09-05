@@ -30,7 +30,7 @@ function f_switch_name_2_content(index) {
     // console.log(index)
 
     // подходящий объект
-    let switch_data_relevant = switch_data[
+    let switch_data_relevant = data_person_switch[
             document.querySelector('main .content > .switches > [data-switch_name_1].active').getAttribute('data-switch_name_1')
         ][
             document.querySelector('main .content > .info > .inner [data-switch_name_2].active').getAttribute('data-switch_name_2')

@@ -24,7 +24,7 @@ document.querySelectorAll('main .content > .switches > [data-switch_name_1]').fo
 function f_switch_name_2_html() {
 
     // подходящий объект
-    let switch_data_relevant = switch_data[
+    let switch_data_relevant = data_person_switch[
         document.querySelector('main .content > .switches > [data-switch_name_1].active').getAttribute('data-switch_name_1')
     ];
 

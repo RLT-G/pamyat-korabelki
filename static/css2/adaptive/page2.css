@@ -1,10 +1,8 @@
 .ad-button{
     display: none;
 }
-@media only screen and (max-width:1200px) {
-    
-}
-@media only screen and (max-width:1024px) {
+
+@media (min-width: 640px) and (max-width: 1024px) {
     header .content {
         padding-left: 12px;
         padding-right: 12px;
@@ -45,7 +43,7 @@
         top: 1rem;
     }
 }
-@media only screen and (max-width:640px) {
+@media (min-width: 320px) and (max-width: 640px) {
     header .content .top .logo-href {
         width: 361px;
         height: 136px;
@@ -332,7 +330,8 @@
         width: calc(100% - 30px);
         flex-wrap: wrap;
     }
-    main .info .hrefs1 a, main .info .hrefs2 a{
+    main .info .hrefs1 a,
+    main .info .hrefs2 a{
         width: 50%;
         font-size: 10px;
         margin-bottom: 15px;
@@ -432,7 +431,7 @@
         min-width: 980px;
     }
 }
-@media only screen and (max-width:320px) {
+@media (max-width: 320px) {
     header .content .bottom {
         display: none;
     }
@@ -900,7 +899,9 @@
         position: absolute;
         bottom: -570px;
     }
-
+    footer .content .img-block {
+        margin-bottom: 50px;
+    }
 
     
 }

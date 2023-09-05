@@ -1,10 +1,8 @@
 .ad-button{
     display: none;
 }
-@media only screen and (max-width:1200px) {
-    
-}
-@media only screen and (max-width:1024px) {
+
+@media (min-width: 640px) and (max-width: 1024px) {
     header .content {
         padding-left: 12px;
         padding-right: 12px;
@@ -45,7 +43,7 @@
         top: 1rem;
     }
 }
-@media only screen and (max-width:640px) {
+@media (min-width: 320px) and (max-width: 640px) {
     header .content .top .logo-href {
         width: 361px;
         height: 136px;
@@ -238,7 +236,7 @@
         padding: 15px 60px;
     }
 }
-@media only screen and (max-width:320px) {
+@media (max-width: 320px) {
     header .content .bottom {
         display: none;
     }
@@ -311,5 +309,13 @@
     }
     footer .top .right {
         left: 0;
+    }
+    main {
+        padding: 10px;
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    footer .content .img-block {
+        margin-bottom: 50px;
     }
 }

@@ -226,6 +226,7 @@ main .info .hrefs2 a{
     letter-spacing: 0.04688rem;
     text-transform: uppercase;
     border-bottom: var(--1, #01437C) dashed 1px;
+    cursor: pointer;
     
     /* pointer-events:none; */
 }
