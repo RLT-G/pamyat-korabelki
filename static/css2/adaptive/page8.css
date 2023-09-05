@@ -1,0 +1,396 @@
+.ad-button{
+    display: none;
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+    header .content {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    main {
+        padding: 7.5rem;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    footer .top, footer .bottom {
+        margin-left: 0;
+        width: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    footer .bottom{
+        margin-top: 6.5rem;
+    }
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 4rem;
+        position: relative;
+        top: 70px;
+    }
+    footer .top .right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+    footer .thirt {
+        height: 9rem;
+        position: absolute;
+        flex-direction: row;
+        width: 24.65rem;
+        top: 1rem;
+    }
+}
+@media (min-width: 320px) and (max-width: 640px) {
+    header .content .top .logo-href {
+        width: 361px;
+        height: 136px;
+    }
+    header .top .nav {
+        display: none;
+    }
+    .ad-button{
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: 0;
+        background-color: transparent;
+        background: url("../../img/index/menu_mob.svg") no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+        position: relative;
+        top: 20px;
+        right: 20px;
+    }
+    header .content .bottom{
+        flex-wrap: wrap;
+    }
+    header .content .bottom .base-href, header .bottom [data-popup_list] {
+        width: 30%;
+    }
+    header .content .bottom .c1 {
+        margin: 0 auto;
+    }
+    .bottom > div:nth-child(1) .c1{
+        margin-bottom: 20px;
+    }
+    .bottom > div:nth-child(2) .c1{
+        margin: 0 39px;
+        margin-bottom: 20px;
+    }
+    .bottom > div:nth-child(3) .c1{
+        margin: 0 20px;
+        margin-bottom: 20px;
+    }
+    header .bottom [data-popup_list] .all-block.opab {
+        width: 147px;
+        left: -21px;
+        top: 29px;
+    }
+    header .bottom [data-popup_list] .all-block.fuck {
+        width: 198px;
+        left: -26px;
+        top: 29px;
+    }
+    footer .container div{
+        color: var(--unnamed, #FFF);
+        font-family: Ubuntu;
+        font-size: 0.9375rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.04688rem;
+        text-decoration: none;
+    }
+    
+    footer h1{
+        color: var(--unnamed, #FFF);
+        /* text-align: center; */
+        font-family: Ubuntu;
+        font-size: 1.40625rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.07031rem;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    footer .first{
+        height: 9rem;
+    }
+    footer .second{
+        height: 12rem;
+    }
+    footer .thirt{
+        height: 9rem;
+    }
+    
+    footer .bottom{
+        display: flex;
+        width: 75%;
+        margin-left: 12.5%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5rem;
+    }
+    footer .bottom .left{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 17%;
+    }
+    footer .bottom .right{
+        color: var(--unnamed, #FFF);
+        text-align: right;
+        font-family: Ubuntu;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.04688rem;
+        text-transform: uppercase;
+    }
+
+    footer .top, footer .bottom {
+        margin-left: 0;
+        width: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    footer .thirt {
+        height: 9rem;
+        /* position: absolute; */
+        position: relative;
+        flex-direction: column;
+        width: 24.65rem;
+        /* top: 1rem; */
+    }
+    footer .container {
+        /* top: 70px; */
+        top: 40px;
+    }
+    footer .content {
+        width: 100%;
+        height: auto;
+        background: url("../../img/index/плашка.png"), no-repeat;
+        background-size: 100% 100%;
+        z-index: 6;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .top, footer .bottom {
+        margin-left: 0;
+        width: calc(100% - 10px);
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+    footer .bottom .left {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 28%;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    main .content {
+        padding: 0 15px;
+    }
+    main .container .date {
+        text-wrap: nowrap;
+    }
+    main .container:nth-child(5) .date, main .container:nth-child(7) .date{
+        text-wrap: wrap;
+    }
+    main .c-last::after {
+        content: '';
+        display: block;
+        width: 4.2%;
+        height: 141%;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        right: -4.2%;
+        bottom: -30%;
+        z-index: 2;
+        border-radius: 0.625rem;
+    }
+    main .container:nth-child(7){
+        padding-top: 350px;
+    }
+    main .container:nth-child(11){
+        padding-top: 300px;
+    }
+    main .container:nth-child(12){
+        padding-top: 800px;
+    }
+    main .c-end:nth-child(7) .date{
+        padding-left: 10px;
+    }
+
+    footer .top {
+        flex-direction: column;
+        align-items: start;
+    }
+    footer .top .right {
+        left: -55px;
+    }
+}
+@media (max-width: 320px) {
+    header .content .bottom {
+        display: none;
+    }
+    header .content .top .logo-href {
+        width: 260px;
+        height: 210px;
+    }
+    header .content .top .logo {
+        background: url("../../img/index/a-logo320px.png"), no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+    }
+    header .content .top {
+        position: relative;
+    }
+    .ad-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header .content .top {
+        justify-content: center;
+    }
+    header .content {
+        min-height: 270px;
+    }
+    footer .content .top img{
+        display: none;
+    }
+    footer .content .img-block{
+        width: 260px;
+        height: 210px;
+        background: url("../../img/index/a-logo320px.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    footer .top .right {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        height: 570px;
+    }
+    footer .container {
+        margin-left: 0;
+    }
+    footer .bottom {
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+    }
+    footer .bottom .left {
+        width: calc(40% + 75px);
+        margin-bottom: 20px;
+    }
+    footer .bottom .right {
+        text-align: start;
+        font-size: 10px;
+        margin-bottom: 75px;
+    }
+    footer .top{
+        flex-direction: column;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    
+
+
+    main .main-text h1 {
+        font-size: 40px;
+    }
+    main .main-text h2 {
+        font-size: 15px;
+    }
+    main .content .left {
+        width: calc(100%);
+    }
+    main .content .border{
+        border-radius: 10px;
+        background: var(--4, #00385C);
+        width: 20px;
+        height: 19110px;
+    }
+    main .c-end .hr {
+        background: url("../../img/page8/Frame46right.png") no-repeat;
+        background-size: 100% 100%;
+        left: -10px;
+    }
+    main .c-end, main .container {
+        align-items: start;
+    }
+    main .container{
+        margin: 0;
+        margin-bottom: 50px;
+    }
+    main .container{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    main .container .h1, main .c-end .h1{
+        color: var(--unnamed, #01437C);
+        font-family: Ubuntu;
+        font-size: 1.1875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.05938rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        max-width: 100%;
+    }
+    main .container .h2, main .c-end .h2{
+        color: var(--unnamed, #01437C);
+        font-family: Ubuntu;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+    main .container .date, main .c-end .date{
+        color: var(--1, #00AEEF);
+        font-family: Ubuntu;
+        font-size: 26px;
+    }
+    main .text{
+        display: none;
+    }
+    main .content .border {
+        bottom: -1rem;
+    }
+    main .container:nth-child(7),
+    main .container:nth-child(11),
+    main .container:nth-child(12){
+        padding-top: 0; padding-bottom: 0;
+    }
+    main .c-last::before,
+    main .c-last::after{
+        display: none;
+    }
+
+    footer .top .right {
+        left: 0;
+    }
+    footer .content .img-block {
+        margin-bottom: 50px;
+    }
+    main {
+        padding: 10px;
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+}

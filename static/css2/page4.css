@@ -1,0 +1,122 @@
+
+
+/* header{
+    border: red solid 1px;
+} */
+
+
+
+main .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7.5rem;
+    padding-left: 12.5%;
+    padding-left: 12.5%;
+    width: 100%;
+    /* height: 100rem; */
+}
+main .main-text{
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: self-start;
+    margin-bottom: 3.75rem;
+}
+
+main .main-buttom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 82%;
+    margin-bottom: 5rem;
+}
+main .main-buttom > a{
+    border: none;
+    background: transparent;
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.07063rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+
+main .table{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+main .table > .cell {
+    width: 30%;
+    margin-bottom: 60px;
+}
+main .table > .cell h2{
+    color: var(--unnamed, #01437C);
+    /* Н2-UP */
+    font-family: Ubuntu;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+main .table > .cell h3{
+    color: var(--unnamed, #01437C);
+    /* Каталог_ФИО */
+    font-family: Ubuntu;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 15px;
+}
+main .table > .cell a:first-child h3 {
+    margin-top: 10px;
+}
+
+
+
+/* main .button-full{
+    width: 30%;
+}
+main .button-full button{
+    width: 100%;
+    border: none;
+    display: flex;
+    padding: 1.2rem 3.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    background: var(--unnamed, #01437C);
+    color: var(--unnamed, #FFF);
+
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+main .button-full button:hover{
+    background-color: #00AEEF;
+} */
+
+
+
+
+

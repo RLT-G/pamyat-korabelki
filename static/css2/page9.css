@@ -1,0 +1,152 @@
+
+main{
+    padding: 7.5rem;
+    padding-left: 12.75%; padding-right: 12.75%;
+}
+main h1{
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1.25rem;
+}
+main h2{
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 7.5rem;
+}
+main h3{
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 1.40625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.07031rem;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+main .p-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; margin-bottom: 2.5rem;
+
+    position: relative;
+}
+main .p-container .title{
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.05938rem;
+    text-transform: uppercase;
+    display: flex; flex-direction: column; justify-content: space-between;
+    width: 25%;
+}
+main .p-container .p{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    align-items: start;
+}
+main .p-container .p h4{
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+main .p-container .p h5{
+    color: var(--unnamed, #01437C);
+font-family: Ubuntu;
+font-size: 1.5625rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.07063rem;
+text-transform: uppercase;
+}
+.p .I1{
+    color: var(--unnamed, #01437C);
+
+    /* H2 */
+    font-family: Ubuntu;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 7.37rem;
+}
+.p-container .title a{
+    display: flex; 
+    flex-direction: row;
+    justify-content: start;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-transform: uppercase;
+}
+.p-container .title a:hover{
+    display: flex; 
+    flex-direction: row;
+    justify-content: start;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--1, #00AEEF);
+    font-family: Ubuntu;
+    font-size: 1.40625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.07031rem;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.p-container .v{
+    width: 75%;
+    height: 31rem;
+    background: var(--20, rgba(0, 0, 0, 0.20));
+    display: flex; 
+    flex-direction: row;
+    justify-content: center; 
+    /* align-items: center; */
+    cursor: pointer;
+}
+.p-container .vv{
+    width: 12%;
+    height: 6rem;
+    background: url('../img/page9/ion_play-circle-outline.svg'), no-repeat;
+    background-size: 100% auto;
+    margin-left: 44%;
+}
+
+
+
+/* фиксация навигации */
+/* фиксация навигации */
+
+/* main > .content {
+    position: relative;
+} */
+/* main > .content #page9_navigation {
+    position: fixed; */
+    /* top: 0;
+} */

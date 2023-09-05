@@ -1,0 +1,241 @@
+
+
+
+
+
+main{
+    padding: 7.5rem; padding-left: 12.5%; padding-right: 12.5%;
+}
+main h1{
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 3.75rem;
+}
+main .r-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 1.2rem;
+}
+main .r{
+    width: 32%;
+    background: var(--unnamed, #F0F0F0);
+    padding: 0.9375rem;
+}
+main .r .inner{
+    width: 100%; height: 100%;
+    border: 3px solid var(--unnamed, #01437C);
+    padding: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+} 
+main .r .inner:hover{
+    border: 3px solid var(--unnamed, #00AEEF);
+}
+main .item1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .item1-1{
+    color: var(--unnamed, #01437C);
+
+    /* Хедер мал */
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-transform: uppercase;
+}
+main .item1-2{
+    color: var(--unnamed, #01437C);
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+main .item2{
+    color: var(--unnamed, #01437C);
+
+    /* Статья/H4 */
+    font-family: Ubuntu;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+main .item3{
+    overflow: hidden;
+    color: var(--unnamed, #01437C);
+    text-overflow: ellipsis;
+    whitespace: nowrap;
+    
+    /* текст */
+    font-family: Ubuntu;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: var(--unnamed, #01437C);
+
+    /* текст */
+    font-family: Ubuntu;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+main .item4{
+    color: var(--1, #00AEEF);
+    text-align: center;
+    
+    /* ссылки в тексте */
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+main .m{
+    margin-bottom: 0.94rem;
+}
+main .r-container .last{
+    background: url("../img/page13-t/СТА_отзыв.png"), no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+main .last h1{
+    color: #FFF;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+main .last button{
+    display: flex;
+    width: 90%;
+    height: 4.3125rem;
+    padding: 0.9375rem 2.75rem;
+    justify-content: center;
+    align-items: center;
+    background: var(--unnamed, #01437C);
+    border: none;
+    color: var(--unnamed, #FFF);
+
+/* Хедер мал */
+font-family: Ubuntu;
+font-size: 0.9375rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.04688rem;
+text-transform: uppercase;
+    cursor: pointer;
+}main .last button:hover{background-color: #00AEEF;}
+main .buttom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+main .buttom button{
+    border: none;
+    display: flex;
+    /* width: 24.125rem; */
+    width: 32%;
+    height: 4rem;
+    padding: 0.9375rem 3.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    background: var(--unnamed, #01437C);
+    color: var(--unnamed, #FFF);
+
+    /* Хедер мал */
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-transform: uppercase;
+    margin-top: 3.75rem;
+    cursor: pointer;
+    margin-bottom: 7.5rem;
+}main .buttom button:hover{background-color: #00AEEF;}
+
+
+
+
+main .c-form .username, 
+main .c-form .phone, 
+main .c-form .email,
+main .c-form .message{
+    width: 100%;
+    border: 2px solid var(--unnamed, #01437C);
+    padding: 1.25rem 1.875rem;
+    color: rgb(0, 0, 0);
+    font-family: Ubuntu;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.05938rem;
+    margin-bottom: 1.25rem;
+}
+
+main .c-form .username::placeholder,
+main .c-form .email::placeholder,
+main .c-form .phone::placeholder,
+main .c-form .message::placeholder{
+    color: var(--non-active, rgba(1, 67, 124, 0.40));
+    font-family: Ubuntu;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.05938rem;
+    text-transform: uppercase;
+}
+main .c-form .message{
+    width: 100%; height: 15rem;
+    resize: none; margin-bottom: 0.8rem;
+}
+main .c-form .submit{
+    width: 30%;
+    padding: 1.5rem 4%;
+    justify-content: center;
+    align-items: center;
+    background: var(--unnamed, #01437C);
+    border: none;
+    color: var(--unnamed, #FFF);
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}main .c-form .submit:hover{background-color: #00AEEF;}

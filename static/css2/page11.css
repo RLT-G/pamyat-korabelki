@@ -1,0 +1,161 @@
+
+
+
+
+
+main{
+    padding: 7.5rem; padding-left: 12.5%; padding-right: 12.5%;
+}
+main .text{
+    color: var(--unnamed, #01437C);
+
+    /* Н1 */
+    font-family: Ubuntu;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 3rem;
+}
+main .container5{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 100%; height: auto;  
+    align-items: stretch;
+}
+main .container5 a{
+    width: 32%; height: 34rem;
+    z-index: 1;
+}
+main .container5 .card{
+    width: 100%; height: auto;
+    display: flex;
+    flex-direction: column;
+    /* max-height: 34rem; */
+}
+main .container5 .card .top{
+    width: 100%;
+    height: 20rem;
+    flex-shrink: 0;
+    background: var(--20, rgba(0, 0, 0, 0.20));
+}
+main .container5 .card .bottom{
+    width: 100%;
+    height: 14rem;
+    /* height: auto; */
+    background: var(--unnamed, #F0F0F0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-shrink: 0;
+    padding: 1rem;
+}
+main .container5 .card .bottom .item1{
+    display: flex;
+    margin-left: 5%;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .container5 .card .bottom .item1 .h1
+{
+    color: var(--unnamed, #01437C);
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-transform: uppercase;
+}
+main .container5 .card .bottom .item1 .h2
+{
+    color: var(--unnamed, #01437C);
+    text-align: center;
+
+    /* Статья/дата */
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+main .container5 .card .bottom .item2{
+    width: 90%;
+    margin-left: 5%;
+    color: var(--unnamed, #01437C);
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+main .container5 .card .bottom .item3
+{
+    margin-left: 5%;
+    color: var(--1, #00AEEF);
+    text-align: start;
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+main .container5 .card{
+    position:relative;
+}
+main .container5 .card .border{
+    display:block;
+    width: 94%;
+    height: 33rem;
+    border: 3px solid var(--unnamed, #01437C);
+    position: absolute;
+    bottom: 0.5rem;
+    left: 3%;
+}
+main .container5 .card .border:hover{
+    border: 3px solid var(--unnamed, #00AEEF);
+}
+main .buttom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+main .buttom button{
+    border: none;
+    display: flex;
+    /* width: 24.125rem; */
+    width: 32%;
+    height: 4rem;
+    padding: 0.9375rem 3.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    background: var(--unnamed, #01437C);
+    color: var(--unnamed, #FFF);
+
+    /* Хедер мал */
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-transform: uppercase;
+    margin-top: 3.75rem;
+    cursor: pointer;
+}
+main .buttom button:hover{
+    background-color: #00AEEF;
+}
+
+
+
+
+

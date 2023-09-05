@@ -1,0 +1,135 @@
+a{
+    text-decoration: none;
+}
+header .content{
+    width: 100%; height: 14.5rem;
+    padding-left: 12.5%; padding-right: 12.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: url("../../img/page1/хедер.svg"), no-repeat;
+    background-size: auto 100%
+}
+header .content .top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header .content .top .logo-href{
+    width: 35%;
+    height: 8rem;
+}
+header .content .top .logo{
+    background: url("../../img/index/логоfooter.svg"), no-repeat;
+    width: 100%;
+    height: 8rem;
+    background-size: 100% 100%;
+}
+header .top .nav{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 2rem;
+    position: relative;
+    top: 1rem;
+}
+header .top .nav a{
+    color: var(--unnamed, #FFF);
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04688rem;
+    text-transform: uppercase;
+}
+header .top .nav img{
+    position: relative;
+    bottom: 0.1rem;
+}
+header .content .bottom,
+header .content .bottom .base-href{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--unnamed, #FFF);
+    font-family: Ubuntu;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.05938rem;
+    text-transform: uppercase;
+}
+
+header .content .bottom .c1 {
+    cursor: pointer;
+}
+
+
+
+/* всплывающий блок */
+/* всплывающий блок */
+
+header .bottom [data-popup_list] {
+    z-index: 9;
+    position: relative;
+    /* background-color: rgba(127, 255, 212, 0.222); */
+}
+
+header .bottom [data-popup_list] .all-block{
+    position: absolute;
+    top: 0;
+    padding-top: 41px;
+}
+header .bottom [data-popup_list] .all-block.opab {
+    width: 147px;
+    left: -58px;
+}
+header .bottom [data-popup_list] .all-block.fuck {
+    width: 198px;
+    left: -38px;
+}
+header .bottom [data-popup_list] .all-block[data-active="false"] {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+header .bottom [data-popup_list] .all-block[data-active="true"] {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+header .bottom [data-popup_list] .all-block a {
+    display: flex;
+    width: 218px;
+    padding: 15px 71px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    border: 3px solid var(--unnamed, #01437C);
+    border-bottom: 0;
+    background: #FFF;
+}
+header .bottom [data-popup_list] .all-block a:last-child {
+    border-bottom: 3px solid var(--unnamed, #01437C);
+}
+
+header .bottom [data-popup_list] .all-block a .block {
+    color: var(--unnamed, #00AEEF);
+    /* Хедер мал */
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+
+    /* от себя */
+    white-space: nowrap;
+}
