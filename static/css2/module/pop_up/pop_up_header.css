@@ -79,16 +79,19 @@
 .hide-block{
     width: 250px;
     height: auto;
-    /* display: none; */
+    display: none;
 }
 .hide-block .item{
     justify-content: end;
     padding-left: 20px;
 }
-
-@media (min-width: 320px) and (max-width: 640px) {
+#pop_up_header_adaptive button{
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 0;
     
 }
-@media (max-width: 320px) {
-    
+#pop_up_header_adaptive button:active + .hide-block{
+    display: block;
 }

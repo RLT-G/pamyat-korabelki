@@ -11,7 +11,7 @@ function pop_up_header_adaptive () {
             <div class="pop_up__content">
                 <div class="item i1">МЕНЮ</div>
                 <a href="../other/page3.html"><div class="item i2">История</div></a>
-                <a href="../other/page4.html"><div class="item i3">персоналии</div></a>
+                <button><div class="item i3">персоналии</div></button>
                 <div class="hide-block">
                     <a href="../opab/page7.html"><div class="item ii">264-й ОПАБ</div></a>
                     <a href="../other/page10.html"><div class="item ii">герои</div></a>

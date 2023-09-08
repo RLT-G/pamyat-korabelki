@@ -2,7 +2,7 @@
     display: none;
 }
 
-@media (min-width: 640px) and (max-width: 1024px) {
+@media (min-width: 0px) and (max-width: 1024px) {
     html body main .content {
         padding: 0;
     }
@@ -47,7 +47,7 @@
     }
     
 }
-@media (min-width: 320px) and (max-width: 640px) {
+@media (min-width: 0px) and (max-width: 640px) {
     body{
         overflow-x: hidden;
     }
